@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- AQUI INDICA PARA O NAVEGADOR QUAL VERSÃO DO HTML DEVE SER UTILIZADA -->
+<html lang="pt-BR">
+    <head> <!-- TAG HEAD TERA INFORMAÇÕES IMPORTANTE SOMENTE PARA O NAVEGADOR -->
+        <title>O título da página</title> <!-- TAG PARA O TÍTULO DA PAGINA QUE É EXIBIDO NA BARRA DA JANELA -->
+        <meta charset="UTF-8"> <!-- TAG PARA POSSIBILITAR IDIOMAS COM ACENTOS E CEDILHA -->
+        <meta name="autor" content="Aline de Araújo - AADEVFOLIO"/>
+        <link rel="stylesheet" href="style.css"> <!-- link para acessar o CSS do arquivo -->
+    </head>
+
+    <body> <!-- TAG BODY TERA AS INFORMAÇÕES QUE SERAO MOSTRADA PARA O USUARIO -->
+
+        <header>
+            <h1>MINHA APRENDIZAGEM</h1>
+            <h5><a href="https://www.instagram.com/aadevfolio/" target="_blank">BY: AADEVFOLIO</a></h5> <!-- LINK SERA ABERTO EM UMA NOVA GUIA -->
+
+            <ul> <!-- LISTA NÃO ORDENADA -->
+                <li>HTML, básico
+                    <ol> <!-- LISTA ORDENADA COM NUMEROS -->
+                        <li><p><a href="#titulos">TAGS DE TITULOS PARAGRAFO E ENFASE</a></p></li>
+                        <li><p><a href="#imagem">TAG DE IMAGEM</a></p></li>
+                    </ol>
+                </li>
+            </ul>
+
+        </header>
+
+        <section>
+            <h2>TAGS DE TITULOS PARAGRAFO E ENFASE</h2> 
+            
+            <h1>H1 - TÍTULO</h1>
+            <h2 style="color: black;">H2 - SUBTÍTULO</h2>
+            <h3>H3 - TEXTO GIGANTE</h3>
+            <h4>H4 - TEXTO GRANDE</h4>
+            <h5>H5 - TEXTO NORMAL</h5>
+            <h6>H6 - TEXTO PEQUENO</h6>
+
+            <p>Esse texto é uma PARAGRAFO</p>
+            <p>Esse texto é uma PARAGRAFO</p>
+            <strong>Esse texto é uma parágrafo em NEGRITO</strong><br> <!-- texto em negrito -->
+            <i>Esse texto é uma parágrafo em ITALICO </i><br> <!-- texto em itálico -->
+            <small>esse texto é uma parágrafo PQUENO</small><br> <!-- texto PEQUENO -->
+            <mark>Esse texto é uma parágrafo MARCADO</mark><br> <!-- texto MARCADO -->
+
+            <br> <!-- TAG PARA QUEBRA DE LINHA -->
+        </section>
+
+        <section>
+            <h2>TAG DE IMAGEM</h2>
+            <img src="centro-distribuicao.png" alt="FOTO DA DISTRIBUIÇÃO"> <!-- tag para adicionar imagem salvar no projeto-->
+
+            <figure> <!-- Tag para adicionar legenda na foto -->
+                <img src="https://images.impresa.pt/blitz/2019-12-16-WIDE-USE_HPromoPhoto_HelenePambrun.jpg" alt="Foto do Harry style" width="500" height="350"> <!-- tag para adicionar imagem por URL-->
+                <figcaption>Legenda da imagem</figcaption>
+            </figure>      
+        </section>
+
+        <section>
+            <h2>TAG DE TABELA</h2>
+            <table border="1"> <!-- ADICIONANDO TABELAS -->
+                <thead>
+                    <td colspan="2" align="center">Alfabeto</td>
+                    <tr>  <!-- coluna -->
+                        <td>A</td> <!-- linha -->
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </body>
+</html>
