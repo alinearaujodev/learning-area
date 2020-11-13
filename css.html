@@ -1,0 +1,694 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>
+        <title>Learning Area By: AADevFolio</title> 
+        <meta charset="UTF-8"> 
+        <meta name="autor" content="Aline de Araújo - AADEVFOLIO"/>
+        <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/generic/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pagecss.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement("header" );
+                document.createElement("footer" );
+                document.createElement("section"); 
+                document.createElement("aside"  );
+                document.createElement("nav"    );
+                document.createElement("article"); 
+                document.createElement("hgroup" ); 
+                document.createElement("time"   );
+            </script>
+            <noscript>
+                <strong>Aviso !</strong>
+                Seu navegador web não suporta HTML5, e devido a isso alguns recursos são simulados usando JScript.
+                Infelizmente seu navegador desativou a execução de scripts. Por favor ative esse recurso para que esta página seja exibida corretamente.
+            </noscript>
+        <![endif]--> 
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="learning-area">
+                    <h1>LEARNING AREA</h1>
+                    <h5><a href="https://www.instagram.com/aadevfolio/" target="_blank">BY: AADEVFOLIO</a></h5> <!-- LINK SERA ABERTO EM UMA NOVA GUIA -->
+                    <time datetime="01-05-2020">01/05/2020
+                </div>
+
+                <ul> <!-- LISTA NÃO ORDENADA -->
+                    <li>CSS, básico
+                        <ol> <!-- LISTA ORDENADA COM NUMEROS -->
+                            <p><a href="#"></a></p>
+                            <p><a href="#"></a></p>
+                            <p><a href="#"></a></p>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>O que é CSS?</h2>
+                <p>CSS: Cascading Style Sheets, em português significa Folha de estilo em cascata. Para um melhor entendimento, é o<strong> Visual do site</strong></p>
+            </section>
+
+            <section id="fontes">
+                <h2>Fontes e Border</h2>
+                <P>texto com as seguintes config no css:</P>
+                   
+                <div>
+                    <p>font-family: 'Times New Roman', Times, serif;</p>
+                    <p>font-size: 15pt;</p>
+                    <p>font-weight: bold;</p>
+                    <p>line-height: 10px;</p>
+                    <p>color: blueviolet;</p>
+                    <p>text-align: center; </P>
+
+                    <p class="explicacao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae deserunt cum maiores doloribus! In saepe et esse velit ut aperiam, quaerat temporibus soluta dicta libero maxime quas! Hic, repellendus aliquam.</p>
+                    <br>
+                </div>
+            </section>
+
+            <section>
+                <p>css reset </p>
+            </section>
+
+            <section>
+                Background-image – imagem de fundo do documento. :url(background.jpg); 
+            </section>
+
+            <section>
+                <h2>Float</h2>
+                <p>essa propriedade significa em português flutuar.</p>
+                <p>Float: pode ser definida left ou right</p>
+                <p>quando aplicado tem um novo contexto, logo se "esconde", mas nunca se "esconde" o conteúdo (img ou text / inline / inline block )</p>
+
+
+                
+            propriedade float 
+
+            * 
+        desejar fazer algo em um determinado local do página, uso o float (flutuar). 
+        
+        
+                <div class="quadrado-float primeiro-float">Primeiro</div>
+                <div class="quadrado-float segundo-float">Segundo</div>
+                <p>Lorem ipsum dolor sit amet consectetur bjfsdhfsdgfjsy eeeehauujkl jksfhjkdhsdu wjwjjwwjwj jaiwudwijd adipisicing elit. Laborum officiis error, nobis aliquam voluptatibus perferendis odit quam nesciunt asperiores odio doloribus quisquam ad dignissimos qui nam distinctio accusantium ratione saepe dolor quibusdam cupiditate tempora alias sunt facilis. Quisquam repellendus modi ut, earum enim dolorum obcaecati adipisci! Modi eligendi eveniet adipisci tenetur, totam accusamus deleniti labore perspiciatis inventore aperiam aliquam voluptatum quo officiis repellendus? Praesentium beatae dicta, deserunt tempora quod dolorum facere laudantium eaque inventore sapiente. Consectetur non quis magnam fugit quasi distinctio repellendus reiciendis neque, adipisci laborum laudantium praesentium, sapiente, ullam nobis libero repudiandae velit vero numquam. Magni, eius! Eos!</p>
+            
+                <p>- para aplicar o texto abaixo dos elementos que  estão flutuando deve adicionar a propriedade clear que pode ser definida left right ou both (ambos) A propriedade clear quer dizer “limpe
+                    o uxo do documento ao meu lado”</p>
+            
+                <p>- se quiser deixar o conteúdo todo alinhado sem a quabra do float, aplique a propriedade overflow: hidden</p>
+            </section>
+
+            <section>
+                porcentagem - tera a referencia do pai, então se o pia tiver 500px de width e for estabelecido que a div tera width: 100% ele ficará com 500px de width tambem.
+                
+                sumir com o elemento
+                <p>visibily: hidden</p>
+                opacity:0;
+                height: 0;
+                overflow: hidden; 
+            </section>
+
+            <section>
+                <h2>Propriedade Display</h2>
+                <P>display é a maneira que mostra os conteúdo (elementos) da pagina. E existe 4 tipos, são:</P>
+                <section>
+                    <h3>Block (Bloco):</h3>
+                    <div>               
+                        <p>a linha todo do conteúdo</p>
+                        <p>altura é defina pelo tamanho do texto</p>
+                        <p>pode usar width e height na propriedade</p>
+                        <p>por padrão não coloca o elemento ao lado</p>
+                    </div>
+                </section> 
+
+                <section>
+                    <h3>Inline (Em linha):</h3>
+                    <p>
+
+                        * por padrão coloca o elemento fica do lado do outro
+                        * 
+                width e height são definida pelo conteúdo
+                        * 
+                 widht e height não são definidos 
+                        * 
+                comportamento de uma palavra, então remova os enter.
+                
+                
+                
+                para alinha verticalmente use o vertical-align: top // vertical-align: middle; // vertical-align: bottom;</p>
+                </section>
+
+                <section>
+                     <h3>Inline-Block</h3>
+
+                     <p>como no display block fica um conteudo abaixo do outro defenindo width e height, e no inline fica um ao lado do outro sem definição de width e height. No inline-block os conteudo podem ficar um do lado do outro e pode também definir o width e o height</p>
+                     <p>Os elementos que recebem o valor inline-block para a propriedade display obedecem às especicações de dimensão das propriedades height (altura) e width (largura) e ainda permitem que outros elementos sejam exibidos ao seu lado como elementos inline.</p>
+                     <p>para remolver o espaço dentro os conteudo usa-se uma gambiarra com comentario ou deixando todas as divs em uma unica linha </p>
+                
+                     <p>testar conteudo center e texto left</p>
+                </section>
+            </section>
+
+            <section>
+                <h2>Propriedade Position</h2>
+                <p>Assim que você definir o position, logo depois tem que definir as coordenadas de posição, com top, bottom, left e right.</p>
+                
+                <article>
+                    <h3>Position: Static</h3>
+                    <p>Por padrão os elementos são static, é o tipo um centroavante que fica parado. Se passarmos algum valor para as propriedades de coordenadas, eles não serão respeitados, por não aceitar um posicionamento manual (left, right, top, bottom)</p>
+                    
+                    <div class="quadrado-static primeiro-static">Primeiro</div>
+                    <div class="quadrado-static segundo-static">Segundo</div>
+                    <div class="quadrado-static terceiro-static">Terceiro</div>
+                </article>
+
+                <article>
+                    <h3>Position: Relative</h3>
+                    <p>Por padrão o elemento será renderizado da mesma maneira que o static, aceitando posicionamento manual. O tamanho do seu elemento pai leva em conta o tamanho do elemento relative, porém sem levar em conta seu posicionamento. O pai não sofreria alterações mesmo se o elemento fosse static.</p>
+
+                    <p>Relative - é relativo ao seu próprio elemento que foi criado quando era static. Assim as coordenadas de posição partirá e moverá da onde foi criado.</p>
+
+                    <ol>
+                        <p>- Abaixo no primeiro quadrado com o position: relative estabelecido, coloquei também um left: 30px.</p>
+                        <p>- No segundo quadrado com o position: relative estabelecido, coloque também um bottom: 20px e um left: 10px;</p>
+                        <p>- O Terceiro quadrado não tem position: relative, assim por padrão fica o position: static</p>
+                    </ol>
+
+                    <div class="quadrado-relative primeiro-relative">Primeiro</div>
+                    <div class="quadrado-relative segundo-relative">Segundo</div>
+                    <div class="quadrado-relative terceiro-relative">Terceiro</div>
+                </section>
+
+                <section>
+                    <h3>Position: Absolute</h3>
+
+                    <p>
+                        * Absolute – Toma por base o elemento pai, quem vem antes do elemento. Fica "em baixo" do novo contexto. Assim as coordenadas de posição se move em relação a página. Para respeitar o elemento pai, bastar o pai ser diferente de static 
+                    
+                            * 
+                    Por denição, o elemento que tem
+                            * 
+                    o modo de posicionamento absolute toma como referência qualquer elemento que seja seu pai na estrutura
+                            * 
+                    doHTMLcujomodo de posicionamento seja diferente de static (que é o padrão), e obedece às coordenadas
+                            * 
+                    de acordo com o tamanho total desse elemento pai.
+                    
+                    
+                                    Quando não há nenhum elemento em toda a hierarquia daquele que recebe o posicionamento absolute que
+                    seja diferente de static, o elemento vai aplicar as coordenadas tendo como referência a porção visível da
+                    página no navegador. Por exemplo:
+
+                    <!--  <div class="quadrado"></div>
+                    <div class="quadrado absoluto"></div> -->
+                                   
+                    Estilo CSS
+                    .quadrado {
+                    background: green;
+                    height: 200px;
+                    width: 200px;
+                    }
+                    .absoluto {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    }
+                    <!-- Seguindo o exemplo acima, o segundo elemento <div>, que recebe o valor “absoluto” em seu atributo class, -->
+                    não tem nenhum elemento como seu “pai” na hierarquia do documento, portanto ele vai alinhar-se ao topo e
+                    à direita do limite visível da página no navegador, adicionando respectivamente óþpx e ìþpx nessas direções.
+                    
+
+                    <!-- <div class="quadrado relativo">
+                    <div class="quadrado absoluto"></div>
+                    </div>  -->
+                    
+                    Estilos CSS
+                    .quadrado {
+                    background: green;
+                    height: 200px;
+                    width: 200px;
+                    }
+                    .absoluto {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    }
+                    .relativo {
+                    position: relative;
+                    }
+                    
+                    Nesse caso, o elemento que recebe o posicionamento absolute é “lho” do elemento que recebe o posicionamento
+                    relative na estrutura do documento, portanto, o elemento absolute vai usar como ponto de
+                    referência para suas coordenadas o elemento relative e se posicionar óþpx ao topo e ìþpx à direita da posição
+                    original desse elemento.
+                    
+                    Uma conguração de posicionamento vertical (le. ou right) e uma horizontal (top ou bottom) é
+                    obrigatória
+                    – O elemento será renderizado na posição indicada, porém relativa ao primeiro elemento pai cujo
+                    position seja diferente de static ou, se não existir este pai, relativa à página
+                    – Seu tamanho não conta para calcular o tamanho do elemento pai</p>
+
+                    <p>Toma por base o elemento pai, quem vem antes do elemento. Fica "em baixo" do novo contexto. Assim as coordenadas de posição se move em relação a página. Para respeitar o elemento pai, bastar o pai ser diferente de static </p>
+
+                    <p>- Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é obrigatória</p> 
+                    <p>- elemento será renderizado na posição indicada, porém relativa ao primeiro elemento pai cujo position seja diferente de static ou, se não existir este pai, relativa à página</p>
+                    <p>– Seu tamanho não conta para calcular o tamanho do elemento pai</p>
+
+                    <div class="quadrado-absolute primeiro-absolute">Primeiro</div>
+                    <div class="quadrado-absolute segundo-absolute">Segundo</div>
+                    <div class="quadrado-absolute terceiro-absolute">Terceiro</div>
+                </section>
+
+                <section>
+                    Fixed – Ficar no lugar que você determinar. Não importa se exista outro elemento com alteração.  Ex: navbar e footer. Uma conguração de posicionamento vertical (le. ou right) e uma horizontal (top ou bottom) é obrigatória – O elemento será renderizado na página na posição indicada: mesmo que ocorra uma rolagem o elemento permanecerá no mesmo lugar Seu tamanho não conta para calcular o tamanho do elemento pai, é como se não fosse elemento filho
+                </section>
+            </section>
+
+            <section>
+                <p>para tirar o sublinhamento abaixo do link -> text-decoration: none, para colocar -> text-decoration: underline</p>
+                <p>tamanho da linha do sublinhamento text-decoration-thickness: 20px</p>
+    
+                <p> color: inherit aplicado ao link, isso irá informar que é para ele herdar as conf da tag pai </p>
+    
+                <p>O valor inherit indica para o elemento filho que ele deve utilizar o mesmo valor presente no elemento pai,
+                    sendo assim, toda vez que o tamanho do elemento pai for alterado, automaticamente o elemento filho herdará
+                    o novo valor, facilitando assim, a manutenção do código.</p>
+    
+                <p>para fazer tranformação no texto</p>
+                <p>text-transform: uppercase - para todas as letras maiuscula</p>
+                <p>text-transform: lowercase - para todas as letras minuscula</p>
+                <p>text-transform: capitalize - Só as primeiras letras das palavras em maiúsculo.</p>
+            </section>
+
+            <section>
+                <h2>Seletores avançados</h2>
+                  
+                * pegando todos os irmão depois de
+                    h2 ~  p{
+                        color:red;
+                    }
+
+                    agora todos os p depois de um h2 levara uma cor red    
+
+                * pegando seu irmao adjacentes
+                    p + p{
+                        color: green;
+                    }
+
+                    o '+' significa pegar o irmaão seguinte. assim o color pegara o segundo p
+
+
+                * para determinar um elemento especifico uso o sinal de >  
+                    div > p {
+                        color: red;
+                    }
+
+                    agora todos os p dentro de uma div receberá um color red
+
+                * para mudar algo quando passar o mouse em cima use a pseudo do class :hover
+
+                    button:hover{
+                        color: red;
+                    }
+                
+                    então todos os button quando passar o mouse por cima o button ficara com color red
+
+                * seleciona todas as âncoras que têm o atributo "href", ou seja, links
+                    a:link {
+                        background-color:#FF0000;
+                    }
+
+                * seleciona todos os links cujo valor de "href" é um endereço já visitado
+                    a:visited {
+                        background-color:#00FF00;
+                    }
+
+                * seleciona o link no exato momento em que clicamos nele
+                    a:active {
+                        background-color:#0000FF;
+                    }
+                    
+                * para o color red ficar no input quando passar o mouse por cima
+                    button:hover + input{
+                        color: red;
+                    }
+
+                * outro forma de fazer é usando o :focus
+                    input:focus{
+                        color:red;
+                    }
+
+                * seletor de negação 
+                    p:not(.especial) {
+                        color: gray;
+                    }
+
+
+                * para pegar o primeiro elemento de uma li use a pseudo class abaixo:
+                    li:first-child {
+                        color: red;
+                    }
+
+                * para pegar o ultimo elemento de uma li use a pseudo class abaixo:
+                    li:last-child {
+                        color: blue;
+                    }
+
+                * nth-child - são filhos do mesmo irmao 
+                    para pegar as li impares (odd) de 5 poderia fazer 
+
+                    li:nth-child(odd){
+                        color:red;
+                    }
+
+                    agora a primeiro li , terceira li  e a quinta li teram color red
+                    * para pegar o par use (even)
+
+                * usando a funcao an+b
+                    pares:  li:nth-child(2n)
+                    imapres:  li:nth-child(2n+1)
+
+                * para formatar a primeira letra     
+                    p:first-letter {
+                        font-size: 200%;
+                    }   
+                    
+                * imagine que queremos colocar amensagem (externo) ao lado de todos os links externos da nossa
+                    página. Usando pseudo-elementos e seletores de atributo, conseguimos:
+                    a[href^=http://]:after {
+                        content: ' (externo)';
+                    }
+    
+                    que algo antes use:
+                    a:before {
+                        content: '[ ';
+                    }
+            </section>
+
+            <section>
+                * bordas arendondadas
+                    div{
+                        border-radius: 5px;
+                    }
+
+                    para fazer uma circuferencia seria metade da height e widht
+                    div{
+                        widht:100px;
+                        height: 100px
+                        border-radius: 50px;
+                    }
+
+                    * o maximo que você consegue ir é fechar a circunferencia
+
+                    para fazer algumas coisinhas legais use o :
+                    border-top-left-radius: ;
+                    border-top-right-radius: ;
+                    border-bottom-left-radius: ;
+                    border-bottom-right-radius: ;
+
+                    exemplo de estilo button:
+                    box-shadow: 5px 5px 10px rgb (0, 0, 0, 0.5);
+                    cursor: poinnter;
+                    :hover 
+                    box-shadow: 2px 2px 10px rgb (0, 0, 0, 0.5);
+                    :active
+                    box-shadow: inset 2px 2px 10px rgb (0, 0, 0, 0.5);
+
+            </section>
+
+            <section>
+                text shadow 
+
+                    para aplicar uma sombra no texto, use o text-shadow.
+
+                    o primeiro valor é para o eixo X 
+                        div {
+                            text-shadow: 10px red;
+                        }
+
+                    o segundo valor é para eixo Y
+                        div{
+                            text-shadow: 10px 10px red;
+                        }
+
+                    o terceiro valor é para grau de espalhamento (blur)
+                        div {
+                            text-shadow: 10px 10px 5px red;
+                        }
+                    
+                    É possível até passar mais de uma sombra ao mesmo tempo para o mesmo elemento:
+                        text-shadow: 10px 10px 5px red, -5px -5px 4px red;
+
+                box-shadow
+                    *agora para aplicar uma sombra em qualquer elemento , use o box-shadow
+                    os valores dessa propriedade são os mesmo que o text-shadow 
+                        box-shadow: 20px 20px 20px black;
+
+                    *porem diferentemente do text-shadow, o box-shadow suporta ainda mais um valor que faz a sombra aumentar ou diminuir:
+                        box-shadow: 20px 20px 20px 30px black;
+
+                    *Por fim, é possível usar a keyword inset para uma borda interna ao elemento:
+                        box-shadow: inset 0 0 40px black;
+            </section>
+
+            <section>
+                opcity e RGBA e prefixos
+                    com o opacity que recebe um valor decimal entre 0 e 1 você pode aplicar um efeito de transparência
+                        p {
+                            opacity: 0.3;
+                        }
+
+                        existe uma função chamada RGBA que recebe um quarto argumento, o chamado canal Alpha. Na
+                        prática, seria como o opacity daquela cor (um valor entre 0 e 1):
+                        /* branco com 80% de opacidade */
+                            color: rgba(255,255,255, 0.8);
+                    
+                    então para aplicar apenas o fundo do texto em preto transluzente (o texto não). Em vez do
+                    opacity, podemos fazer então:
+                        p {
+                            background: rgba(0,0,0,0.3);
+                            color: white;
+                        }
+
+                    Os prefixos dos fabricantes mais famosos são:
+                        • -webkit-: navegadoresWebkit (Chrome, Safari, iOS, Android)
+                        • -moz-: Firefox (Mozilla)
+                        • -ms-: Internet Explorer (Microsoft)
+                        • -o-: Opera
+            </section>
+
+            <section>
+                transform e transition
+
+                    transition - é uma animação mais sutil
+                    Por padrão, a animação é linear, mas temos outros tipos para animações mais suaves:
+                        linear - velocidade constante na animação;
+                        ease - redução gradual na velocidade da animação;
+                        ease-in - aumento gradual na velocidade da animação;
+                        ease-in-out - aumento gradual, depois redução gradual na velocidade da animação;
+                        cubic-bezier(x1,y1,x2,y2) - curva de velocidade para animação customizada (avançado);
+                        *Podemos ainda usar mais de uma propriedade ao mesmo tempo, incluindo cores!
+
+                            #teste:hover{
+                                top: 30px;
+                                color: red;
+                                transition: top 2s, color 1s ease;
+                            }
+
+                    exemplo de button
+                    button{
+                        transform: scale(0.5); // seria para diminuir
+                        transform: scale(1); // seria o padrão 
+                        transform: scale(2); // para aumentar
+                    }
+                    
+                    para deixar algo mais bonito e elegante para fazer essa tranformação use o transition
+
+                    button{
+                        transition: transform 0.5s linear;
+                    }
+
+                    button:hover {
+                        tranform: scale(1.5);
+                    }
+
+                    tranform: translate
+                    .header {
+                        /* Move o elemento no eixo horizontal */
+                        transform: translateX(50px);
+                        }
+                        #main {
+                        /* Move o elemento no eixo vertical */
+                        transform: translateY(-20px);
+                        }
+                        footer {
+                        /* Move o elemento nos dois eixos (X, Y) */
+                        transform: translate(40px, -20px);
+                    }
+
+                    tranform: rotate 
+
+                    #menu-departamentos {
+                        transform: rotate(-10deg);
+                    }
+
+
+                    transform: scale
+                    #novidades li {
+                        /* Alterar a escala total do elemento */
+                        transform: scale(1.2);
+                    }
+                        #mais-vendidos li {
+                        /* Alterar a escala vertical e horizontal do elemento */
+                        transform: scale(1, 0.6);
+                    }
+
+                    transform: skew 
+                    footer {
+                        /* Distorcer o elemento no eixo horizontal */
+                        transform: skewX(10deg);
+                        }
+                        #social {
+                        /* Distorcer o elemento no eixo vertical */
+                        transform: skewY(10deg);
+                        }
+
+                    *É possível combinar várias transformações no mesmo elemento, basta declarar uma depois da outra:
+                        html {
+                        transform: rotate(-30deg) scale(0.4);
+                        }
+
+            </section>
+
+            <section>
+                box model e box-sizing 
+
+                    O boxmodel é constituído de quatro áreas retangulares: 
+                        conteúdo (content): aquilo que será exibido
+                        espaçamento (padding): distância entre a borda e o conteúdo
+                        bordas (borders): quatro linhas que envolvem a caixa (box)
+                        margens (margin): distância que separa um box de outro.
+
+                    box-sizing que nos permite trocar o box model que queremos usar.
+                        Por padrão, todos os elementos têm o valor box-sizing: content-box o que indica que o tamanho dele é
+                    definido pelo seu conteúdo apenas -- em outras palavras, é o tal box model padrão que vimos antes. Mas
+                    podemos trocar por box-sizing: border-box que indica que o tamanho agora levará em conta até a borda
+                    – ou seja, o width será a soma do conteúdo com a borda e o padding.
+
+
+
+
+            </section>
+
+            <section>
+                responsivo
+                    primeiro no head adicione um meta 
+                    <meta name="viewport" content="width=device-width"> 
+
+                    valores das medidas de proporçãopxé um pixel virtual
+
+ %. 
+com % ela pega como referencia a width e height do pai porem alguma propriedade pega de referencia do próprio elemento como o tranform: translatey
+
+vw e vh
+vw - view width
+vh - view height
+aplicando esse valor e pegara a referencia da tela
+ex: tela com 1000 de width e uma section: 10vw; logo pegara 10 % do 1000
+ 
+
+calc()
+para fazer um calculo entre valores de proporções
+wight: calc(100% - 10px);
+para fazer * ou + deve usar um <number></number> primeiro
+
+rem e em
+em - sera uma multiplicação do font-size do pai
+pai{ font-size: 10px; }
+filho{margin-bottom: 2em; }
+nesse exemplo o margin ficara o dobro do pai dentro tera 20px
+se nao for definido o font-size do pai, ele pegara o font-size do pai mais proximo
+rem - é a mesma coisa porem a multiplicação do font-size é do html 
+
+ch
+é um multiplicador assim como o em e rem, mas a referencia a width da tipografia da fonte.
+otimo para dar um espacamento no input com padding: 2ch; 
+  
+
+
+
+                    media quary
+                        breakpoint - ponto de parada
+                            é fazer uma determinada coisa em um ponto especifico
+                            prefira breakpoints com valores baseados no seu conteúdo. Ou seja, achar suas media queries a partir do seu conteúdo e do seu design. Fica bem mais fácil garantir que sua página funciona em todos os dispositivos.
+
+                            max-width, é 'até' (para baixo -) um determinado valor 
+                            min-width, é 'de' (para cima + ) um determinado valor 
+
+                        @media (max-width:800px){
+                            .secao{
+                                widht: 100vw;
+                            }
+                        }
+                            uma obs é escrever os max-width do maior para o menor, entao se tivesse um breakpoint de max-width 600 ficaria abaixo do 800 no css
+
+            </section>
+
+            <section>
+                Letter-spacing – Espaçamento de letras  
+
+                    Word-spacing – espaçamento de palavras 
+
+                    Line-height – espacamento entre linhas   
+
+                    Text-indent – distancia da primeira linha  
+
+                    Background-color – cor de fundo do documento. 
+
+
+                    Background-attachment – deixar a imagem fixa ou scroll com o texto 
+
+                    Background-position – controlar o posicionamento 
+
+                    Z-index – Sobrepor uma div . quem fica na frente e atras
+
+                    font-size – definir o tamanho 
+
+                    text-align – alinhamento de texto 
+
+                    text-decoration - decoração do baixo, como sublinhado 
+
+                    Overflow – deixa uma barra de rolagem        
+
+                    *{ 
+
+                    Um seletor universal, com ele irá codificar todos os componentes de todas as páginas.  
+
+                    } 
+
+
+                    *fazer um exemplo e explicação de container 
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <hr>
+            com amor by: <a href="https://www.instagram.com/aadevfolio/" target="_blank">aadevfolio</a></time>
+            <br>
+            <a href="css.html">Home</a>
+        </footer>
+    </body>
+</html>

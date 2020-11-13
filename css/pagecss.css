@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*  APLICAR UMA IMAGEM NO FUNDO  */
+
+.icon{
+    background-image: url(../img/favicon-32x32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fontes{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    line-height: 10px;
+    color: blueviolet;
+    text-align: center;
+
+    /* BORDAS */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.explicacao{
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
+    line-height: 25px; /* tamanho da altura de cada linha */
+    letter-spacing: 3px; /* tamanho do espaço entre cada letra */
+    word-spacing: 5px; /* tamanho do espaço entre cada palavra */
+}
+
+.quadrado-float{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+}
+
+.primeiro-float{
+    background-color: chocolate;
+    float: left;
+}
+
+.segundo-float{
+    background-color: tomato;
+    float: left;
+}
+
+.box-model{
+    
+    background-color: blueviolet;
+    color: white;
+
+    /* ARRASTAR ELEMENTO PARA DIREITA */
+    display: block; /* OCUPA A LINHA TODA */
+    width: 500px;
+    margin-left: auto;
+
+    /*  SE QUISER CENTRALIZAR O ELEMENTO COLOQUE TANTO margin-lefT quanto MARGIN-RIGHT AUTO */
+}
+
+.quadrado-static{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.primeiro-static{
+    background-color: red;
+    position: static;
+}
+
+.segundo-static{
+    background-color: blue;
+}
+
+.terceiro-static{
+    background-color: black;
+}
+
+.quadrado-relative{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.primeiro-relative{
+    background-color: red;
+    position: relative;
+    left: 30px;
+}
+
+.segundo-relative{
+    background-color: blue;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+.terceiro-relative{
+    background-color: black;
+}
+
+.quadrado-absolute{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.primeiro-absolute{
+    background-color: red;
+    position: absolute;
+    left: 30px;
+}
+
+.segundo-absolute{
+    background-color: blue;
+}
+
+.terceiro-absolute{
+    background-color: black;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+

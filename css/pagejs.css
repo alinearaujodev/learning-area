@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*  POr MEIO DE TAG
+
+body{
+
+}
+   por meio de class
+
+ .titulos{
+
+ }  
+
+    por meio de id
+
+   #area{
+
+   } 
+*/
+
+/* CSS PRINCIPAL DO SITE */
+
+body{
+    background-color: rgb(255, 250, 250);
+    color: #333;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.learning-area{
+    text-align: center;
+}
+
+
+.explicacao{
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto */
+    line-height: 25px; /* tamanho da altura de cada linha */
+    letter-spacing: 3px; /* tamanho do espaço entre cada letra */
+    word-spacing: 5px; /* tamanho do espaço entre cada palavra */
+}
+
+#leg-imagem{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+/*  APLICAR UMA IMAGEM NO FUNDO  */
+
+.icon{
+    background-image: url(../img/favicon-32x32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fontes{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    line-height: 10px;
+    color: blueviolet;
+    text-align: center;
+
+    /* BORDAS */
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.box-model{
+    
+    background-color: blueviolet;
+    color: white;
+
+    /* ARRASTAR ELEMENTO PARA DIREITA */
+    display: block; /* OCUPA A LINHA TODA */
+    width: 500px;
+    margin-left: auto;
+
+    /*  SE QUISER CENTRALIZAR O ELEMENTO COLOQUE TANTO margin-lefT quanto MARGIN-RIGHT AUTO */
+}
+
+.quadrado-relative{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.primeiro-relative{
+    background-color: red;
+    position: relative;
+    left: 30px;
+}
+
+.segundo-relative{
+    background-color: blue;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+.terceiro-relative{
+    background-color: black;
+}
+
+.quadrado-absolute{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: white;
+}
+
+.primeiro-absolute{
+    background-color: red;
+    position: absolute;
+    left: 30px;
+}
+
+.segundo-absolute{
+    background-color: blue;
+}
+
+.terceiro-absolute{
+    background-color: black;
+    position: absolute;
+    width: auto;
+    left: 0;
+    right: 0;
+}
+
+footer{
+    text-align: center;
+  }
+

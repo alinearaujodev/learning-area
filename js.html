@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learning Area - JS</title>
+    </head>
+    <body>
+        <h2>Escreva algo na tela</h2>
+        <p>O primeiro comando para aprender em JS é como aparecer algo na tela. E para isso, usamos o comando <strong>alert('Escreva algo aqui');</strong>.</p>
+        <p>O ponto em vírgula no final é opcional, mas eu gosto de usar porque sou cria da linguagem C haha</p>
+    </body>
+</html>
+
+alert('Primeira mensagem com alert'); // comando escreva
+            confirm('Tranquilin?'); // comando escreva mas também tem a opcao de cancelar
+            prompt('Qual seu nome?'); // comando com opcao para usuario escrever algo 
+
+    tipos de dados
+    O JS não diferencia numeros inteiros de real, todos são number
+        dentro de number tem dois tipos
+        Infinity
+        NaN 
+    null
+    undefined
+    object 
+    function
+
+    quando quiser saber o tipo de dados use o comando typeof nome da variavel
+
+    passagem de tipos 
+    Number para string -> String(n)
+    String para number -> Number(n)
+
+    template string - uma string entre crases ` ` e com placeholder ${}
+
+    casa decimal e virgula 
+    n1.toFixed(2).replace('.',',')
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+declaração de variaveis
+    var
+    let 
+    const 
+
+
+function (função)
+
+    funciont fica_mais_velho (){
+        idade = idade + 1;
+        alert (idade);
+    }
+
+    * para chamar uma function você escrever o nome da function ();
+    
+    A função querySelector sempre retorna um elemento, mesmo que o seletor potencialmente
+traga mais de um elemento, neste caso, apenas o primeiro elemento da seleção será retornado.
+
+A função querySelectorAll retorna uma lista de elementos compatíveis como seletor CSS passado
+como argumento. Sendo assim, para acessarmos cada elemento retornado, precisaremos
+passar o seu índice
+
+BOM - WINDOW
+DOM - DOCUMENT
+
+Existem diversos eventos que podem ser utilizados para que a interação do usuário coma página seja o ponto
+de disparo de funções que alteram os elementos da própria página:
+• onclick: clica com o mouse
+• ondblclick: clica duas vezes com o mouse
+• onmousemove: mexe o mouse
+• onmousedown: aperta o botão do mouse
+• onmouseup: solta o botão do mouse (útil com os dois acima para gerenciar drag’n’drop)
+• onkeypress: ao pressionar e soltar uma tecla
+• onkeydown: ao pressionar uma tecla.
+• onkeyup: ao soltar uma tecla. Mesmo acima.
+• onblur: quando um elemento perde foco
+onfocus: quando um elemento ganha foco
+• onchange: quando um input, select ou textarea tem seu valor alterado
+• onload: quando a página é carregada
+• onunload: quando a página é fechada
+• onsubmit: disparado antes de submeter o formulário. Útil para realizar validações
+        
