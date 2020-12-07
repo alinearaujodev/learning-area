@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Learning Area By: AADevFolio</title>
+        <title>Learning Area - Internet e Afins</title>
         <meta charset="UTF-8"> 
         <meta name="autor" content="Aline de Araújo - AADEVFOLIO"/>
         <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
@@ -32,36 +32,38 @@
         <![endif]--> 
     </head>
     <body>
-        compilação: é o ato de pegar o código fonte que escrever e passar para o computador entender. (00101010001111010101)
-
-linguagem de alto nível são linguagem que se aproxima da linguagem humana. 
-
-linguagem de baixo nível são linguagem que se aproxima da linguagem dos computadores
-
-sistema vs software 
-software é um programa que fez bem uma determinada função. ex software de gestão de entrada e saída 
-sistema é um programa que faz vem várias funções. são vários software. ex um erp ou sistema Windows
-
-servidor é um computador conectado à internet que serve para algumas funções como enviar dados para o usuário, para outro servidor ou executar uma tarefa para um usuário. 
-
-client-server
-uma pessoa acesa um endereço de site no google: www.aadevfolio.com.br quando apertar a tecla enter, o servidor começar a executar diversas tarefas e uma delas e ver em qual ip esta o endereço desse site. logo assim que o servidor encontra o ip ele retorna a resposta para o para a página web abrir
-
-front-end ou client-side, que é o que vemos no navegador, e o back-end ou server-side, que é o programa rodando no servidor
+        <main>
+            <header>
+                <h1>Internet e Afins</h1>
+            </header>
+            <section>
+                <h2>Sistema vs Software</h2>
+                <p>Software é um programa que fez bem uma determinada função, exemplo, software de gestão de entrada e saída.</p>
+                <p>Sistema é um programa que faz bem várias funções, logo, são vários software, exemplo um ERP ou sistema Windows</p>
+            </section>
+            <section>
+                <h2>Tipos de Linguagem</h2>
+                <p>Linguagem de alto nível são linguagens que se aproximam da linguagem humana.</p>
+                <p>Linguagem de baixo nível são linguagens que se aproximam da linguagem dos computadores.</p>
+                <p>Algumas linguagens mesmo sendo de alto nível, precisam transformar o código para que assim o computador possa entender, isso se chama compilação, que é o ato de pegar o código fonte que escrever e passar para o computador entender. (00101010001111010101) </p>
+            </section>
+            <section>
+                <h2>Cliente e Servidor</h2>
+                <p>Servidores: são computadores que guardam páginas ou aplicativos. Quando o dispositivo de um cliente quer acessar uma página, uma cópia dela é baixada do servidor à máquina do cliente para ser mostrada no browser.</p>
+                <p>Clientes: são os usuários típicos da Web conectados à Internet (por exemplo, seu computador conectado ao seu Wi-Fi, ou seu smartphone conectado à sua rede móvel) e programas de acesso à Web disponíveis nesses aparelhos (geralmente um browser como Firefox ou Chrome).</p>
+                <p>Para entender melhor o papel de cada um, o client-server é a parte do usuário, que acessa um endereço de site no google: www.alinearaujo.dev, quando apertar a tecla enter, o servidor começar a executar diversas tarefas e uma delas é ver em qual IP está o endereço desse site. Assim que o servidor encontra o IP, ele retorna a resposta para que a página web possa abrir</p>
+                <p>Uma diferença importante para se entender é sobre Front-End e Back-End. Front-end ou client-side, é o que vemos no navegador, e o back-end ou server-side, é o programa rodando no servidor.</p>
+            </section>
+            <section>
+                <h2>Endereço IP e DNS</h2>
+                <p>A internet funciona baseada por protocolo TCP/IP, que é a funcão principal é garantir o padrão de comunicação entre dispositivos diferentes, assim possando trocar mensagens.</p>
+                <p>Essa comunicação pode ser você querendo acessar um site. Então, através de um computador, que tem um único numero, chamado de endereço IP.</p>
+                <p>Os IPs mais antigos (IPv4) usam 4 octetos, que são conjuntos de 8 bits separados por pontos, totalizando 32 bits por identificador. Ex: 123.45.67.89 = 01111011.00101101.01000011.01011001 Os IPs mais modernos (IPv6), usam 128 bits ao todo (o que é 4x mais bits que o IPv4). Ex: 2001:0db8:85a3:08d3:1319:8a2e:0370:7344</p>
+                <p>Agora imagina temos que decorar cada IP para acessar um site especifico, muito trabalho. Por isso foi criado Domain Name System, o DNS, que é basicamente como "listas telefonicas", criando a ligação entre o IP e o nome do site. Vale lembrar que seu IP muda constatemente.</p>
+            </section>
+        </main>
 
 Diferentes ambientes de execução: local, produção e testes: Enquanto criamos o software em nossa máquina, chamamos de ambiente de desenvolvimento local. O ambiente onde o usuário final utiliza é o ambiente de produção. E temos um ambiente que deve ser o máximo possível igual ao de produção, para nós, programadores(as), testarmos, chamado ambiente de testes.
-
-
-
-1.1 Rede de computadores
-	* é a ligação entre computadores que possibilitam a comunicação de dados através de cabos ou sem fio
-
-1.2 Endereço IP e Portas
-	* por exemplo essa comunicação de dados pode ser você querendo acessar um site. então você através de um computador, que tem um único numero, chamado de endereço IP, e também tem portas que possibilitam o acesso para que se comuniquem.
-	* Assim seu computador se tornar o cliente e o computador onde a página se encontra chamamos de servidor
-
-		* Clientes: são os usuários típicos da Web conectados à Internet (por exemplo, seu computador conectado ao seu Wi-Fi, ou seu smartphone conectado à sua rede móvel) e programas de acesso à Web disponíveis nesses aparelhos (geralmente um browser como Firefox ou Chrome). 
-		* Servidores: são computadores que guardam páginas ou aplicativos. Quando o dispositivo de um cliente quer acessar uma página, uma cópia dela é baixada do servidor à máquina do cliente para ser mostrada no browser. 
 
 1.3 DNS e Portas desconhecida
 	* Quando conectando um computador a uma rede, ele é configurado a acessar um servidor chamado de DNS
