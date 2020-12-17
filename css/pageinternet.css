@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* CSS PRINCIPAL DO SITE */
+
+body{
+    color: #333;
+    padding: 20px 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: justify;
+}
+
+header{
+    text-align: center;
+}
+
+.learning-area{
+    text-align: center;
+}
+
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+footer{
+    text-align: center;
+}
+
+#footer-position{
+    position: fixed; 
+    width: 100%; 
+    bottom: 0;
+    left: 0;
+    height: 70px;
+}

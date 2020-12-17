@@ -7,7 +7,8 @@
         <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/pageinternet.css">
 
          <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,28 +62,19 @@
             <section>
                 <h2>Endereço IP e DNS</h2>
                 <p>A internet funciona baseada por protocolo TCP/IP, que é a funcão principal é garantir o padrão de comunicação entre dispositivos diferentes, assim possando trocar mensagens.</p>
+                <p>Transmission Control Protocol e Internet Protocol são protocolos de comunicação que definem como os dados viajam pela Web. Isso é, como os mecanismos de transporte que te permitem ir ao shopping, fazer um pedido e comprar. Você pode andar e comprar o que você quer, mas nesse caso vamos imaginar que você ligue para a loja, pague seu pedido pelo telefone e espere pela entrega</p>
                 <p>Essa comunicação pode ser você querendo acessar um site. Então, através de um computador, que tem um único numero, chamado de endereço IP.</p>
                 <p>Os IPs mais antigos (IPv4) usam 4 octetos, que são conjuntos de 8 bits separados por pontos, totalizando 32 bits por identificador. Ex: 123.45.67.89 = 01111011.00101101.01000011.01011001 Os IPs mais modernos (IPv6), usam 128 bits ao todo (o que é 4x mais bits que o IPv4). Ex: 2001:0db8:85a3:08d3:1319:8a2e:0370:7344</p>
-                <p>Agora imagina temos que decorar cada IP para acessar um site especifico, muito trabalho. Por isso foi criado Domain Name System, o DNS, que é basicamente como "listas telefonicas", criando a ligação entre o IP e o nome do site. Vale lembrar que seu IP muda constatemente.</p>
+                <p>Agora, imagine temos que decorar cada IP para acessar um site especifico? Puts, muito trabalho. Por isso foi criado Domain Name System, o DNS, que é basicamente como "listas telefonicas", criando a ligação entre o IP e o nome do site. Vale lembrar que seu IP muda constatemente.</p>
+                <p>Quando você digita um endereço web no seu navegador, este procura o real endereço da página web no servidor DNS antes de poder lhe entregar a página. O navegador precisa encontrar em qual servidor web a página está hospedada, para que ele mande mensagens HTTP para o lugar certo.</p>
+            </section>
+            <section>
+                <h2>Protocolo HTTP</h2>
+                <p>Hypertext Transfer Protocol é um protocolo de aplicação que define uma linguagem para clientes e servidores conversarem entre si. É como a linguagem que você usa para fazer seu pedido e falar com a pessoa que está entregando seu pedido.</p>
             </section>
         </main>
-
-Diferentes ambientes de execução: local, produção e testes: Enquanto criamos o software em nossa máquina, chamamos de ambiente de desenvolvimento local. O ambiente onde o usuário final utiliza é o ambiente de produção. E temos um ambiente que deve ser o máximo possível igual ao de produção, para nós, programadores(as), testarmos, chamado ambiente de testes.
-
-1.3 DNS e Portas desconhecida
-	* Quando conectando um computador a uma rede, ele é configurado a acessar um servidor chamado de DNS
-	* Para saber qual é a IP do site que deseja acessar é preciso que o servidor DNS informe.
-
-
-	* Sua conexão de Internet: Permite que você mande e receba dados da Web. É basicamente como a rua entre sua casa e a loja. 
-	* TCP/IP: Transmission Control Protocol e Internet Protocol são protocolos de comunicação que definem como os dados viajam pela Web. Isso é como os mecanismos de transporte que te permitem ir ao shopping, fazer um pedido e comprar. Você pode andar e comprar o que você quer, mas nesse caso vamos imaginar que você ligue para a loja, pague seu pedido pelo telefone e espere pela entrega. 
-	* DNS: Domain Name Servers são como listas de endereços para sites. Quando você digita um endereço web no seu navegador, este procura o real endereço da página web no servidor DNS antes de poder lhe entregar a página. O navegador precisa encontrar em qual servidor web a página está hospedada, para que ele mande mensagens HTTP para o lugar certo. 
-	* HTTP: Hypertext Transfer Protocol é um protocolo de aplicação que define uma linguagem para clientes e servidores conversarem entre si. É como a linguagem que você usa para fazer seu pedido e falar com a pessoa que está entregando seu pedido.  
-	* Arquivos do componente: Um website é feito de muitos arquivos diferentes, que são diferentes partes daquilo que você comprou na loja. Esses arquivos são divididos em dois tipos principais: 
-
-		* Arquivos de Código: Websites são feitos primariamente de HTML, CSS e JavaScript, mas você vai encontrar outras tecnologias depois. 
-		* Assets: Esse é o nome coletivo para todas as outras coisas que compõem um website, como imagens, música, vídeo, documentos do Word e PDFs. 
-
+             
+        <!--Assets: Esse é o nome coletivo para todas as outras coisas que compõem um website, como imagens, música, vídeo, documentos do Word e PDFs. --> 
 
     </body>
 </html>
