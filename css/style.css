@@ -13,6 +13,10 @@ body{
     text-align: center;
 }
 
+nav div {
+    text-align: center;
+}
+
 section{
     padding-top: 10px;
     padding-bottom: 10px;
