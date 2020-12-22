@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Learning Area - Internet e Afins</title>
+        <title>Internet e Afins - Learning Area</title>
         <meta charset="UTF-8"> 
         <meta name="autor" content="Aline de Araújo - AADEVFOLIO"/>
         <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
@@ -33,30 +33,39 @@
         <![endif]--> 
     </head>
     <body>
+        <header>
+            <nav>         
+                <div>
+                    <h1>HTML</h1>
+                    <h5><a href="https://www.github.com/alinearaujodev/" target="_blank">By: AlineAraujoDev</a></h5> 
+                </div>
+            </nav>
+
+            <section>
+                <ul> 
+                    <li><a href="#sistema_software">Sistema vs Software</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#tipos_linguagem">Tipos de Linguagem</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#funcionamento_computador">Como funciona um programa de computador</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#cliente_servidor">Cliente e Servidor</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#ip_dns">Endereço IP e DNS</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#http">Protocolo HTTP</a></li>
+                </ul>
+                <ul> 
+                    <li><a href="#dominio_hospedagem">Domínio e Hospedagem</a></li>
+                </ul>
+            </section>
+        </header>
         <main>
-            <header>
-                <h1>Internet e Afins</h1>
-                <section>
-                    <ul> 
-                        <li><a href="#sistema_software">Sistema vs Software</a></li>
-                    </ul>
-                    <ul> 
-                        <li><a href="#tipos_linguagem">Tipos de Linguagem</a></li>
-                    </ul>
-                    <ul> 
-                        <li><a href="#funcionamento_computador">Como funciona um programa de computador</a></li>
-                    </ul>
-                    <ul> 
-                        <li><a href="#cliente_servidor">Cliente e Servidor</a></li>
-                    </ul>
-                    <ul> 
-                        <li><a href="#ip_dns">Endereço IP e DNS</a></li>
-                    </ul>
-                    <ul> 
-                        <li><a href="#http">Protocolo HTTP</a></li>
-                    </ul>
-                </section>
-            </header>
             <section id="sistema_software">
                 <h2>Sistema vs Software</h2>
                 <p>Software é um programa que fez bem uma determinada função, exemplo, software de gestão de entrada e saída.</p>
@@ -87,6 +96,7 @@
                 <p>Os IPs mais antigos (IPv4) usam 4 octetos, que são conjuntos de 8 bits separados por pontos, totalizando 32 bits por identificador. Ex: 123.45.67.89 = 01111011.00101101.01000011.01011001 Os IPs mais modernos (IPv6), usam 128 bits ao todo (o que é 4x mais bits que o IPv4). Ex: 2001:0db8:85a3:08d3:1319:8a2e:0370:7344</p>
                 <p>Agora, imagine temos que decorar cada IP para acessar um site especifico? Puts, muito trabalho. Por isso foi criado Domain Name System, o DNS, que é basicamente como "listas telefonicas", criando a ligação entre o IP e o nome do site. Vale lembrar que seu IP muda constatemente.</p>
                 <p>Quando você digita um endereço web no seu navegador, este procura o real endereço da página web no servidor DNS antes de poder lhe entregar a página. O navegador precisa encontrar em qual servidor web a página está hospedada, para que ele mande mensagens HTTP para o lugar certo.</p>
+                <div><img src="img/client-server.png" alt="como funciona na pratica" id="client_server"></div>
             </section>
             <section id="http">
                 <h2>Protocolo HTTP</h2>
@@ -95,8 +105,14 @@
             <section id="dominio_hospedagem">
                 <h2>Domínio e Hospedagem</h2>
                 <p>Domínio: é a parte principal da URL. O domínio é um nome único, para que consiga identifiacr seus servidores e páginas. Geralemente o valor é coobrado anual, numa parcela única. Exemplo de domínio: alinearaujo.dev</p>
-                <p>Hospedagem: é o local que você colocará seu site</p>
+                <p>Hospedagem: é o local que você hospedará seu site para que seus arquivos fiquem online todo tempo, além de serem bem seguros. Geralmente, além de hospedar o site, podem criar emails, banco de dados, site prontos e entre outras coisas.</p>
             </section>
         </main>
+        <footer>
+            <hr>
+            <p></p>com amor by: <a href="https://www.github.com/alinearaujodev/" target="_blank">AlineAraújoDev</a></p>
+            <br>
+            <a href="internet.html">Home</a>
+        </footer>
     </body>
 </html>

@@ -9,11 +9,11 @@ body{
     text-align: justify;
 }
 
-header h1{
+header nav{
     text-align: center;
 }
 
-.learning-area{
+#client_server{
     text-align: center;
 }
 
@@ -25,12 +25,4 @@ section{
 
 footer{
     text-align: center;
-}
-
-#footer-position{
-    position: fixed; 
-    width: 100%; 
-    bottom: 0;
-    left: 0;
-    height: 70px;
 }
