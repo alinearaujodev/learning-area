@@ -17,6 +17,10 @@ nav div {
     text-align: center;
 }
 
+.box{
+    border-radius: 5px;
+}
+
 section{
     padding-top: 10px;
     padding-bottom: 10px;
