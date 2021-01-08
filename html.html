@@ -49,7 +49,7 @@
                 <ol> 
                     <li><a href="#basico">HTML, básico </a></li>
                     <li><a href="#marcacao">Títulos, Paragrafo e Enfase</a></li>
-                    <li><a href="#imagem">Inserir Imagem</a></li>
+                    <li><a href="#imagem">Adicionando Imagem</a></li>
                     <li><a href="#links">Adicionando Links</a>
                     <li><a href="#list">Adicionando Listas</a></li>
                     <li><a href="#tabela">Adicionando Tabela</a></li>
@@ -114,8 +114,8 @@
             </section>
 
             <section id="imagem">
-                <h2>3. Inserir Imagem</h2>
-                <p>Atributo <strong>SRC</strong>, é onde colocamos o caminha para se encontrar a imagem;</p>
+                <h2>3. Adicionando Imagem</h2>
+                <p>Atributo <strong>SRC</strong>, é onde colocamos o caminho onde se encontra a imagem;</p>
                 <p>Atributo <strong>TITLE</strong>, para descrição, esse texto irá aparecer quando o mouse for passado por cima da imagem;</p>
                 <p>Atributo <strong>ALT</strong>, a função é praticamente a mesma do atributo TITLE, mas com a diferença de o texto aparecer quando a imagem não aparecer;</p> 
                 <p>Outro ponto importante, é o <strong> width (largura) e height (altura)</strong>, para ajuste da imagem.</p>        
@@ -123,35 +123,36 @@
                 <section id="tamanho-img">
                     <h3>Tamanho de Imagem para Site</h3>
                     <div>
+                        <p>Para usa imagens em sites, é importante não deixar o tamanho da imagem grande, pois dificulta o carregamento das imagens, pois temos que pensar em todos os dispositivos, e além disso, diferentes velocidades de internet de cada usuário</p>
                         <p>Para imagem de fundo, o ideal é no máximo a imagem ter 1500 de largura</p>
                         <p>Para imagem de conteúdo, o ideal é no máximo ter 650 de largura</p>
                     </div>
                 </section>
                 <section id="inserir-img">
-                    <h3>3.1 - Via arquivo no projeto ou URL</h3>
+                    <h3>Via arquivo no projeto ou URL</h3>
                     <div>
-                        <p>- Inserindo imagem via arquivo localizado na pasta do projeto</p>
+                        <p>Inserindo imagem via arquivo localizado na pasta do projeto</p>
                         <img src="./img/image-baixada.png" alt="FOTO exemplo imagem baixada" width="300" height="200">  
                     </div>
                     <div>
-                        <p>- Inserindo imagem via URL</p>
+                        <p>Inserindo imagem via URL</p>
                         <img src="./img/image-url.png" alt="imagem exemplo imagem url" width="1200" height="250">
                     </div>
                 </section>               
                 <section id="figure">
-                    <h3>3.2 - Imagem com legenda</h3>
+                    <h3>Imagem com legenda</h3>
                     <p>Caso precise adicionar uma legenda abaixo da imagem será preciso adicionar duas novas tags, <strong><code>&lt;figure&gt;</code><code>&lt;/figure&gt;</code></strong> e a <strong><code>&lt;figcaption&gt;</code><code>&lt;/figcaption&gt;</code></strong></p>
                     <img src="./img/figure.png" alt="exemplo no html figure"/>
                     <div>
                         <p>Exemplo:</p>
                         <figure>
-                            <img src="img/centro-distribuicao.png" alt="foto do centro de distribuicao">
+                            <img src="https://static.todamateria.com.br/upload/57/b7/57b7235c6af22-paisagem-natural.jpg" alt="imagem da cachoeira">
                             <figcaption>Legenda da Foto acima</figcaption>
                         </figure>
                     </div>
                 </section>       
                 <section>
-                    <h3>3.3 Imagens Responsivas</h3>
+                    <h3>Imagens Responsivas</h3>
                     <p>Para deixar a imagem Responsivas, na tag <strong><code>&lt;img&gt;</code></strong> você deve adicionar mais dois novos atributos:</p>
                     <p>- srcset: define o conjunto de imagens que nós iremos permitir ao navegador escolher, e qual tamanho cada imagem tem.</p>
                     <p>- sizes: define um conjunto de condições de mídia (ex.: largura da tela) e indica qual tamanho da imagem deveria ser a melhor escolha, quando certas condições de tela são verdadeiras - Estas são as sugestões que nós falamos antes.</p>
@@ -165,6 +166,13 @@
                                 800px"
                         src="img/jodiecomer.jpg" alt="imagem da atriz jodie comer">
                 </section>   
+                <section>
+                    <h3>Favicon</h3>
+                    <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
+                    <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
+                    <p>A extensão para favicon é a .ico</p>
+                    <p>Para adicionar, no <strong>head</strong> é preciso colocar link para favicon e no href, coloca o caminho do favicon</p>             
+                </section>
             </section>
 
             <section id="links"> 
