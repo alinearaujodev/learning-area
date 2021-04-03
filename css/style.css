@@ -5,7 +5,7 @@
 body{
     color: #333;
     padding: 20px 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: 'Source Code Pro', monospace;
     text-align: justify;
 }
 
