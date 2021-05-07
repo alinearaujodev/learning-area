@@ -1,0 +1,224 @@
+<section id="form">
+    <form>
+        <label for="nome">Nome:</label> <!-- LABEL - NOME DO INPUT / FOR - É RELACIONADO COM O ID DO INPUT -->
+        <input id="nome" type="text"> <!-- INPUT - ENTRADA DE DADOS / TYPE - TIPO DE DADO  -->
+
+        <label for="email">Email:</label> 
+        <input id="email" type="email">
+
+        <label for="phone">Telefone:</label> 
+        <input id="phone" type="phone">
+
+        <label for="mensagem">Mensagem:</label> 
+        <textarea id="mensagem"></textarea>
+
+        <input type="submit" value="Enviar"> <!-- submit - tipo para envio do form / VALEU - NOME DO BUTTON -->
+        <button type="reset">Limpar</button> <!-- reset - para limpar o form -->
+
+
+         <fieldset></fieldset> <!-- é uma sessao dentro do form // funcionar so no form-->
+         <legend></legend> <!-- é um titulo da fieldset -->
+         <input type="radio" id="um" name="number">
+         <input type="radio" id="dois" name="number" checked> <!-- é a 'grupo' de bolinha. // com o id você diferencia assim pode selecionar um radio apenas. // com o name voce coloca todos no mesmo grupo // checked é para deixar um radio já selecionado -->
+         <input type="radio" id="tres" name="number">
+
+         para ser selecionado assim que for clicado em uma imagem ou palavra, pode ser de duas maneiras
+            1 - o input dentro da label: 
+                <label>Text
+                    <input type="text">
+                </label>
+            2 - com o atributo for do label sendo relacionado com o id do input 
+                <label for="text"></label>
+                <input type="text" id="text">
+
+        <input type="range">
+
+        O formulário presenta o atributo obrigatório action. O valor desse atributo
+        é o endereço para onde as informações do formulário serão enviadas, e esse valor depende inteiramente de
+        como é feita a aplicação que receberá essas informações no lado do servidor.    
+
+        No formulário, podemos indicar que página (URL) vai receber os dados preenchidos. É só especificar o atributo
+        action. No nosso exemplo, temos um formulário na página produto.php e vamos criar uma próxima
+        página, checkout.php, que vai receber o produto escolhido e deixar o usuário proceder com a compra.
+        No formulário de produto então fazemos: <form action="checkout.php">
+
+        O segundo atributo, method, especica o método do HTTP pelo qual essa informação será transmitida. O
+            valor post, demaneira simplista, signica que queremos inserir as informações desse formulário, salvá-la de
+            alguma maneira. Outro valor possível para esse atributo, o get, é utilizado quando queremos obter alguma
+            coisa a partir das informações que estamos transmitindo, por exemplo, um formulário de busca.
+            
+            Há ainda um outro atributo do formque indica amaneira como os dados são enviados. É o atributo method que
+        pode receber dois valores: GET ou POST. Ambos os métodos enviam os dados do formulário ao servidor,
+        mas o GET faz isso via parâmetros na URL enquanto o POST envia os dados no corpo da requisição (e,
+        portanto, não é visível na barra de endereços).
+        <form action="checkout.php" method="POST">
+
+            label
+            Adicionamos a marcação do elemento <label>. Esse elemento é uma tag de conteúdo, e seu texto é exibido
+            de maneira comum dentro do nosso formulário, a única diferença é que essa marcação faz uma ligação com
+            outro elemento qualquer em nosso formulário. Note que nosso label tem o atributo for, que recebe o valor
+            nome.
+            Quando clicamos com o mouse sobre o texto marcado com a tag label, o elemento que tem o atributo id
+            com o mesmo valor que o atributo for do label é selecionado para que possamos interagir com ele. No
+            exemplo, esse elemento vinculado ao label é um campo de texto que declaramos com a tag input.
+            Essamarcação <label> é de extrema importância para a usabilidade e acessibilidade dos nossos formulários.
+
+            Provavelmente o tipomais comum de input, o que tem o atributo type="text”, é utilizado quando queremos
+            que o usuário envie uma informação textual simples, pois esse elemento não permite a entrada de quebras
+            de linha.
+
+            O input que recebe o atributo type="password” é similar ao anterior, do tipo text, com a diferença de que
+ele não exibe exatamente o texto digitado pelo usuário, e sim uma série de símbolos * ou outro, dependendo
+do navegador e sistema operacional.
+
+checkbox
+O elemento input do tipo checkbox exibe uma caixa para marcação, é muito utilizado quando temos uma
+opção que pode ser marcada como sim ou não, por exemplo “Aceito os termos de contrato do usuário”, ou
+“Manter a sessão ativa” em formulários de login.
+Apesar de muito utilizado com o valor true, é possível determinar qualquer valor para o checkbox.
+
+Quando desejamos que o usuário escolha somente uma entre uma série de opções, podemos utilizar elementos
+input do tipo radio. Quando há mais de um elemento desse tipo com o mesmo valor no atributo name,
+somente um pode ser selecionado.
+
+O elemento input com o atributo type="button” renderiza um botão dentro do formulário, mas esse botão
+não tem nenhuma função direta nele e é comumente utilizado para disparar eventos para a execução de
+scripts.
+O texto do botão é determinado pelo valor do atributo value.
+
+O elemento input com o atributo type="submit” é similar ao botão, mas quando acionado esse elemento
+inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do
+
+<form>.
+
+image
+<input type="image" name="botao" src="images/enviar.png" width="20" height="18">
+É possível substituir o botão de envio do formulário por uma imagem, possibilitando criar um visual mais
+atrativo para o formulário.
+
+O input comtype="reset” elimina os valores entrados anteriormente nos elementos de um formulário, permitindo
+que o usuário limpe o mesmo.
+
+
+A tag <input> dos tipos button, submit e reset pode ser substituída pela tag <button>. Neste
+caso, o texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário
+especicar o valor do atributo type, inclusive se ele for button:
+<button type="button" name="enviar">Clique aqui</button>
+
+Quando é necessário que o usuário envie um arquivo para a aplicação no lado do servidor é necessário o
+uso do input do tipo le. Para o correto envio dos arquivos, muitas vezes também é necessário adicionar o
+atributo enctype="multipart/form-data" na tag <form>.
+
+Muitas vezes precisamos enviar e receber informações que não têm utilidade direta para o usuário e, portanto,
+não devem ser exibidos no formulário. Para essa nalidade, existe o input do tipo hidden, que somente
+carrega em si um valor.
+
+Quando desejamos que o usuário insira uma quantidade grande de informações textuais, incluindo quebras
+de linha, é necessário o uso da tag textarea
+
+Quando desejamos que o usuário selecione entre diversas opções, com a possibilidade de exibilizar a maneira
+com que ele interage com o componente do formulário, podemos utilizar a tag <select>.
+<select name="cidades">
+<option value="bsb">Brasília</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="sp">São Paulo</option>
+</select>
+Em sua conguração padrão, o controle select exibe o que conhecemos como menu drop-down, permitindo
+que somente uma das opções possa ser selecionada. Caso seja adicionado o atributo multiple, é possível
+selecionar mais de uma opção da mesma maneira que selecionamos diversos arquivos no explorador
+do sistema operacional.
+
+O input do tipo email permite que os dispositivosmóveis, principalmente, exibamumteclado adaptado para
+facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de
+domínio .com.
+
+O input do tipo number, além de exibir um teclado numérico em dispositivos móveis, nos navegadores
+modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma
+seta para cima ou para baixo.
+Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores
+válidos. No exemplo anterior, o elemento deve aceitar números múltiplos de 5 com o limite do valor “100”.
+
+Oelemento input comtipo url permite que os dispositivos exibamum teclado como, no exemplo do iPhone,
+opções como www e .com.
+
+O elemento input do tipo range exibe um controle deslizante nos navegadores modernos, permitindo uma
+interação mais agradável quando precisamos de um valor numérico em escala. O controle guarda um valor
+numérico em seu atributo value. Assim como o input do tipo number, é possível especicar um valor
+mínimo, máximo e uma escala.
+
+Os controles de “date picker” são feitos para coletar uma informação de data ou hora. São várias as possibilidades
+de formato de data ou hora necessárias. No navegador Opera, quando utilizado esse tipo de controle,
+o usuário pode selecionar uma data a partir de um calendário. É possível especicar datas mínima emáxima.
+
+O elemento input do tipo color permite que seja exibido um “color picker” para o preenchimento do seu
+valor.
+
+O input do tipo search exibe um campo especíco para busca. O atributo “results” determina quantas últimas
+buscas serão armazenadas e lembradas, além de exibir uma lupa dentro do campo (Safari e Chrome).
+
+O input do tipo tel foi especicado para coletar um número de telefone.
+Em dispositivos com teclados virtuais como smartphones e tablets, é comum o teclado ser adaptado para
+exibir apenas opções relevantes à entrada de números telefônicos
+
+
+atributos
+
+autofocus
+Sua presença indica que aquele campo deve iniciar com foco quando a página for carregada. O usuário já
+pode começar a digitar algo sem nenhum clique.
+
+<input type="text" name="nome" placeholder="Insira seu nome">
+O atributo placeholder exibe o texto contido em seu valor dentro do elemento do formulário caso o seu valor
+seja vazio.
+
+A implementação de autocomplete sem o atributo list no campo, ligando-o a um datalist, vai utilizar os últimos
+valores utilizados em outros campos ou em outros formulários, dando prioridade a valores adicionados
+em inputs com o mesmo valor no atributo name.
+
+
+validação
+
+required
+Podemos indicar na marcação do formulário quando um campo é de preenchimento obrigatório.
+<input type="text" name="nome" required>
+Esse atributo permite uma validação fraca no lado do cliente.
+
+Conseguimos também especicar um formato requerido através do atributo pattern, adicionando uma expressão
+regular como valor:
+<input type="text" pattern="^@\w{2,}" name="usuario_twitter">
+O atributo pattern também permite uma validação fraca do campo.
+
+Essa pseudo-classe é a :invalid, e pode ser utilizada para dar um retorno visual imediato caso o usuário não
+esteja atendendo aos requisitos dos campos do formulário.
+:invalid {
+outline: 1px solid #cc0000;
+}
+Essa validação é fraca pois de maneira direta não é possível impedir que o usuário envie as informações
+do formulário, mesmo que incompletas ou incorretas. É possível porém alterar o botão de submit e deixálo
+desabilitado caso seja possível selecionar algum elemento por essa pseudo-classe no formulário. Essa
+vericação e alteração do elemento submit pode ser feita por JavaScript e jQuery de maneira simples.
+
+
+
+
+
+
+        No PHP, podemos acessar cada parâmetro individualmente usando uma sintaxe de arrays:
+            <? = $_GET['mensagem'] ?>
+            ou
+            <? = $_POST['mensagem'] ?>
+        
+        Até o capítulo anterior, quando queríamos imprimir algo na tela usamos a construção:
+            <?php print $dado; ?>
+        Mas o PHP permite uma sintaxe mais curta para declarar um bloco de código quando a única ação é imprimir algo e não há várias linhas de código.
+            <?= $dado ?>
+            É uma sintaxe mais curta que a primeira e tem exatamente o mesmo efeito.
+
+            <dl>
+                <dt>Cor</dt>
+                <dd><?= $_POST['cor'] ?> </dd>
+                <dt>Tamanho</dt>
+                <dd><?= $_POST['tamanho'] ?> </dd>
+            </dl>
+    </form>
+</section>

@@ -52,7 +52,6 @@
                     <li><a href="#list">Adicionando Listas</a></li>
                     <li><a href="#imagem">Adicionando Imagem</a></li>
                     <li><a href="#links">Adicionando Links</a>            
-                    <li><a href="#tabela">Adicionando Tabela</a></li>
                     <li><a href="#tabela">Divindo as seções da página</a></li>
                 </ol>
             </section>
@@ -109,6 +108,9 @@
                     <p>Paragrafo usa a tag <strong><code>&lt;p&gt;</code><code>&lt;/p&gt;</code></strong></p>
                     <p>Caso queira uma quebra de linha, usa a tag <strong><code>&lt;br&gt;</code></strong></p>
                     <p>Caso queira uma linha horizontal, usa a tag <strong><code>&lt;hr&gt;</code></strong></p>
+                    <p><strong><code>&lt;spam&gt;</code><code>&lt;/spam&gt;</code></strong>contém pequenos trechos de texto ou outro HTML. Eles são usados ​​para separar pequenos pedaços de conteúdo que estão na mesma linha de outro conteúdo.</p>
+                    <!-- img spam -->
+                    <p>É melhor usar um <strong><code>&lt;spam&gt;</code><code>&lt;/spam&gt;</code></strong>elemento quando você deseja direcionar uma parte específica do conteúdo que está embutido ou na mesma linha que outro texto.</p>
                 </section>
                 <section id="enfase">
                     <h3>Ênfase no texto</h3>             
@@ -206,7 +208,11 @@
                     <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
                     <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
                     <p>A extensão para favicon é a .ico</p>
-                    <p>Para adicionar, no <strong>head</strong> é preciso colocar link para favicon e no href, coloca o caminho do favicon</p>             
+                    <p>Para adicionar, no <strong>head</strong> é preciso colocar o seguinte link:<strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong><p>                            
+                    <p>O atributos para os ícones:</p>
+                    <p>REL - para descrever o ícone desejado. </p> 
+                    <p>SIZES - para resolução de tamanho do ícone.</p> 
+                    <p>HREF - o caminho do ícone.</p>          
                 </section>
             </section>
 
@@ -236,361 +242,38 @@
                         <p>Link para WhatsApp</p> 
                         <strong><code>&lt;a href="https://api.whatsapp.com/send?phone=seunumerodetelefone&text=sua%20mensagem"&gt;</code><code>&lt;/a&gt;</code></strong>
                     </div>
-                    <div>
-                        <p>Link para favicon</p>
-                        <p>Para adicionar o favicon é preciso salvar com o formato .ico </p>
-                        
-                        <p>Logo após adicione no campo o seguinte link:<strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong> </p>
-                                                
-                        <p>O atributos para os ícones:</p>
-                        <p>REL - para descrever o ícone desejado. </p> 
-                        <p>SIZES - para resolução de tamanho do ícone.</p> 
-                        <p>HREF - o caminho do ícone.</p>
-                    </div>
                 </section>
             </section>
 
-            <section id="tabelas">
-                <h2>6. Adicionando Tabela</h2>
-                <p>Para delimitar uma tabela sera preciso adicionar a tag <strong><code>&lt;table&gt;</code><code>&lt;/table&gt;</code></strong></p> 
-                <p>Para adicionar as linhas, use a tag <strong><code>&lt;tr&gt;</code><code>&lt;/tr&gt;</code></strong></p>
-                <p>E para adicionar as colunas da tabela, use <strong><code>&lt;td&gt;</code><code>&lt;/td&gt;</code></strong></p>  
-                <section id="6.1">
-                    <h3>6.1 - Organizar melhor a tabela</h3>
-                    <p>- Para organizar melhor o código da nossa tabela existem três outras tags. São elas: </p>
-                    <p>TAG THEAD - é usada para incluir um grupo de linhas em uma tabela, como um cabeçalho.</p>
-                    <p>TAG TBODY - é usada para o corpo principal da tabela.</p>
-                    <p>TAG TFOOT - é usada para incluir um grupo de linhas em uma tabela, como um rodape. Por exemplo, para criar uma ultima linha com espaço para um resumo.</p>
-                </section>
-                <section id="6.2">
-                    <h3>6.2 - Atributos para tabela</h3>
-                    <p>- Colspan: Permite que uma unica célula da tabela abranja a largura de mais de uma célula ou coluna.</p>
-                    <p>- Rowspan: Permite que uma unica célula da tabela alcance a altura de mais de uma célula ou linha.</p>
-                    <p>- Align: Alinhamento horizontal do conteúdo da célula.</p>
-                    <p>- Border: Permite fazer a borda de uma tabela. Quanto maior o numero colocado no atributo border, mais grossa sera a borda da tabela.</p>
-                </section>
+            <section>
+                <h2>ID e Class</h2>
+                <p>Atributos são conteúdos adicionados à tag de abertura de um elemento e podem ser usados ​​de várias maneiras diferentes, desde fornecer informações até alterar o estilo. Os atributos são compostos das duas partes a seguir:</p>
+                <ul>
+                    <li>O <i>nome</i> do atributo</li>
+                    <li>O <i>valor</i> do atributo</li>
+                </ul>
+                <div>
+                    <h3>ID</h3>
+                    <p>é realmente útil quando você usa um elemento mais de uma vez.</p>
+                </div>
+                
+
+
+
             </section>
-
-            <section id="form">
-                <form>
-                    <label for="nome">Nome:</label> <!-- LABEL - NOME DO INPUT / FOR - É RELACIONADO COM O ID DO INPUT -->
-                    <input id="nome" type="text"> <!-- INPUT - ENTRADA DE DADOS / TYPE - TIPO DE DADO  -->
-
-                    <label for="email">Email:</label> 
-                    <input id="email" type="email">
-
-                    <label for="phone">Telefone:</label> 
-                    <input id="phone" type="phone">
-
-                    <label for="mensagem">Mensagem:</label> 
-                    <textarea id="mensagem"></textarea>
-
-                    <input type="submit" value="Enviar"> <!-- submit - tipo para envio do form / VALEU - NOME DO BUTTON -->
-                    <button type="reset">Limpar</button> <!-- reset - para limpar o form -->
-
-
-                     <fieldset></fieldset> <!-- é uma sessao dentro do form // funcionar so no form-->
-                     <legend></legend> <!-- é um titulo da fieldset -->
-                     <input type="radio" id="um" name="number">
-                     <input type="radio" id="dois" name="number" checked> <!-- é a 'grupo' de bolinha. // com o id você diferencia assim pode selecionar um radio apenas. // com o name voce coloca todos no mesmo grupo // checked é para deixar um radio já selecionado -->
-                     <input type="radio" id="tres" name="number">
-
-                     para ser selecionado assim que for clicado em uma imagem ou palavra, pode ser de duas maneiras
-                        1 - o input dentro da label: 
-                            <label>Text
-                                <input type="text">
-                            </label>
-                        2 - com o atributo for do label sendo relacionado com o id do input 
-                            <label for="text"></label>
-                            <input type="text" id="text">
-
-                    <input type="range">
-
-                    O formulário presenta o atributo obrigatório action. O valor desse atributo
-                    é o endereço para onde as informações do formulário serão enviadas, e esse valor depende inteiramente de
-                    como é feita a aplicação que receberá essas informações no lado do servidor.    
-
-                    No formulário, podemos indicar que página (URL) vai receber os dados preenchidos. É só especificar o atributo
-                    action. No nosso exemplo, temos um formulário na página produto.php e vamos criar uma próxima
-                    página, checkout.php, que vai receber o produto escolhido e deixar o usuário proceder com a compra.
-                    No formulário de produto então fazemos: <form action="checkout.php">
-
-                    O segundo atributo, method, especica o método do HTTP pelo qual essa informação será transmitida. O
-                        valor post, demaneira simplista, signica que queremos inserir as informações desse formulário, salvá-la de
-                        alguma maneira. Outro valor possível para esse atributo, o get, é utilizado quando queremos obter alguma
-                        coisa a partir das informações que estamos transmitindo, por exemplo, um formulário de busca.
-                        
-                        Há ainda um outro atributo do formque indica amaneira como os dados são enviados. É o atributo method que
-                    pode receber dois valores: GET ou POST. Ambos os métodos enviam os dados do formulário ao servidor,
-                    mas o GET faz isso via parâmetros na URL enquanto o POST envia os dados no corpo da requisição (e,
-                    portanto, não é visível na barra de endereços).
-                    <form action="checkout.php" method="POST">
-
-                        label
-                        Adicionamos a marcação do elemento <label>. Esse elemento é uma tag de conteúdo, e seu texto é exibido
-                        de maneira comum dentro do nosso formulário, a única diferença é que essa marcação faz uma ligação com
-                        outro elemento qualquer em nosso formulário. Note que nosso label tem o atributo for, que recebe o valor
-                        nome.
-                        Quando clicamos com o mouse sobre o texto marcado com a tag label, o elemento que tem o atributo id
-                        com o mesmo valor que o atributo for do label é selecionado para que possamos interagir com ele. No
-                        exemplo, esse elemento vinculado ao label é um campo de texto que declaramos com a tag input.
-                        Essamarcação <label> é de extrema importância para a usabilidade e acessibilidade dos nossos formulários.
-
-                        Provavelmente o tipomais comum de input, o que tem o atributo type="text”, é utilizado quando queremos
-                        que o usuário envie uma informação textual simples, pois esse elemento não permite a entrada de quebras
-                        de linha.
-
-                        O input que recebe o atributo type="password” é similar ao anterior, do tipo text, com a diferença de que
-ele não exibe exatamente o texto digitado pelo usuário, e sim uma série de símbolos * ou outro, dependendo
-do navegador e sistema operacional.
-
-checkbox
-O elemento input do tipo checkbox exibe uma caixa para marcação, é muito utilizado quando temos uma
-opção que pode ser marcada como sim ou não, por exemplo “Aceito os termos de contrato do usuário”, ou
-“Manter a sessão ativa” em formulários de login.
-Apesar de muito utilizado com o valor true, é possível determinar qualquer valor para o checkbox.
-
-Quando desejamos que o usuário escolha somente uma entre uma série de opções, podemos utilizar elementos
-input do tipo radio. Quando há mais de um elemento desse tipo com o mesmo valor no atributo name,
-somente um pode ser selecionado.
-
-O elemento input com o atributo type="button” renderiza um botão dentro do formulário, mas esse botão
-não tem nenhuma função direta nele e é comumente utilizado para disparar eventos para a execução de
-scripts.
-O texto do botão é determinado pelo valor do atributo value.
-
-O elemento input com o atributo type="submit” é similar ao botão, mas quando acionado esse elemento
-inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do
-
-<form>.
-
-    image
-    <input type="image" name="botao" src="images/enviar.png" width="20" height="18">
-    É possível substituir o botão de envio do formulário por uma imagem, possibilitando criar um visual mais
-    atrativo para o formulário.
-
-    O input comtype="reset” elimina os valores entrados anteriormente nos elementos de um formulário, permitindo
-que o usuário limpe o mesmo.
-
-
-A tag <input> dos tipos button, submit e reset pode ser substituída pela tag <button>. Neste
-    caso, o texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário
-    especicar o valor do atributo type, inclusive se ele for button:
-    <button type="button" name="enviar">Clique aqui</button>
-
-    Quando é necessário que o usuário envie um arquivo para a aplicação no lado do servidor é necessário o
-    uso do input do tipo le. Para o correto envio dos arquivos, muitas vezes também é necessário adicionar o
-    atributo enctype="multipart/form-data" na tag <form>.
-
-        Muitas vezes precisamos enviar e receber informações que não têm utilidade direta para o usuário e, portanto,
-não devem ser exibidos no formulário. Para essa nalidade, existe o input do tipo hidden, que somente
-carrega em si um valor.
-
-Quando desejamos que o usuário insira uma quantidade grande de informações textuais, incluindo quebras
-de linha, é necessário o uso da tag textarea
-
-Quando desejamos que o usuário selecione entre diversas opções, com a possibilidade de exibilizar a maneira
-com que ele interage com o componente do formulário, podemos utilizar a tag <select>.
-<select name="cidades">
-<option value="bsb">Brasília</option>
-<option value="rj">Rio de Janeiro</option>
-<option value="sp">São Paulo</option>
-</select>
-Em sua conguração padrão, o controle select exibe o que conhecemos como menu drop-down, permitindo
-que somente uma das opções possa ser selecionada. Caso seja adicionado o atributo multiple, é possível
-selecionar mais de uma opção da mesma maneira que selecionamos diversos arquivos no explorador
-do sistema operacional.
-
-O input do tipo email permite que os dispositivosmóveis, principalmente, exibamumteclado adaptado para
-facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de
-domínio .com.
-
-O input do tipo number, além de exibir um teclado numérico em dispositivos móveis, nos navegadores
-modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma
-seta para cima ou para baixo.
-Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores
-válidos. No exemplo anterior, o elemento deve aceitar números múltiplos de 5 com o limite do valor “100”.
-
-Oelemento input comtipo url permite que os dispositivos exibamum teclado como, no exemplo do iPhone,
-opções como www e .com.
-
-O elemento input do tipo range exibe um controle deslizante nos navegadores modernos, permitindo uma
-interação mais agradável quando precisamos de um valor numérico em escala. O controle guarda um valor
-numérico em seu atributo value. Assim como o input do tipo number, é possível especicar um valor
-mínimo, máximo e uma escala.
-
-Os controles de “date picker” são feitos para coletar uma informação de data ou hora. São várias as possibilidades
-de formato de data ou hora necessárias. No navegador Opera, quando utilizado esse tipo de controle,
-o usuário pode selecionar uma data a partir de um calendário. É possível especicar datas mínima emáxima.
-
-O elemento input do tipo color permite que seja exibido um “color picker” para o preenchimento do seu
-valor.
-
-O input do tipo search exibe um campo especíco para busca. O atributo “results” determina quantas últimas
-buscas serão armazenadas e lembradas, além de exibir uma lupa dentro do campo (Safari e Chrome).
-
-O input do tipo tel foi especicado para coletar um número de telefone.
-Em dispositivos com teclados virtuais como smartphones e tablets, é comum o teclado ser adaptado para
-exibir apenas opções relevantes à entrada de números telefônicos
-
-
-atributos
-
-autofocus
-Sua presença indica que aquele campo deve iniciar com foco quando a página for carregada. O usuário já
-pode começar a digitar algo sem nenhum clique.
-
-<input type="text" name="nome" placeholder="Insira seu nome">
-O atributo placeholder exibe o texto contido em seu valor dentro do elemento do formulário caso o seu valor
-seja vazio.
-
-A implementação de autocomplete sem o atributo list no campo, ligando-o a um datalist, vai utilizar os últimos
-valores utilizados em outros campos ou em outros formulários, dando prioridade a valores adicionados
-em inputs com o mesmo valor no atributo name.
-
-
-validação
-
-required
-Podemos indicar na marcação do formulário quando um campo é de preenchimento obrigatório.
-<input type="text" name="nome" required>
-Esse atributo permite uma validação fraca no lado do cliente.
-
-Conseguimos também especicar um formato requerido através do atributo pattern, adicionando uma expressão
-regular como valor:
-<input type="text" pattern="^@\w{2,}" name="usuario_twitter">
-O atributo pattern também permite uma validação fraca do campo.
-
-Essa pseudo-classe é a :invalid, e pode ser utilizada para dar um retorno visual imediato caso o usuário não
-esteja atendendo aos requisitos dos campos do formulário.
-:invalid {
-outline: 1px solid #cc0000;
-}
-Essa validação é fraca pois de maneira direta não é possível impedir que o usuário envie as informações
-do formulário, mesmo que incompletas ou incorretas. É possível porém alterar o botão de submit e deixálo
-desabilitado caso seja possível selecionar algum elemento por essa pseudo-classe no formulário. Essa
-vericação e alteração do elemento submit pode ser feita por JavaScript e jQuery de maneira simples.
-
-
-
-
-
-
-                    No PHP, podemos acessar cada parâmetro individualmente usando uma sintaxe de arrays:
-                        <? = $_GET['mensagem'] ?>
-                        ou
-                        <? = $_POST['mensagem'] ?>
-                    
-                    Até o capítulo anterior, quando queríamos imprimir algo na tela usamos a construção:
-                        <?php print $dado; ?>
-                    Mas o PHP permite uma sintaxe mais curta para declarar um bloco de código quando a única ação é imprimir algo e não há várias linhas de código.
-                        <?= $dado ?>
-                        É uma sintaxe mais curta que a primeira e tem exatamente o mesmo efeito.
-
-                        <dl>
-                            <dt>Cor</dt>
-                            <dd><?= $_POST['cor'] ?> </dd>
-                            <dt>Tamanho</dt>
-                            <dd><?= $_POST['tamanho'] ?> </dd>
-                        </dl>
-                </form>
-            </section>
-
+           
             <section>
                 explicação da tag <aside></aside>
+                 <!-- o aside é para conteúdo que não está relacionados diretamente com os conteúdos principais, mas que podem providenciar informações complementares a esses -->
             </section>
-                            <!-- o aside é para conteúdo que não está relacionados diretamente com os conteúdos principais, mas que podem providenciar informações complementares a esses -->
-
-
-
-            <section>
-                <video src="rabbit320.webm" controls>
-                    <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
-                    </video>controls
-                    Os usuários devem poder controlar a reprodução de vídeo e áudio (isso é especialmente crítico para pessoas que possuem epilepsy.) Você deve usar o atributo controls para incluir a própria interface de controle do navegador ou criar sua interface usando o apropriado JavaScript API. No mínimo, a interface deve incluir uma maneira de iniciar e parar a mídia e ajustar o volume.
-                    
-                    
-                    
-                    As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:
-                        * 
-                    Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.
-                        * 
-                    Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.
-                        * 
-                    O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.
-                    
-
-                    Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso terceiro exemplo, abaixo:
-                    <video controls width="400" height="400"
-       autoplay loop muted
-       poster="poster.png">
-  <source src="rabbit320.mp4" type="video/mp4">
-  <source src="rabbit320.webm" type="video/webm">
-    <track kind="subtitles" src="subtitles_en.vtt" srclang="en">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
-</video>
-
-Os novos recursos são:
-
-width and height
-Você pode controlar o tamanho do vídeo com esses atributos ou com CSS. Nos dois casos, os vídeos mantêm sua proporção largura-altura nativa - conhecida como proporção de tela. Se a proporção não for mantida pelos tamanhos definidos, o vídeo aumentará para preencher o espaço horizontalmente, e o espaço não preenchido receberá apenas uma cor sólida de fundo por padrão.
-autoplay
-Faz com que o áudio ou o vídeo comece a ser reproduzido imediatamente, enquanto o restante da página está sendo carregado. É aconselhável não usar vídeo (ou áudio) de reprodução automática em seus sites, porque os usuários podem achar isso realmente irritante.
-loop
-Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Isso também pode ser irritante, portanto, use apenas se for realmente necessário.
-muted
-Faz com que a mídia seja reproduzida com o som desativado por padrão.
-poster
-O URL de uma imagem que será exibida antes da reprodução do vídeo. Destina-se a ser usado para uma tela inicial ou tela de publicidade.
-preload
-Usado para armazenar arquivos grandes em buffer; pode levar um dos três valores:
-
-"none" não armazena em buffer o arquivo
-"auto" armazena em buffer o arquivo de mídia
-"metadata" armazena em buffer apenas os metadados do arquivo
-
-
-O elemento <audio> funciona exatamente como o elemento <video>, com algumas pequenas diferenças, conforme descrito abaixo. Um exemplo típico pode parecer assim:
-    <audio controls>
-        <source src="viper.mp3" type="audio/mp3">
-        <source src="viper.ogg" type="audio/ogg">
-        <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-      </audio>
-
-      Isso ocupa menos espaço do que um reprodutor de vídeo, pois não há componente visual - você só precisa exibir controles para reproduzir o áudio. Outras diferenças do vídeo HTML5 são as seguintes:
-
-      O elemento <audio> não suporta os atributos width/height — novamente, não há componente visual; portanto, não há nada para atribuir uma largura ou altura.
-      Também não suporta o atributo poster — novamente, não há componente visual
-      Mais do que isso, <audio> suporta todos os mesmos recursos que <video>
-                    
-                    
-            </section>
-
-            <section>
-                Os elementos <iframe> foram projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc
+                           
             
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oUNMq7AiYKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-                    allowfullscreen
-Se definido, ele <iframe>poderá ser colocado no modo de tela cheia usando a API de tela cheia (um pouco além do escopo deste artigo).
-frameborder
-Se definido como 1, isso indica ao navegador para desenhar uma borda entre esse quadro e outros quadros, que é o comportamento padrão. 0 remove a borda. Usar isso não é mais recomendado, pois o mesmo efeito pode ser melhor alcançado usando em seu CSS .border: none;
-src
-Este atributo, como <video>/ <img>, contém um caminho apontando para o URL do documento a ser incorporado.
-width e height
-Esses atributos especificam a largura e a altura que você deseja que o iframe seja.
-Conteúdo alternativo
-Da mesma forma que outros elementos semelhantes <video>, você pode incluir conteúdo de fallback entre as <iframe></iframe>tags de abertura e fechamento que aparecerão se o navegador não suportar <iframe>. Nesse caso, incluímos um link para a página. É improvável que você encontre qualquer navegador que não suporte <iframe>s atualmente.
-sandbox
-Esse atributo, que funciona em navegadores um pouco mais modernos que o restante dos <iframe>recursos (por exemplo, IE 10 e superior), requer configurações de segurança mais elevadas; falaremos mais sobre isso na próxima seção.
-
-                </section>
 
         </main>
 
         <footer id="rodape">
             <hr>
-            com amor by: <a href="https://www.instagram.com/aadevfolio/" target="_blank">aadevfolio</a></time>
+            com amor, por:<a href="https://www.instagram.com/alinearaujodev" target="_blank">@alinearaujodev</a></time>
             <br>
             <a href="#">Home</a>
         </footer>

@@ -1,0 +1,82 @@
+<section>
+    Os elementos <iframe> foram projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oUNMq7AiYKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        allowfullscreen
+Se definido, ele <iframe>poderá ser colocado no modo de tela cheia usando a API de tela cheia (um pouco além do escopo deste artigo).
+frameborder
+Se definido como 1, isso indica ao navegador para desenhar uma borda entre esse quadro e outros quadros, que é o comportamento padrão. 0 remove a borda. Usar isso não é mais recomendado, pois o mesmo efeito pode ser melhor alcançado usando em seu CSS .border: none;
+src
+Este atributo, como <video>/ <img>, contém um caminho apontando para o URL do documento a ser incorporado.
+width e height
+Esses atributos especificam a largura e a altura que você deseja que o iframe seja.
+Conteúdo alternativo
+Da mesma forma que outros elementos semelhantes <video>, você pode incluir conteúdo de fallback entre as <iframe></iframe>tags de abertura e fechamento que aparecerão se o navegador não suportar <iframe>. Nesse caso, incluímos um link para a página. É improvável que você encontre qualquer navegador que não suporte <iframe>s atualmente.
+sandbox
+Esse atributo, que funciona em navegadores um pouco mais modernos que o restante dos <iframe>recursos (por exemplo, IE 10 e superior), requer configurações de segurança mais elevadas; falaremos mais sobre isso na próxima seção.
+
+    </section>
+
+    <section>
+        <video src="rabbit320.webm" controls>
+            <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+            </video>controls
+            Os usuários devem poder controlar a reprodução de vídeo e áudio (isso é especialmente crítico para pessoas que possuem epilepsy.) Você deve usar o atributo controls para incluir a própria interface de controle do navegador ou criar sua interface usando o apropriado JavaScript API. No mínimo, a interface deve incluir uma maneira de iniciar e parar a mídia e ajustar o volume.
+            
+            
+            
+            As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:
+                * 
+            Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.
+                * 
+            Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.
+                * 
+            O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.
+            
+
+            Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso terceiro exemplo, abaixo:
+            <video controls width="400" height="400"
+autoplay loop muted
+poster="poster.png">
+<source src="rabbit320.mp4" type="video/mp4">
+<source src="rabbit320.webm" type="video/webm">
+<track kind="subtitles" src="subtitles_en.vtt" srclang="en">
+<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+
+Os novos recursos são:
+
+width and height
+Você pode controlar o tamanho do vídeo com esses atributos ou com CSS. Nos dois casos, os vídeos mantêm sua proporção largura-altura nativa - conhecida como proporção de tela. Se a proporção não for mantida pelos tamanhos definidos, o vídeo aumentará para preencher o espaço horizontalmente, e o espaço não preenchido receberá apenas uma cor sólida de fundo por padrão.
+autoplay
+Faz com que o áudio ou o vídeo comece a ser reproduzido imediatamente, enquanto o restante da página está sendo carregado. É aconselhável não usar vídeo (ou áudio) de reprodução automática em seus sites, porque os usuários podem achar isso realmente irritante.
+loop
+Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Isso também pode ser irritante, portanto, use apenas se for realmente necessário.
+muted
+Faz com que a mídia seja reproduzida com o som desativado por padrão.
+poster
+O URL de uma imagem que será exibida antes da reprodução do vídeo. Destina-se a ser usado para uma tela inicial ou tela de publicidade.
+preload
+Usado para armazenar arquivos grandes em buffer; pode levar um dos três valores:
+
+"none" não armazena em buffer o arquivo
+"auto" armazena em buffer o arquivo de mídia
+"metadata" armazena em buffer apenas os metadados do arquivo
+
+
+O elemento <audio> funciona exatamente como o elemento <video>, com algumas pequenas diferenças, conforme descrito abaixo. Um exemplo típico pode parecer assim:
+<audio controls>
+<source src="viper.mp3" type="audio/mp3">
+<source src="viper.ogg" type="audio/ogg">
+<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+</audio>
+
+Isso ocupa menos espaço do que um reprodutor de vídeo, pois não há componente visual - você só precisa exibir controles para reproduzir o áudio. Outras diferenças do vídeo HTML5 são as seguintes:
+
+O elemento <audio> não suporta os atributos width/height — novamente, não há componente visual; portanto, não há nada para atribuir uma largura ou altura.
+Também não suporta o atributo poster — novamente, não há componente visual
+Mais do que isso, <audio> suporta todos os mesmos recursos que <video>
+            
+            
+    </section>
