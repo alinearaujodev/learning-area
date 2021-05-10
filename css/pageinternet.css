@@ -2,19 +2,3 @@
 
 /* CSS PRINCIPAL DO SITE */
 
-body{
-    color: #333;
-    padding: 20px 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    text-align: justify;
-}
-
-section{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-footer{
-    text-align: center;
-}
