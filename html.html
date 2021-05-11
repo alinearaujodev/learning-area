@@ -1,10 +1,10 @@
 <!DOCTYPE html> 
 <html lang="pt-BR">
     <head>
-        <title>HTML - Learning Area</title>
+        <title>HTML - Learning Area Por: @alinearaujo</title>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width">
-        <meta name="autor" content="AlineAraujoDev"/>
+        <meta name="autor" content="Aline de Araújo - @alinearaujodev"/>
         <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="css/generic/reset.css">
@@ -177,6 +177,33 @@
                 </section>
             </section>
 
+            <section id="links"> 
+                <h2>4. Adicionando Link</h2>
+                <p>A web é um mundo de links, todo vez que você estiver navegando em algum site e clicar em um local que leva para outra página, site ou até baixa um arquivo, você estará interagindo com <strong>hiperlink</strong></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BNHR6IQJGZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div>
+                    <h3>A vs Link</h3>
+                    <p>A tag <strong><code>&lt;a&gt;</code><code>&lt;/a&gt;</code></strong> significa âncora, e devemos usar para criar <strong>hiperlinks</strong>. Existem alguns atributos essenciais para essa tag:</p>
+                    <p>Atributo <strong>href</strong>, tem finalidade de adicionar as <i>URLs</i> para ser direcionado a pagina.</p>
+                    <p>Atributo <strong>hreflang</strong>, permite indicar qual a linguagem principal do site para onde o link será desviado.</p>
+                    <p>Atributo <strong>target</strong>, por padrão todos os links abriram na mesma janela. Ou seja o conteúdo anterior deixará de ser exibido para mostrar o novo conteúdo. Por isso esse atributo é muito importante, a função dizer em qual janela específica você desejar direncionar seu usuário. Se optar por <strong>"_blank" </strong>, abrirá o documento vinculado em uma nova janela. E o <strong>"_self"</strong>, abre o documento vinculado na janela atual.</p>
+
+                    <p>A tag <strong><code>&lt;link&gt;</code></strong> é para links de arquivos que se encontra dentro da pasta do projeto.</p>
+                    <p>Com o <strong><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></strong> dentro da tag HEAD, sera para identificar o CSS interno</p>
+                    <p>Outro link importante no HEAD é o <strong><code>&lt;link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"&gt;</code></strong>, que sera para incluir o icon na barra da janela de nevegação</p>  
+                </div>
+   
+                <div>
+                    <h3>Formato de Links Importantes</h3>
+                    <p>Link Para Dowload</p>
+                    <i><code>&lt;a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US" download="firefox-39-installer.exe"&gt;</code><code>&lt;/a&gt;</code></strong></i>
+                    <p>Link de Email</p> 
+                    <i><code>&lt;a href="mailto:nowhere@mozilla.org"&gt;</code><code>&lt;/a&gt;</code></i>
+                    <p>Link para WhatsApp</p> 
+                    <i><code>&lt;a href="https://api.whatsapp.com/send?phone=seunumerodetelefone&text=sua%20mensagem"&gt;</code><code>&lt;/a&gt;</code></i>
+                </div>
+            </section>
+
             <section id="imagem">
                 <h2>3. Adicionando Imagem</h2>
                 <p>A  <strong><code>&lt;img&gt;</code></strong>tag permite que você adicione uma imagem a uma página da web. A maioria dos elementos requer tags de abertura e fechamento, mas a é uma tag de fechamento automático.</p>
@@ -244,35 +271,6 @@
                     <p>REL - para descrever o ícone desejado. </p> 
                     <p>SIZES - para resolução de tamanho do ícone.</p> 
                     <p>HREF - o caminho do ícone.</p>          
-                </section>
-            </section>
-
-            <section id="links"> 
-                <h2>4. Adicionando Link</h2>
-                <section id="4.1">
-                    <h3>4.1 - A vs Link</h3>
-                    <p>A tag <strong><code>&lt;a&gt;</code><code>&lt;/a&gt;</code></strong> tem dois atributos essenciais</p>
-                    <p>- Atributo <strong>HREF</strong>, tem finalidade para adicionar link, para quando o usuário clicar for direcionado para a pagina selecionada;</p>
-                    <p>- Atributo <strong>TARGET</strong>, a função é onde irá abrir a pagina. Sendo que <strong>"_blank" </strong>, abre o documento vinculado em uma nova janela ou guia. E o <strong>"_self"</strong>, abre o documento vinculado no mesmo quadro em que foi clicado.</p>
-
-                    <p>A tag <strong><code>&lt;link&gt;</code></strong> é para links de arquivos que se encontra dentro da pasta do projeto.</p>
-                    <p>Com o <strong><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></strong> dentro da tag HEAD, sera para identificar o CSS interno</p>
-                    <p>Outro link importante no HEAD é o <strong><code>&lt;link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"&gt;</code></strong>, que sera para incluir o icon na barra da janela de nevegação</p>
-                </section>
-                <section id="4.2">
-                    <h3>4.2 - Formato de Links Importantes</h3>     
-                    <div>
-                        <p>Link Para Dowload</p> 
-                        <strong><code>&lt;a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US" download="firefox-39-installer.exe"&gt;</code><code>&lt;/a&gt;</code></strong>
-                    </div>
-                    <div>
-                        <p>Link de Email</p> 
-                        <strong><code>&lt;a href="mailto:nowhere@mozilla.org"&gt;</code><code>&lt;/a&gt;</code></strong>
-                    </div>
-                    <div>
-                        <p>Link para WhatsApp</p> 
-                        <strong><code>&lt;a href="https://api.whatsapp.com/send?phone=seunumerodetelefone&text=sua%20mensagem"&gt;</code><code>&lt;/a&gt;</code></strong>
-                    </div>
                 </section>
             </section>
 
