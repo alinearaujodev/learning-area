@@ -58,34 +58,39 @@
 
             <section id="basico">
                 <h2>1. HTML, o básico</h2>
-                <section id="html">
+                <div id="html">
                     <h3>O que é HTML?</h3>
                     <p>HTML: HyperText Markup Language, em português significa Linguagem de marcação de texto. Para um melhor entendimento, é a <strong> estrutura do site</strong>.</p>
                     <p>Quer ir mais a fundo? Assista abaixo um curto vídeo explicando melhor</p>
                     <div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RISPTY1Lh2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </section>
+                </div>
 
-                <section id="tags">
+                <div id="tags">
                     <h3>Tags</h3>
                     <p>As marcações que temos no HTML é chamada de tags. São basicamente eles que o navegador vai interpretar e assim, estruturar o site. As Tags ficam entre chaves menor que e maior que, e na maioria das vezes, possui abertura e fechamento.</p>
                     <p>Ou seja, <strong><code>&lt;tag&gt;</code><code>&lt;/tag&gt;</code></strong></p>
-                </section>
+                </div>
 
-                <section id="estrutura">
+                <div id="estrutura">
                     <h3>Estrutura inicial do HTML</h3>
                     <img src="img/html-estrutura.png" alt="foto da estrutura do html">
-                    <p>Acima temos a estruta inicial do HTML. O <strong>!DOCTYPE html</strong> não é uma TAG, mas sim uma instrução para mostrar ao navegador a versão mais recente do HTML. Deve ser a primeira linha de código em seu documento HTML.</p>
-                    <p>A tag <strong>html</strong>é para a criação da estrutura HTML, e qualquer coisa entre as tags de abertura e fechamento será interpretado pelo navegador.</p>       
-                    <p>Além disso, a tag HTML é o pai das tags <strong>head (cabeça)</strong>, que contém informações que somente o navegador irá precisar. e <strong>body(corpo)</strong>, TERA AS INFORMAÇÕES QUE SERAO MOSTRADA no site</p>
+                    <p>Acima temos a estruta inicial do <i>html</i>. O <strong>!DOCTYPE html</strong> não é uma tag, é uma instrução para mostrar ao navegador a versão mais recente do <i>html</i>. Deve ser a primeira linha de código em seu documento.</p>
+                    <p>A tag <strong>html</strong> é para a criação da estrutura <i>html</i>, e qualquer coisa entre as tags de abertura e fechamento será interpretado pelo navegador.</p>       
+                    <p>Além disso, a tag <strong>html</strong> é o pai das tags <strong>head (cabeça)</strong>, que contém informações que somente o navegador irá precisar, como os <i>metadados</i>, que são informações sobre a página que não são exibidas diretamente na página da web. Diferentemente do <strong>body(corpo)</strong>, que todas informações estão mostrada na página.</p>
+                    <p>O metadado <strong>meta charset</strong> dentro do <i>head</i> é para possibilitar a leitura de caracters especiais da lingua latina</p>
+                    <p> metadado <strong>meta</strong> com o atributo <strong>NAME</strong> especifica o tipo de elemento meta que é, o tipo de informação contém. O atributo <strong>content</strong> especifica o conteúdo real do meta.</p>
+                    <p>A tag <strong>title</strong> é PARA O TÍTULO DA PAGINA QUE será EXIBIDO NA BARRA DA JANELA </p>             
+                </div>
 
-                    <p>A tag <strong>meta charset</strong>dentro da head é para possibilitar a leitura de caracters especiais da lingua latina</p>
-                    <p>A tag <strong>meta</strong> com o atributo <strong>NAME</strong> especifica o tipo de elemento meta que é, o tipo de informação contém. O atributo <strong>CONTENT</strong> especifica o conteúdo real do meta.</p>
-                    <p>A tag <strong>title</strong> é PARA O TÍTULO DA PAGINA QUE será EXIBIDO NA BARRA DA JANELA </p>
+                <div>
+                    <!-- FALAR SOBRE ENDEDAÇÃO E COMENTÁRIOS -->
+                    <!-- Incluir comentários em seu código é útil por muitos motivos:
 
-                    
-                </section>
+Eles ajudam você (e outros) a entender seu código se você decidir voltar e revisá-lo em uma data muito posterior.
+Eles permitem que você experimente um novo código, sem ter que deletar o código antigo.-->
+                </div>
             </section>
 
             <section id="marcacao">
@@ -188,9 +193,18 @@
                     <p>Atributo <strong>hreflang</strong>, permite indicar qual a linguagem principal do site para onde o link será desviado.</p>
                     <p>Atributo <strong>target</strong>, por padrão todos os links abriram na mesma janela. Ou seja o conteúdo anterior deixará de ser exibido para mostrar o novo conteúdo. Por isso esse atributo é muito importante, a função dizer em qual janela específica você desejar direncionar seu usuário. Se optar por <strong>"_blank" </strong>, abrirá o documento vinculado em uma nova janela. E o <strong>"_self"</strong>, abre o documento vinculado na janela atual.</p>
 
-                    <p>A tag <strong><code>&lt;link&gt;</code></strong> é para links de arquivos que se encontra dentro da pasta do projeto.</p>
+                    <div>
+                        <h3>Link de caminho diferente</h3>
+                        <p> Ao criar sites estáticos de várias páginas, os desenvolvedores da Web geralmente armazenam arquivos HTML no diretório raiz ou em uma pasta principal onde todos os arquivos do projeto são armazenados. Conforme o tamanho dos projetos que você cria aumenta, você pode usar pastas adicionais dentro da pasta do projeto principal para organizar seu código.</p>
+                        <!-- fazer um intrutação de exemplo de arquivo -->
+                    </div>
+
+                    <!--LINK DE IMAGEM -->
+                    <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" /></a>
+
+                   <!-- <p>A tag <strong><code>&lt;link&gt;</code></strong> é para links de arquivos que se encontra dentro da pasta do projeto.</p>
                     <p>Com o <strong><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></strong> dentro da tag HEAD, sera para identificar o CSS interno</p>
-                    <p>Outro link importante no HEAD é o <strong><code>&lt;link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"&gt;</code></strong>, que sera para incluir o icon na barra da janela de nevegação</p>  
+                    <p>Outro link importante no HEAD é o <strong><code>&lt;link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"&gt;</code></strong>, que sera para incluir o icon na barra da janela de nevegação</p>  -->
                 </div>
    
                 <div>
@@ -284,6 +298,9 @@
                 <div>
                     <h3>ID</h3>
                     <p>é realmente útil quando você usa um elemento mais de uma vez.</p>
+                    Quando os usuários visitam nosso site, queremos que eles possam clicar em um link e que a página role automaticamente para uma seção específica.
+
+Para criar um link para um destino na mesma página, devemos fornecer ao destino um id , como este:
                 </div>
                 
 
