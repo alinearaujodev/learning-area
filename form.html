@@ -199,7 +199,93 @@ desabilitado caso seja possível selecionar algum elemento por essa pseudo-class
 vericação e alteração do elemento submit pode ser feita por JavaScript e jQuery de maneira simples.
 
 
+**Name –** Server para manipular
 
+**Value –** Server para o banco de dados
+
+Quando você estiver trabalhando com botões **checkbox, todo name e value pode ser nome dferentes**, mas quando for Radio, name só pode um nome. Pois só vai uma informação para o banco de dados, não varias.
+
+**Action** - define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados.
+
+Exemplos:
+
+- <form action="[http://foo.com](http://foo.com/)">
+- <form action="/somewhere_else">
+
+**Method** - define qual o método HTTP para enviar os dados (ele pode ser "**GET**" ou "**POST**"
+
+- **GET -** O método GET é o método usado pelo navegador para pedir ao servidor para enviar de volta um determinado recurso: "Hey servidor, eu quero obter este recurso." Nesse caso, o navegador envia um corpo vazio. Como o corpo está vazio, se um formulário é enviado usando esse método, os dados enviados para o servidor **são anexados ao URL**.
+- **POST -** O método POST é um pouco diferente. É o método que o navegador envia ao servidor para pedir uma resposta que leva em conta os dados fornecidos no corpo da solicitação HTTP: "Hey servidor, dê uma olhada nesses dados e envie-me de volta um resultado apropriado". Se um formulário é enviado usando esse método, os dados **são anexados ao corpo do pedido HTTP.**
+
+**OBS:**
+
+1. Se você precisar enviar uma senha (ou qualquer parte sensível de dados), nunca use o método GET ou corre o risco de exibi-lo na barra de URL.
+2. Se você precisar enviar uma grande quantidade de dados, o método POST é preferido porque alguns navegadores limitam o tamanho dos URLs. Além disso, muitos servidores limitam o comprimento dos URLs que aceitam.
+3. Defina o valor de [enctype](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form#attr-enctype) Para multipart / form-data porque os dados serão divididos em várias partes, uma para cada arquivo mais uma para o texto do corpo do formulário que pode ser enviado com eles.
+
+<**textarea** cols="6" rows="5"> </**textarea**>
+
+<**form** name="form1" action=""> </**form**>
+
+<**div** class="form-group">
+
+<label class="control-label"> Teste </label>
+
+<input class=""form-control" type="text" name="teste"  value="" />
+
+</**div**>
+
+<**div** class="form-group">
+
+<label class="control-label"> Selecionar opções </label>
+
+<**select** class="form-control" name="teste">
+
+<option value="item1">Item 1 </option>
+
+<option value="item2">Item 2 </option>
+
+</**select**>
+
+</**div**>
+
+<div class="**radio**">
+
+<input type="radio" name="teste" value="teste1" id="radio1"/>
+
+<label class="control-label">Teste 1 </label>
+
+<input type="radio" name="teste" value="teste2" id="radio2"/>
+
+<label class="control-label">Teste 2 </label>
+
+</div>
+
+**autofocus** - input focado
+
+**multiple** - selecionar mais de um arquivo
+
+**placeholder**="teste" - Discrição
+
+**maxlength**="10" - caráter máximo
+
+**minlength**="5" - caráter mínimo
+
+**checked**
+
+**disabled** – bloquear campo
+
+**Readonly** – Apenas leitura
+
+**Selected**
+
+**<fieldset> </fieldset>** - estrutura de organização do form
+
+**<legend> </legend>** - Legendar o título do form
+
+<input type="image" src="img/busca.png" class="lupa">
+
+<input type="search"> - para pesquisar algo no site
 
 
 

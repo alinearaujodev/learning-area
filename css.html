@@ -683,6 +683,106 @@ otimo para dar um espacamento no input com padding: 2ch;
 
                     *fazer um exemplo e explicação de container 
             </section>
+            <section>
+                - **Padrão do navegador**
+
+**4.5 CSS: Prioridades**
+
+- As unidades de medidas mais utilizadas no CSS são **px (pixels)** e **% (porcentagem).**
+    - **PX -** quantidade de pixels utilizadas na página.
+    - **%** - tamanho em relação ao tamanho da página em seu browser.
+- **Alterando o tipo de fonte**:
+    - Usando o **font-family**, sempre é necessário colocar três tipo de fonte.
+        - **Fonte** serifada – para leitura
+        - **Fonte sem serifa** – Para títulos
+        - Fonte script - imitam escrita humana.
+        - Fonte display - ícones
+        
+                Margin: cria uma margem em volta do conteudo. (Respiro externo) Para definir, usa para qual lado precisa inserir a margem: margin-left(esquerda), margin-right(direita), margin-bottom(inferior) e margin-top(superior).
+
+                - **Background-color: Define a cor de fundo**
+- **Wight: Define a largura da tag**
+- **Height: Define a altura da tag**
+- **Border: Acrescenta uma borda**
+
+**4.7 Formatando as imagens**
+
+- Primeiramente, para adicionar filtro ao uma imagem é preciso adicionar o temo **filter.**
+- Abaixo verá alguns filtro para:
+    - **blur()**
+    - **brightness()**
+    - **constrast()**
+    - **grayscale()**
+    - **invert()**
+    - **opacity()**
+    - **saturate()**
+    - **sepia()**
+    - **hue-rotate()**
+    - **drop-shadow()**
+
+- Para **girar uma imagem**:
+    - tem que usar o termo **transform** e dentro desta prioridade adicionar o **rotate()**
+                **4.9 Tipos de Seletores**
+
+- **<!-- SELETOR SIMPLES -->**
+    - h4 { font-family:Tahoma, Geneva, sans-serif; font-size:24px; }
+- **<!-- SELETOR COMPOSTO -->**
+    - #seletor_composto h1 { font-family:Tahoma, Geneva, sans-serif; font-size: 24px; color:#009; }
+- **<!-- SELETOR DESCENDENTE -->**
+    - #menu { width:700px; height:40px; }
+    - #menu ul li { list-style-type:none; }
+- **<!-- SELETOR FILHO -->**
+    - #filho { }
+    - #filho p { font-size:25px; color:#F00; }
+    - #filho h3 { font-size:25px; color:#F00; }
+    - #filho h2, h3 { font-size:25px; color:#F00; }
+                - **<!-- SELETOR IRMÃO -->**
+    - #principal {}
+    - #principal h1 + h2 { color:#F00; }
+    - #principal h2 + p { color:#F00; }
+
+**seletores de atributo de css3**
+
+verificar link
+
+[href="https://twitter.com/im4line"] {
+
+}
+
+verificar palavra
+
+[href*="twitter"] {
+
+}
+
+verificar começo
+
+[href^="https"] {
+
+}
+
+verificar final
+
+[href$=".com.br"] {
+
+}
+
+list-style: none;
+
+text-indent: 100px;
+
+background-size: cover // 100px 100px
+
+/* image replacement */
+
+display: block;
+
+text-indent: -9999px;
+
+}
+
+**hidden - Oculta o elemento onde for declarado.**
+            </section>
         </main>
 
         <footer id="rodape">
