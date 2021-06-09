@@ -12,30 +12,56 @@
         <title>HTML 2 - Learning Area Por: @alinearaujodev</title>
     </head>
     <body>
-        
-        <section>
-            <h2>ID e Class</h2>
-            <p>Atributos são conteúdos adicionados à tag de abertura de um elemento e podem ser usados ​​de várias maneiras diferentes, desde fornecer informações até alterar o estilo. Os atributos são compostos das duas partes a seguir:</p>
-            <ul>
-                <li>O <i>nome</i> do atributo</li>
-                <li>O <i>valor</i> do atributo</li>
-            </ul>
-            <div>
-                <h3>ID</h3>
-                <p>é realmente útil quando você usa um elemento mais de uma vez.</p>
-                Quando os usuários visitam nosso site, queremos que eles possam clicar em um link e que a página role automaticamente para uma seção específica.
+        <main>
+            <section>
+                <h2>ID e Class</h2>
+                <p>Atributos são conteúdos adicionados à tag de abertura de um elemento e podem ser usados ​​de várias maneiras diferentes, desde fornecer informações até alterar o estilo. Os atributos são compostos das duas partes a seguir:</p>
+                <ul>
+                    <li>O <i>nome</i> do atributo</li>
+                    <li>O <i>valor</i> do atributo</li>
+                </ul>
+                <div>
+                    <h3>ID</h3>
+                    <p>é realmente útil quando você usa um elemento mais de uma vez.</p>
+                    Quando os usuários visitam nosso site, queremos que eles possam clicar em um link e que a página role automaticamente para uma seção específica.
+    
+    Para criar um link para um destino na mesma página, devemos fornecer ao destino um id , como este:
+                </div>
+            </section>
+           
+            <section id="block-inline">
+                <h2>Elementos Block vs Inline</h2>
+                <p>Os termos se referem a como um determinado elemento vai encaixar no fluxo de conteúdo do documento</p>
+                <p><strong>Block (Bloco)</strong> - É o amigo que não gosta de dividir o chocolate.</p>
+                <!--IMAGEM BLOCK-->
+                <p><strong>Inline (Linha)</strong> - É o amigo da galera, compartilha o chocolate. </p>
+                <img src="img/inline.png" alt="pessoas em ordem - inline exemplo">
+            </section>
 
-Para criar um link para um destino na mesma página, devemos fornecer ao destino um id , como este:
-            </div>
-            
+            <section id="div-spam">
+                <h2>Spam e Divs</h2>
+                <div>
+                    <p><strong>Div</strong> - são elemetos de divisão do conteúdos da página, ou seja, é um contêiner "transparente" para agrupar coisas. Além disso é um elemento block</p>
+                </div>
+                <div>
+                    <p><strong>Spam</strong> - contém pequenos trechos de texto ou outro HTML. Eles são usados ​​para separar pequenos pedaços de conteúdo que estão na mesma linha de outro conteúdo.</p>
+                    <p>É melhor usar um <strong><code>&lt;spam&gt;</code><code>&lt;/spam&gt;</code></strong> elemento quando você deseja direcionar uma parte específica do conteúdo que está embutido ou na mesma linha que outro texto.</p></p>
+                </div>
+            </section>
 
-
-
-        </section>
-       
-        <section>
-            explicação da tag <aside></aside>
-             <!-- o aside é para conteúdo que não está relacionados diretamente com os conteúdos principais, mas que podem providenciar informações complementares a esses -->
-        </section>
+            <section id="morethan-div">
+                <h2>Não se apegue as Divs</h2>
+                <p>Vai chegar um momento que as <i>div</i> se tornaram Deus para você. Então por isso é bom usar-la em último caso. Nisso existem outras tags que fazem a mesma coisa da <i>div</i>, mas há significado semântico.</p>
+                <ul>
+                    <li><strong>Main</strong> - como o próprio elemento já diz, principal. Usamos muito para o definir o principal conteúdo da página.</li>
+                    <li><strong>Nav</strong> - usamos para definir o conteúdo de barras de navegação, ou seja, tudo que incluir links.</li>
+                    <li><strong>Section</strong> - apenas representa uma seção. Como uma <i>div</i> pode ser incluída em qualquer lugar, mas agora terá um significado.</li>
+                    <li><strong>Aside</strong> - algo que realmente não é essencial ao conteúdo. Aqui temos as barras laterais</li>
+                    <li><strong>Article</strong> - definir como artigo, o conteúdo da página uma parte indenpedente do documento. Muito usado em blogs</li>
+                    <li><strong>Header</strong> - é para cabelhaço.</li>
+                    <li><strong>Footer</strong> - é para o rodapé.</li>
+                </ul>
+            </section>
+        </main>     
     </body>
 </html>
