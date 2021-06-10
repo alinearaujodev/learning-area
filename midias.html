@@ -1,3 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Incluindo Mídias ao HTML - Learning Area Por: @alinearaujodev</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <meta name="autor" content="Aline de Araújo - @alinearaujodev"/>
+        <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="css/generic/reset.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/pagehtml.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement("header" );
+                document.createElement("footer" );
+                document.createElement("section"); 
+                document.createElement("aside"  );
+                document.createElement("nav"    );
+                document.createElement("article"); 
+                document.createElement("hgroup" ); 
+                document.createElement("time"   );
+            </script>
+            <noscript>
+                <strong>Aviso !</strong>
+                Seu navegador web não suporta HTML5, e devido a isso alguns recursos são simulados usando JScript.
+                Infelizmente seu navegador desativou a execução de scripts. Por favor ative esse recurso para que esta página seja exibida corretamente.
+            </noscript>
+        <![endif]--> 
+    </head>
+    <body>
+        
+    </body>
+</html>
+            <section id="imagem">
+                <h2>Adicionando Imagem</h2>
+                <p>A tag <strong><code>&lt;img&gt;</code></strong> permite que você adicione uma imagem ao documento. A maioria dos elementos requer tags de abertura e fechamento, mas essa é uma tag que não possui fechamento.</p>
+                <p>Atributo <strong>src</strong> é obrigatório, para definir o caminho onde se encontra a imagem.</p>
+                <p>Atributo <strong>alt</strong> significa texto alternativo, traz significado às imagens em nossos sites. Se uma imagem não carregar em uma página da web, um usuário pode passar o mouse sobre a área originalmente destinada para a imagem e ler uma breve descrição da imagem. Além disso, usuários com deficiência visual geralmente navegam na web com a ajuda de um software de leitura de tela. Quando você inclui o <i>alt</i>, o software de leitura de tela pode ler a descrição da imagem em voz alta para o usuário com deficiência visual.</p>
+                <p>Atributo <strong>title</strong> é para descrição, esse texto irá aparecer quando o mouse for passado por cima da imagem.</p>
+                      
+                <p>Para web, os melhores formatos de imagens são <strong>JPEG</strong> ou <strong>PNG</strong>, o que vai diferenciar qual formato você deve usar é o que você predente com a imagem. Se quiser uma imagem grande e com alta resolução, escolha o JPEG. Se quiser com fundo transparente, escolha o PNG</p>   
+
+                <section>
+                    <h3>Tamanho de Imagem para Site</h3>
+                    <div>
+                        <p>Vale lembrar que é importante não deixar o tamanho da imagem grande, pois dificulta o carregamento das imagens, pois temos que pensar em todos os dispositivos, e além disso, diferentes velocidades de internet de cada usuário.</p>
+                        <p>Para imagem de fundo, o ideal é no máximo a imagem ter 1500px de largura</p>
+                        <p>Para imagem de conteúdo, o ideal é no máximo ter 650px de largura</p>
+                    </div>
+                </section>
+
+                <section id="inserir-img">
+                    <h3>Via arquivo no projeto ou URL</h3>
+                    <div>
+                        <p>Inserindo imagem via arquivo localizado na pasta do projeto</p>
+                        <img src="./img/image-baixada.png" alt="FOTO exemplo imagem baixada" width="300" height="200">  
+                    </div>
+                    <div>
+                        <p>Inserindo imagem via URL</p>
+                        <img src="./img/image-url.png" alt="imagem exemplo imagem url" width="1200" height="250">
+                    </div>
+                </section>        
+
+                <section>
+                    <h3>Imagem com legenda</h3>
+                    <p>Caso precise adicionar uma legenda abaixo da imagem será preciso adicionar duas novas tags, <strong><code>&lt;figure&gt;</code><code>&lt;/figure&gt;</code></strong> e a <strong><code>&lt;figcaption&gt;</code><code>&lt;/figcaption&gt;</code></strong></p>
+                    <img src="./img/figure.png" alt="exemplo no html figure"/>
+                    <div>
+                        <p>Exemplo:</p>
+                        <figure>
+                            <img src="https://static.todamateria.com.br/upload/57/b7/57b7235c6af22-paisagem-natural.jpg" alt="imagem da cachoeira">
+                            <figcaption>Legenda da Foto acima</figcaption>
+                        </figure>
+                    </div>
+                </section>    
+
+                <section>
+                    <h3>Imagens Responsivas</h3>
+                    <img src="img/picture.png" alt="exemplo tag picture">
+                    <p>Perceba que envolvida pela tag <strong>picture</strong>, o </p>
+                    <p>Além disso, note que a tag <strong>source</strong> possui três atributos:</p>
+                    <ul>
+                        <li><i>type</i> - vai indicar o media type da imagem que usamos.</li>
+                        <li><i>srcset</i> - vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido</li>
+                        <li><i>media</i> - indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.</li>
+                    </ul>
+                    <p>É importante que existe uma ordem entre os <strong>source</strong>, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de <strong>picture</strong> deve ser a imagem padrão.</p>
+                </section>   
+                <section>
+                    <h3>Favicon</h3>
+                    <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
+                    <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
+                    <p>A extensão para favicon é a .ico</p>
+                    <p>Para adicionar, no <strong>head</strong> é preciso colocar o seguinte link:<strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong><p>                            
+                    <p>O atributos para os ícones:</p>
+                    <p>REL - para descrever o ícone desejado. </p> 
+                    <p>SIZES - para resolução de tamanho do ícone.</p> 
+                    <p>HREF - o caminho do ícone.</p>          
+                </section>
+                 <!--LINK DE IMAGEM -->
+                 <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" /></a>
+            </section>
+
 <section>
     Os elementos <iframe> foram projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc
 

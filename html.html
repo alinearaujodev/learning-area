@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="pt-BR">
     <head>
-        <title>HTML - Learning Area Por: @alinearaujodev</title>
+        <title>Introdução ao HTML - Learning Area Por: @alinearaujodev</title>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width">
         <meta name="autor" content="Aline de Araújo - @alinearaujodev"/>
@@ -42,10 +42,7 @@
                     <p>Por:<a href="https://www.github.com/alinearaujodev/" target="_blank">@alinearaujodev</a></p> 
                 </div>
             </nav>
-        </header>
-
-        <main>
-            <sections>  
+            <section>  
                 <ol> 
                     <li><a href="#basico">HTML, básico </a></li>
                     <li><a href="#marcacao">Formatação de Texto</a></li>
@@ -54,7 +51,9 @@
                     <li><a href="#imagem">Adicionando Imagem</a></li>                      
                 </ol>
             </section>
+        </header>
 
+        <main>
             <section id="basico">
                 <h2>1. HTML, o básico</h2>
                 <div id="html">
@@ -204,79 +203,8 @@
                     </ul>
                 </div>
             </section>
-
-            <section id="imagem">
-                <h2>3. Adicionando Imagem</h2>
-                <p>A  <strong><code>&lt;img&gt;</code></strong>tag permite que você adicione uma imagem a uma página da web. A maioria dos elementos requer tags de abertura e fechamento, mas a é uma tag de fechamento automático.</p>
-                <p>Atributo <strong>src</strong>, é obrigatório, para definir o caminho onde se encontra a imagem;</p>
-                <p>Atributo <strong>alt</strong>, que significa texto alternativo, traz significado às imagens em nossos sites. Se uma imagem não carregar em uma página da web, um usuário pode passar o mouse sobre a área originalmente destinada para a imagem e ler uma breve descrição da imagem.</p>
-                <p>Usuários com deficiência visual geralmente navegam na web com a ajuda de um software de leitura de tela. Quando você inclui o <strong>alt</strong>, o software de leitura de tela pode ler a descrição da imagem em voz alta para o usuário com deficiência visual.</p>
-                <p>O altatributo também desempenha um papel na Otimização de Mecanismos de Pesquisa (SEO), porque os mecanismos de pesquisa não podem “ver” as imagens em sites à medida que rastreiam a internet. Ter altatributos descritivos pode melhorar a classificação do seu site.</p>
-                <p>Atributo <strong>title</strong>, para descrição, esse texto irá aparecer quando o mouse for passado por cima da imagem;</p>
-                
-                <p>Outro ponto importante, é o <strong> width (largura) e height (altura)</strong>, para ajuste da imagem.</p>        
-                <p>Para web, os melhores formatos de imagens são o <strong>JPEG e PNG</strong>, o que vai diferenciar qual modelo você deve usar é o que você predente com a imagem. Se quiser uma imagem grande e com alta resolução, escolha o JPEG. Se quiser com fundo transparente, escolha o PNG</p>   
-                <section id="tamanho-img">
-                    <h3>Tamanho de Imagem para Site</h3>
-                    <div>
-                        <p>Para usa imagens em sites, é importante não deixar o tamanho da imagem grande, pois dificulta o carregamento das imagens, pois temos que pensar em todos os dispositivos, e além disso, diferentes velocidades de internet de cada usuário</p>
-                        <p>Para imagem de fundo, o ideal é no máximo a imagem ter 1500 de largura</p>
-                        <p>Para imagem de conteúdo, o ideal é no máximo ter 650 de largura</p>
-                    </div>
-                </section>
-                <section id="inserir-img">
-                    <h3>Via arquivo no projeto ou URL</h3>
-                    <div>
-                        <p>Inserindo imagem via arquivo localizado na pasta do projeto</p>
-                        <img src="./img/image-baixada.png" alt="FOTO exemplo imagem baixada" width="300" height="200">  
-                    </div>
-                    <div>
-                        <p>Inserindo imagem via URL</p>
-                        <img src="./img/image-url.png" alt="imagem exemplo imagem url" width="1200" height="250">
-                    </div>
-                </section>               
-                <section id="figure">
-                    <h3>Imagem com legenda</h3>
-                    <p>Caso precise adicionar uma legenda abaixo da imagem será preciso adicionar duas novas tags, <strong><code>&lt;figure&gt;</code><code>&lt;/figure&gt;</code></strong> e a <strong><code>&lt;figcaption&gt;</code><code>&lt;/figcaption&gt;</code></strong></p>
-                    <img src="./img/figure.png" alt="exemplo no html figure"/>
-                    <div>
-                        <p>Exemplo:</p>
-                        <figure>
-                            <img src="https://static.todamateria.com.br/upload/57/b7/57b7235c6af22-paisagem-natural.jpg" alt="imagem da cachoeira">
-                            <figcaption>Legenda da Foto acima</figcaption>
-                        </figure>
-                    </div>
-                </section>       
-                <section>
-                    <h3>Imagens Responsivas</h3>
-                    <p>Para deixar a imagem Responsivas, na tag <strong><code>&lt;img&gt;</code></strong> você deve adicionar mais dois novos atributos:</p>
-                    <p>- srcset: define o conjunto de imagens que nós iremos permitir ao navegador escolher, e qual tamanho cada imagem tem.</p>
-                    <p>- sizes: define um conjunto de condições de mídia (ex.: largura da tela) e indica qual tamanho da imagem deveria ser a melhor escolha, quando certas condições de tela são verdadeiras - Estas são as sugestões que nós falamos antes.</p>
-                    <p>A imagem abaixo é responsiva.</p> 
-                    
-                    <img srcset="img/jodiecomer.jpg 320w,
-                                 img/jodiecomer.jpg 480w,
-                                 img/jodiecomer.jpg 800w"
-                         sizes="(max-width: 320px) 280px,
-                                (max-width: 480px) 440px,
-                                800px"
-                        src="img/jodiecomer.jpg" alt="imagem da atriz jodie comer">
-                </section>   
-                <section>
-                    <h3>Favicon</h3>
-                    <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
-                    <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
-                    <p>A extensão para favicon é a .ico</p>
-                    <p>Para adicionar, no <strong>head</strong> é preciso colocar o seguinte link:<strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong><p>                            
-                    <p>O atributos para os ícones:</p>
-                    <p>REL - para descrever o ícone desejado. </p> 
-                    <p>SIZES - para resolução de tamanho do ícone.</p> 
-                    <p>HREF - o caminho do ícone.</p>          
-                </section>
-                 <!--LINK DE IMAGEM -->
-                 <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" /></a>
-            </section>
         </main>
+
         <footer id="rodape">
             <hr>
             com amor, por:<a href="https://www.instagram.com/alinearaujodev" target="_blank">@alinearaujodev</a></time>
