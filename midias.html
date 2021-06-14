@@ -34,28 +34,45 @@
         <![endif]--> 
     </head>
     <body>
-        
-    </body>
-</html>
+        <header>
+            <nav>
+                <div class="learning-area">
+                    <h1>Incluindo Mídias ao HTML</h1>
+                    <p>Por:<a href="https://www.github.com/alinearaujodev/" target="_blank">@alinearaujodev</a></p> 
+                </div>
+            </nav>
+            <section>  
+                <ul> 
+                    <li><a href="#imagem">Adicionando Imagem</a></li>
+                    <li><a href="#audio">Adicionando Áudios</a></li>
+                    <li><a href="#video">Adicionando Vídeos</a></li>   
+                    <li><a href="#iframe">Adicionando Iframes</a></li>              
+                </ul>
+            </section>
+        </header>
+
+        <main>
             <section id="imagem">
                 <h2>Adicionando Imagem</h2>
                 <p>A tag <strong><code>&lt;img&gt;</code></strong> permite que você adicione uma imagem ao documento. A maioria dos elementos requer tags de abertura e fechamento, mas essa é uma tag que não possui fechamento.</p>
                 <p>Atributo <strong>src</strong> é obrigatório, para definir o caminho onde se encontra a imagem.</p>
-                <p>Atributo <strong>alt</strong> significa texto alternativo, traz significado às imagens em nossos sites. Se uma imagem não carregar em uma página da web, um usuário pode passar o mouse sobre a área originalmente destinada para a imagem e ler uma breve descrição da imagem. Além disso, usuários com deficiência visual geralmente navegam na web com a ajuda de um software de leitura de tela. Quando você inclui o <i>alt</i>, o software de leitura de tela pode ler a descrição da imagem em voz alta para o usuário com deficiência visual.</p>
+                <p>Atributo <strong>alt</strong> significa texto alternativo, traz significado às imagens em nossos sites. Se uma imagem não carregar em uma página da web, o texto vai aparecer. Além disso, usuários com deficiência visual geralmente navegam na web com a ajuda de um software de leitura de tela. Quando você inclui o <i>alt</i>, o software de leitura de tela pode ler a descrição da imagem em voz alta para o usuário com deficiência visual.</p>
                 <p>Atributo <strong>title</strong> é para descrição, esse texto irá aparecer quando o mouse for passado por cima da imagem.</p>
                       
                 <p>Para web, os melhores formatos de imagens são <strong>JPEG</strong> ou <strong>PNG</strong>, o que vai diferenciar qual formato você deve usar é o que você predente com a imagem. Se quiser uma imagem grande e com alta resolução, escolha o JPEG. Se quiser com fundo transparente, escolha o PNG</p>   
 
-                <section>
+                <img src="img/img-tag.png" alt="exemplo da tag img">
+
+                <div>
                     <h3>Tamanho de Imagem para Site</h3>
                     <div>
                         <p>Vale lembrar que é importante não deixar o tamanho da imagem grande, pois dificulta o carregamento das imagens, pois temos que pensar em todos os dispositivos, e além disso, diferentes velocidades de internet de cada usuário.</p>
                         <p>Para imagem de fundo, o ideal é no máximo a imagem ter 1500px de largura</p>
                         <p>Para imagem de conteúdo, o ideal é no máximo ter 650px de largura</p>
                     </div>
-                </section>
+                </div>
 
-                <section id="inserir-img">
+                <div>
                     <h3>Via arquivo no projeto ou URL</h3>
                     <div>
                         <p>Inserindo imagem via arquivo localizado na pasta do projeto</p>
@@ -65,25 +82,18 @@
                         <p>Inserindo imagem via URL</p>
                         <img src="./img/image-url.png" alt="imagem exemplo imagem url" width="1200" height="250">
                     </div>
-                </section>        
-
-                <section>
+                </div>  
+                
+                <div>
                     <h3>Imagem com legenda</h3>
-                    <p>Caso precise adicionar uma legenda abaixo da imagem será preciso adicionar duas novas tags, <strong><code>&lt;figure&gt;</code><code>&lt;/figure&gt;</code></strong> e a <strong><code>&lt;figcaption&gt;</code><code>&lt;/figcaption&gt;</code></strong></p>
+                    <p>Caso precise adicionar uma legenda abaixo da imagem será preciso adicionar duas novas tags, <strong><code>&lt;figure&gt;</code><code>&lt;/figure&gt;</code></strong> engloba toda a estrutura da imagem com a legenda, e a <strong><code>&lt;figcaption&gt;</code><code>&lt;/figcaption&gt;</code></strong>, onde será colocado o legenda da foto.</p>
                     <img src="./img/figure.png" alt="exemplo no html figure"/>
-                    <div>
-                        <p>Exemplo:</p>
-                        <figure>
-                            <img src="https://static.todamateria.com.br/upload/57/b7/57b7235c6af22-paisagem-natural.jpg" alt="imagem da cachoeira">
-                            <figcaption>Legenda da Foto acima</figcaption>
-                        </figure>
-                    </div>
-                </section>    
+                </div>  
 
-                <section>
+                <div>
                     <h3>Imagens Responsivas</h3>
-                    <img src="img/picture.png" alt="exemplo tag picture">
-                    <p>Perceba que envolvida pela tag <strong>picture</strong>, o </p>
+                    <img src="img/picture.png" alt="exemplo tag picture" width="750">
+                    <p>Perceba que envolvida pela tag <strong>picture</strong>, o <strong>img</strong> permanence igual com <i>src</i> e <i>alt</i></p>
                     <p>Além disso, note que a tag <strong>source</strong> possui três atributos:</p>
                     <ul>
                         <li><i>type</i> - vai indicar o media type da imagem que usamos.</li>
@@ -91,7 +101,29 @@
                         <li><i>media</i> - indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset.</li>
                     </ul>
                     <p>É importante que existe uma ordem entre os <strong>source</strong>, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de <strong>picture</strong> deve ser a imagem padrão.</p>
-                </section>   
+                </div> 
+            </section>
+
+            <section id="audio">
+                <h2>Adicionando Áudios</h2>
+                <p>O elemento <strong>audio</strong> funciona para adicionar audios para seu documento.</p>
+                <img src="img/exemplo-audio.png" alt="exemplo da tag audio no html">
+                <p>O elemento  <strong>audio</strong> não há componente visual; portanto, não há nada para atribuir uma largura ou altura.</p>
+                <p>O atributo preload indica se o áudio será pré-carregado ou não e aceita três valores:</p>
+                    <ul>
+                        <li><i>metadata</i> - vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)</li>
+                        <li><i>none</i> - não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução</li>
+                        <li><i>auto (padrão)</i> - vai carregar o arquivo de áudio inteiro assim</li>
+                    </ul>    
+                <p>O atributo <i>controls</i> vai apresentar o player na tela. Caso não seja colocado na tag <strong>audio</strong>, o controle será transparente e o usuário não poderá interagir com ele.
+                <p>O atributo <i>autoplay</i>, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.</p> 
+                <p>O atributo <i>loop</i> vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução</p>
+            </section>
+        </main>     
+    </body>
+</html>  
+
+                 
                 <section>
                     <h3>Favicon</h3>
                     <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
@@ -105,7 +137,7 @@
                 </section>
                  <!--LINK DE IMAGEM -->
                  <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" /></a>
-            </section>
+
 
 <section>
     Os elementos <iframe> foram projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc
@@ -128,32 +160,19 @@ Esse atributo, que funciona em navegadores um pouco mais modernos que o restante
     </section>
 
     <section>
-        <video src="rabbit320.webm" controls>
-            <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
-            </video>controls
-            Os usuários devem poder controlar a reprodução de vídeo e áudio (isso é especialmente crítico para pessoas que possuem epilepsy.) Você deve usar o atributo controls para incluir a própria interface de controle do navegador ou criar sua interface usando o apropriado JavaScript API. No mínimo, a interface deve incluir uma maneira de iniciar e parar a mídia e ajustar o volume.
+        <h2>Adicionando Vídeos</h2>
+        <p>Para adicionar vídeos hospedado no nosso servidor, use a tag <strong>video</strong></p>
+        <p></p>
             
             
-            
-            As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:
-                * 
-            Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.
-                * 
-            Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.
-                * 
-            O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.
-            
-
-            Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso terceiro exemplo, abaixo:
-            <video controls width="400" height="400"
-autoplay loop muted
-poster="poster.png">
-<source src="rabbit320.mp4" type="video/mp4">
-<source src="rabbit320.webm" type="video/webm">
-<track kind="subtitles" src="subtitles_en.vtt" srclang="en">
-<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
-</video>
-
+        <p>As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:</p>
+        <ul>
+            <li>Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.</li>
+            <li>Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.</li>
+            <li>O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.</li>
+        </ul>
+        <p>Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso terceiro exemplo, abaixo:</p>
+        <img src="img/video-exemplo.png" alt="exemplo da tag video no html">
 Os novos recursos são:
 
 width and height
@@ -172,20 +191,3 @@ Usado para armazenar arquivos grandes em buffer; pode levar um dos três valores
 "none" não armazena em buffer o arquivo
 "auto" armazena em buffer o arquivo de mídia
 "metadata" armazena em buffer apenas os metadados do arquivo
-
-
-O elemento <audio> funciona exatamente como o elemento <video>, com algumas pequenas diferenças, conforme descrito abaixo. Um exemplo típico pode parecer assim:
-<audio controls>
-<source src="viper.mp3" type="audio/mp3">
-<source src="viper.ogg" type="audio/ogg">
-<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-</audio>
-
-Isso ocupa menos espaço do que um reprodutor de vídeo, pois não há componente visual - você só precisa exibir controles para reproduzir o áudio. Outras diferenças do vídeo HTML5 são as seguintes:
-
-O elemento <audio> não suporta os atributos width/height — novamente, não há componente visual; portanto, não há nada para atribuir uma largura ou altura.
-Também não suporta o atributo poster — novamente, não há componente visual
-Mais do que isso, <audio> suporta todos os mesmos recursos que <video>
-            
-            
-    </section>
