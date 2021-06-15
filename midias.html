@@ -102,6 +102,23 @@
                     </ul>
                     <p>É importante que existe uma ordem entre os <strong>source</strong>, e nessa nossa configuração, os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de <strong>picture</strong> deve ser a imagem padrão.</p>
                 </div> 
+
+                <div>
+                    <h3>Favicon</h3>
+                    <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
+                    <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
+                    <p>A extensão para favicon é a .ico</p>
+                    <p>Para adicionar, no <strong>head</strong> é preciso colocar o seguinte link:<p> 
+                    <p>
+                        <strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong>
+                    </p>                           
+                    <p>O atributos para os ícones:</p>
+                    <ul>
+                        <li><i>rel</i> - para descrever o ícone desejado.</li>
+                        <li><i>sizes</i> - para resolução do tamanho do ícone.</li>
+                        <li><i>href</i> - o caminho do ícone.</li>
+                    </ul>      
+                </div>
             </section>
 
             <section id="audio">
@@ -119,28 +136,42 @@
                 <p>O atributo <i>autoplay</i>, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.</p> 
                 <p>O atributo <i>loop</i> vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução</p>
             </section>
+
+            <section id="video">
+                <h2>Adicionando Vídeos</h2>
+                <p>Para adicionar vídeos hospedado no nosso servidor, use a tag <strong>video</strong></p>
+                <p>Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso exemplo, abaixo:</p>
+                <img src="img/video-exemplo.png" alt="exemplo da tag video no html">
+                <p>Os novos recursos são:</p>
+                <ul>
+                    <li><i>width and height</i> - Você pode controlar o tamanho do vídeo com esses atributos. Os vídeos mantêm sua proporção largura-altura nativa - conhecida como proporção de tela. Se a proporção não for mantida pelos tamanhos definidos, o vídeo aumentará para preencher o espaço horizontalmente, e o espaço não preenchido receberá apenas uma cor sólida de fundo por padrão.</li>
+                    <li><i>muted</i> - Faz com que a mídia seja reproduzida com o som desativado por padrão.</li>
+                    <li><i>poster</i> - O URL de uma imagem que será exibida antes da reprodução do vídeo. Destina-se a ser usado para uma tela inicial ou tela de publicidade.</li>
+                    <li><i>controls</i> - vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra na tag.</li>
+                </ul>
+                    
+                <div>
+                    <h3>Que formatos são esses?</h3>
+                    <p>As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:</p>
+                    <ul>
+                        <li>Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.</li>
+                        <li>Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.</li>
+                        <li>O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.</li>
+                    </ul>
+                </div>  
+            </section>
         </main>     
     </body>
-</html>  
-
-                 
-                <section>
-                    <h3>Favicon</h3>
-                    <p>Favicon é um ícone de favorito que fica no inferior do Title do site</p>
-                    <img src="img/favicon-exemplo.png" alt="exemplo da favicon do github">
-                    <p>A extensão para favicon é a .ico</p>
-                    <p>Para adicionar, no <strong>head</strong> é preciso colocar o seguinte link:<strong><code>&lt;head&gt;</code><code>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</code><code>&lt;/head&gt;</code></strong><p>                            
-                    <p>O atributos para os ícones:</p>
-                    <p>REL - para descrever o ícone desejado. </p> 
-                    <p>SIZES - para resolução de tamanho do ícone.</p> 
-                    <p>HREF - o caminho do ícone.</p>          
-                </section>
+</html>      
+                
                  <!--LINK DE IMAGEM -->
                  <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank"><img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" /></a>
 
 
-<section>
-    Os elementos <iframe> foram projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc
+<section id="iframe">
+    <p>Quando colocamos vídeos no nosso próprio servidor, podemos passar por problemas com alto consumo de banda, site lento e incompatibilidades com alguns navegadores. Então faciliatr nossa vida, foi criado a tag <strong>iframe</strong>, que são projetados para permitir que você incorpore outros documentos da Web ao documento atual. Isso é ótimo para incorporar conteúdo de terceiros em seu site sobre o qual você pode não ter controle direto e não querer implementar sua própria versão - como vídeo de fornecedores de vídeo on-line, sistemas de comentários como Disqus , mapas on-line fornecedores de mapas, banners publicitários etc</p>
+    <p>No YouTube, abra o vídeo que você quer incorporar e clique no link COMPARTILHAR. Ao clicar no link indicado anteriormente, uma janela vai aparecer, te dando as opções de compartilhamento. Escolha o item INCORPORAR.</p>
+    <p>O código HTML personalizado vai aparecer em uma nova janela de contexto, incluindo um botão que permite COPIAR o código com a tag do <strong>iframe</strong> que vai aparecer diretamente na sua página. Volte ao seu editor de código e cole a tag no seu arquivo HTML que vai apresentar o vídeo.</p>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/oUNMq7AiYKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -159,35 +190,6 @@ Esse atributo, que funciona em navegadores um pouco mais modernos que o restante
 
     </section>
 
-    <section>
-        <h2>Adicionando Vídeos</h2>
-        <p>Para adicionar vídeos hospedado no nosso servidor, use a tag <strong>video</strong></p>
-        <p></p>
-            
-            
-        <p>As faixas de áudio e vídeo também estão em diferentes formatos, por exemplo:</p>
-        <ul>
-            <li>Um contêiner WebM geralmente empacota o áudio do Ogg Vorbis com vídeo VP8 / VP9. Isso é suportado principalmente no Firefox e Chrome.</li>
-            <li>Um contêiner MP4 geralmente empacota áudio AAC ou MP3 com vídeo H.264. Isso é suportado principalmente no Internet Explorer e Safari.</li>
-            <li>O contêiner Ogg mais antigo tende a usar o áudio Ogg Vorbis e o vídeo Ogg Theora. Isso foi suportado principalmente no Firefox e Chrome, mas foi basicamente substituído pelo formato WebM de melhor qualidade.</li>
-        </ul>
-        <p>Há vários outros recursos que você pode incluir em um vídeo HTML5. Dê uma olhada no nosso terceiro exemplo, abaixo:</p>
-        <img src="img/video-exemplo.png" alt="exemplo da tag video no html">
-Os novos recursos são:
-
-width and height
-Você pode controlar o tamanho do vídeo com esses atributos ou com CSS. Nos dois casos, os vídeos mantêm sua proporção largura-altura nativa - conhecida como proporção de tela. Se a proporção não for mantida pelos tamanhos definidos, o vídeo aumentará para preencher o espaço horizontalmente, e o espaço não preenchido receberá apenas uma cor sólida de fundo por padrão.
-autoplay
-Faz com que o áudio ou o vídeo comece a ser reproduzido imediatamente, enquanto o restante da página está sendo carregado. É aconselhável não usar vídeo (ou áudio) de reprodução automática em seus sites, porque os usuários podem achar isso realmente irritante.
-loop
-Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Isso também pode ser irritante, portanto, use apenas se for realmente necessário.
-muted
-Faz com que a mídia seja reproduzida com o som desativado por padrão.
-poster
-O URL de uma imagem que será exibida antes da reprodução do vídeo. Destina-se a ser usado para uma tela inicial ou tela de publicidade.
-preload
-Usado para armazenar arquivos grandes em buffer; pode levar um dos três valores:
-
-"none" não armazena em buffer o arquivo
-"auto" armazena em buffer o arquivo de mídia
-"metadata" armazena em buffer apenas os metadados do arquivo
+    
+        
+       
