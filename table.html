@@ -1,20 +1,57 @@
-<section id="tabelas">
-    <h2>6. Adicionando Tabela</h2>
-    <p>Para delimitar uma tabela sera preciso adicionar a tag <strong><code>&lt;table&gt;</code><code>&lt;/table&gt;</code></strong></p> 
-    <p>Para adicionar as linhas, use a tag <strong><code>&lt;tr&gt;</code><code>&lt;/tr&gt;</code></strong></p>
-    <p>E para adicionar as colunas da tabela, use <strong><code>&lt;td&gt;</code><code>&lt;/td&gt;</code></strong></p>  
-    <section id="6.1">
-        <h3>6.1 - Organizar melhor a tabela</h3>
-        <p>- Para organizar melhor o código da nossa tabela existem três outras tags. São elas: </p>
-        <p>TAG THEAD - é usada para incluir um grupo de linhas em uma tabela, como um cabeçalho.</p>
-        <p>TAG TBODY - é usada para o corpo principal da tabela.</p>
-        <p>TAG TFOOT - é usada para incluir um grupo de linhas em uma tabela, como um rodape. Por exemplo, para criar uma ultima linha com espaço para um resumo.</p>
-    </section>
-    <section id="6.2">
-        <h3>6.2 - Atributos para tabela</h3>
-        <p>- Colspan: Permite que uma unica célula da tabela abranja a largura de mais de uma célula ou coluna.</p>
-        <p>- Rowspan: Permite que uma unica célula da tabela alcance a altura de mais de uma célula ou linha.</p>
-        <p>- Align: Alinhamento horizontal do conteúdo da célula.</p>
-        <p>- Border: Permite fazer a borda de uma tabela. Quanto maior o numero colocado no atributo border, mais grossa sera a borda da tabela.</p>
-    </section>
-</section>
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionando Tabelas</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <section id="why-table">
+                <h2>Por que usar tabelas?</h2>
+                <p>Existem muitos sites na Internet que exibem informações como preços de ações, placares esportivos, dados de faturas e muito mais. Esses dados são naturalmente tabulares, o que significa que uma tabela costuma ser a melhor forma de apresentar os dados.</p>
+                <p>O elemento <strong>table</strong> conterá todos os dados tabulares que planejamos exibir. Para delimitar uma tabela sera preciso adicionar a tag <strong><code>&lt;table&gt;</code><code>&lt;/table&gt;</code></strong></p> 
+                <p>E como de custome todas as tabelas tem linhas, colunas e os dados, e no <i>HTML</i>, cada um desses componetes devem ser criados.</p>
+            </section>
+
+            <section id="lihnas-colunas">
+                <h2>Adicionando Linhas e Colunas</h2>
+                <p>Para adicionar as linhas, use a tag <strong><code>&lt;tr&gt;</code><code>&lt;/tr&gt;</code></strong>, que significa <i>table row</i>. Além de criar as linhas, você colocar os dados que deseja, por isso usamos o <strong><code>&lt;td&gt;</code><code>&lt;/td&gt;</code></strong>, que significa table data</p>     
+                <p>No exemplo acima, três pontos de dados (Aline, 21 anos e Feminino) foram inseridos em uma linha que existe. Ao adicionar três pontos de dados, criamos três células de dados.</p>
+                <p>Os dados da tabela não fazem muito sentido sem títulos para descrever o que os dados representam. Para adicionar títulos de linhas e colunas, você pode usar o cabeçalho da tabela elemento: <strong><code>&lt;th&gt;</code><code>&lt;/th&gt;</code></strong>, que significa table headers. Assim como os dados da tabela, um título da tabela deve ser colocado dentro de uma linha da tabela.</p>
+                <!-- COLOCAR IMAGEM DE EXEMPLO -->  
+                <p>Observe, também, o uso do atributo <i>scope</i>, que pode assumir um de dois valores:</p>
+                <ul>
+                    <li><i>row</i> - este valor deixa claro que o título é para uma linha.</li>
+                    <li><i>col</i> - este valor deixa claro que o título é para uma coluna.</li>
+                </ul>
+            </section>
+                
+            <section id="organizando">
+                <h2>Organizando melhor a tabela</h2>
+                <p>Para organizar melhor e colocar significado em nossa tabela, existem três importantes tags para conhecer. São elas: </p>
+                <ul>
+                    <li><i>thead</i> - é usada para incluir um grupo de linhas em uma tabela, como um cabeçalho.</li>
+                    <li><i>tbody</i> - é usada para o corpo principal da tabela.</li>
+                    <li><i>tfooter</i> - é usada para incluir um grupo de linhas em uma tabela, como um rodape. Por exemplo, para criar uma última linha com espaço para um total</li>
+                </ul>
+            </section>
+
+            <section id="atributos">
+                <h2>Atributos da tabela</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>- Colspan: Permite que uma unica célula da tabela abranja a largura de mais de uma célula ou coluna.</p>
+                <p>- Rowspan: Permite que uma unica célula da tabela alcance a altura de mais de uma célula ou linha.</p>
+                <p>- Align: Alinhamento horizontal do conteúdo da célula.</p>
+            </section>
+        </main>      
+    </body>
+</html>
