@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulário de Cadastro</title>
+        <title>Formulários no HTML - Learning Area Por: @alinearaujodev</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <meta name="autor" content="Aline de Araújo - @alinearaujodev"/>
+        <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="css/generic/reset.css">
+        <link rel="stylesheet" href="css/style.css"> 
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement("header" );
+                document.createElement("footer" );
+                document.createElement("section"); 
+                document.createElement("aside"  );
+                document.createElement("nav"    );
+                document.createElement("article"); 
+                document.createElement("hgroup" ); 
+                document.createElement("time"   );
+            </script>
+            <noscript>
+                <strong>Aviso !</strong>
+                Seu navegador web não suporta HTML5, e devido a isso alguns recursos são simulados usando JScript.
+                Infelizmente seu navegador desativou a execução de scripts. Por favor ative esse recurso para que esta página seja exibida corretamente.
+            </noscript>
+        <![endif]--> 
     </head>
     <body>
         <header>
-            <h1>Adicionando Formulários</h1>
+            <nav>
+                <div class="learning-area">
+                    <h1>Formulários no HTML</h1>
+                    <p>Por:<a href="https://www.github.com/alinearaujodev/" target="_blank">@alinearaujodev</a></p> 
+                </div>
+            </nav>
+            <section>  
+                <ol> 
+                    <li><a href="#intro-form">Para que serve um formulário na web?</a></li>
+                    <li><a href="#input-label">Elemento Input e Label</a></li>
+                    <li><a href="#list">Adicionando Listas</a></li>
+                    <li><a href="#links">Adicionando Links</a>   
+                    <li><a href="#imagem">Adicionando Imagem</a></li>                      
+                </ol>
+            </section>
         </header>
-        <section id="intro-form">
-            <h2>Para que serve um formulário na web?</h2>
-            <p><strong>Formulário</strong> é uma das elementos mais úteis da <i>web</i>, ele está por todas as partes. Para um cadastro simple de login, cadastro uma dado em site, pedir um iFodd... São várias as opções.</p>
-            <p>E como funciona um formulário? Lembra da lei da atração? Tudo o que vai volta, com os formulários funciona da mesma forma, você enviar algo para uma parte, e depois a outra parte de devolver o que você pediu.</p>
-            <p>Para isso que serve um atributo chamado <strong><i>action</i></strong>, ele especifica para onde os dados devem ir quando você apertar no botão enviar. Para entender melhor, precisamos estudar um pouco de <a href="internet.html#cliente_servidor">Cliente e Servidor</a></p>
-        </section>
 
-        <section id="">
+        <main>
+            <section id="intro-form">
+                <h2>Para que serve um formulário na web?</h2>
+                <p><strong>Formulário</strong> é uma das elementos mais úteis da <i>web</i>, ele está por todas as partes. Para um cadastro simple de login, cadastro uma dado em site, pedir um iFodd... São várias as opções.</p>
+                <p>E como funciona um formulário? Lembra da lei da atração? Tudo o que vai volta, com os formulários funciona da mesma forma, você enviar algo para uma parte, e depois a outra parte de devolver o que você pediu.</p>
+                <p>Para isso que serve um atributo chamado <strong><i>action</i></strong>, ele especifica para onde os dados devem ir quando você apertar no botão enviar. Para entender melhor, precisamos estudar um pouco de <a href="internet.html#cliente_servidor">Cliente e Servidor</a></p>
+            </section>
+        </main>
+        
+
+        <section id="input-label">
             <h2>Elemento Input e Label</h2>
             <div>
                 <p>O elemento mais comum no form é o <strong>input</strong>, que significa entrada, e você pode usa-lo em mais de 20 diferente tipos de entradas, por isso você precisa mudar apenas o atributo <i>type</i>. veja alguns exemplos abaixo:</p>
@@ -27,58 +71,27 @@
                     <li><i>text</i> - para textos</li>
                     <li><i>password</i> - para senhas</li>
                     <li><i>color</i> - para selecionar cor</li>
-                    <li><i>number</i> - para números</li>
+                    <li><i>number</i> - além de exibir um teclado numérico em dispositivos móveis, nos navegadores modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma seta para cima ou para baixo. Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores válidos.</li>
                     <li><i>submit</i> - botão de enviar</li>
-                    <li><i>email</i> para email</li>
+                    <li><i>email</i> - permite que os dispositivos móveis, principalmente, exiba um teclado adaptado para facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de domínio .com</li>
                     <li><i>date</i> - para selecionar datas</li>
                 </ul>
             </div>
             <div>
-                <p>A <strong>label</strong>é um acopanhamento para os <i>input</i></p>
+                <h3>Label</h3>
+                <p>Normalmente precisamos de uma descrição para nossos <i>input</i>, por isso é importante a <strong>label</strong>, esse elemento é uma tag de conteúdo para descrever seu texto. Além disso, é bom para telas pequenas e acessibilidade.</p>
+                <p>A maneira de conectar uma <i>label</i> para o <i>input</i> é por dois atributos, o <strong>for</strong> e <strong>ID</strong>. Todas as vezes que inserimos um <i>input</i>, fornecemos um ID, e todas as que inserimos uma <i>label</i>, fornecemos um for. E quando queremos conecta-los, precisamos atribuir o mesmo valores para ambos.</p>   
+                <p>Outra coisa legal de associar eles, é que assim que clicamos sobre o texto marcado com a tag <i>label</i>, o elemento <i>input</i> é selecionado.</p> 
+                <img src="img/label-input.png" alt="exemplo de conectar label e input">
             </div>
-            
-            
-
         </section>
-        
-        <h1>Formulário de Cadastro | App Lista de Casa</h1>
-        <p>Completo o cadastro abaixo com seus dados</p>
-
-        <form>
-            <fieldset>
-                <div>
-                    <label>Nome:</label>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div>
-                    <label>Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
-                </div>
-                <div>
-                    <label>Email:</label>
-                    <input type="email" name="email" id="email">
-                </div>
-            </fieldset>espaço reservado dentro da caixa de entrada, assimq eu você digita, ele desaparece
-           </div>
-
-            <div></div>
-        </form>
         
     </body>
 </html>
 <!--
 <section id="form">
     <form>
-        <label for="nome">Nome:</label> LABEL - NOME DO INPUT / FOR - É RELACIONADO COM O ID DO INPUT
-        <input id="nome" type="text">  INPUT - ENTRADA DE DADOS / TYPE - TIPO DE DADO 
-
-        <label for="email">Email:</label> 
-        <input id="email" type="email">
-
-        <label for="phone">Telefone:</label> 
-        <input id="phone" type="phone">
-
-        <label for="mensagem">Mensagem:</label> 
+ 
         <textarea id="mensagem"></textarea>
 
         <input type="submit" value="Enviar">  submit - tipo para envio do form / VALEU - NOME DO BUTTON
@@ -102,9 +115,7 @@
 
         <input type="range">
 
-        O formulário presenta o atributo obrigatório action. O valor desse atributo
-        é o endereço para onde as informações do formulário serão enviadas, e esse valor depende inteiramente de
-        como é feita a aplicação que receberá essas informações no lado do servidor.    
+           
 
         No formulário, podemos indicar que página (URL) vai receber os dados preenchidos. É só especificar o atributo
         action. No nosso exemplo, temos um formulário na página produto.php e vamos criar uma próxima
@@ -122,23 +133,6 @@
         portanto, não é visível na barra de endereços).
         <form action="checkout.php" method="POST">
 
-            label
-            Adicionamos a marcação do elemento <label>. Esse elemento é uma tag de conteúdo, e seu texto é exibido
-            de maneira comum dentro do nosso formulário, a única diferença é que essa marcação faz uma ligação com
-            outro elemento qualquer em nosso formulário. Note que nosso label tem o atributo for, que recebe o valor
-            nome.
-            Quando clicamos com o mouse sobre o texto marcado com a tag label, o elemento que tem o atributo id
-            com o mesmo valor que o atributo for do label é selecionado para que possamos interagir com ele. No
-            exemplo, esse elemento vinculado ao label é um campo de texto que declaramos com a tag input.
-            Essamarcação <label> é de extrema importância para a usabilidade e acessibilidade dos nossos formulários.
-
-            Provavelmente o tipomais comum de input, o que tem o atributo type="text”, é utilizado quando queremos
-            que o usuário envie uma informação textual simples, pois esse elemento não permite a entrada de quebras
-            de linha.
-
-            O input que recebe o atributo type="password” é similar ao anterior, do tipo text, com a diferença de que
-ele não exibe exatamente o texto digitado pelo usuário, e sim uma série de símbolos * ou outro, dependendo
-do navegador e sistema operacional.
 
 checkbox
 O elemento input do tipo checkbox exibe uma caixa para marcação, é muito utilizado quando temos uma
@@ -159,11 +153,6 @@ O elemento input com o atributo type="submit” é similar ao botão, mas quando
 inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do
 
 <form>.
-
-image
-<input type="image" name="botao" src="images/enviar.png" width="20" height="18">
-É possível substituir o botão de envio do formulário por uma imagem, possibilitando criar um visual mais
-atrativo para o formulário.
 
 O input comtype="reset” elimina os valores entrados anteriormente nos elementos de um formulário, permitindo
 que o usuário limpe o mesmo.
@@ -197,15 +186,6 @@ que somente uma das opções possa ser selecionada. Caso seja adicionado o atrib
 selecionar mais de uma opção da mesma maneira que selecionamos diversos arquivos no explorador
 do sistema operacional.
 
-O input do tipo email permite que os dispositivosmóveis, principalmente, exibamumteclado adaptado para
-facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de
-domínio .com.
-
-O input do tipo number, além de exibir um teclado numérico em dispositivos móveis, nos navegadores
-modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma
-seta para cima ou para baixo.
-Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores
-válidos. No exemplo anterior, o elemento deve aceitar números múltiplos de 5 com o limite do valor “100”.
 
 Oelemento input comtipo url permite que os dispositivos exibamum teclado como, no exemplo do iPhone,
 opções como www e .com.
