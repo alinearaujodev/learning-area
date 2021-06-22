@@ -75,6 +75,7 @@
                     <li><i>submit</i> - botão de enviar</li>
                     <li><i>email</i> - permite que os dispositivos móveis, principalmente, exiba um teclado adaptado para facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de domínio .com</li>
                     <li><i>date</i> - para selecionar datas</li>
+                    <li><i>reset</i> - elimina os valores entrados anteriormente nos elementos de um formulário, permitindo que o usuário limpe o mesmo.</li>
                 </ul>
             </div>
             <div>
@@ -85,7 +86,32 @@
                 <img src="img/label-input.png" alt="exemplo de conectar label e input">
             </div>
         </section>
-        
+
+        <section id="atributos">
+            <h2>Atributos no Formulários</h2>
+
+            atributos
+
+autofocus
+Sua presença indica que aquele campo deve iniciar com foco quando a página for carregada. O usuário já
+pode começar a digitar algo sem nenhum clique.
+
+<input type="text" name="nome" placeholder="Insira seu nome">
+O atributo placeholder exibe o texto contido em seu valor dentro do elemento do formulário caso o seu valor
+seja vazio.
+
+A implementação de autocomplete sem o atributo list no campo, ligando-o a um datalist, vai utilizar os últimos
+valores utilizados em outros campos ou em outros formulários, dando prioridade a valores adicionados
+em inputs com o mesmo valor no atributo name.
+
+        </section>
+
+        <section id="buton">
+            <h2>Adicionando Botões</h2>
+            <p>Quando queremos criar um botão que enviam coisas, presicamos conhecer a tag <strong>button</strong>. Usamos essa tag para envio dentro do form, e sempre será redirencionado para o link do atributo <i>action</i>. O texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário especificar o valor do atributo type, inclusive se ele for button.</p>
+            <p>O elemento input com o atributo <i>type="button”</i> renderiza um botão dentro do formulário, mas esse botão não tem nenhuma função direta nele e é comumente utilizado para disparar eventos para a execução de scripts. O texto do botão é determinado pelo valor do atributo value.</p>
+            <p>O elemento input com o atributo <i>type="submit”</i> é similar ao botão, mas quando acionado esse elemento inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do <i>form</i></p>
+        </section>
     </body>
 </html>
 <!--
@@ -104,14 +130,6 @@
          <input type="radio" id="dois" name="number" checked> é a 'grupo' de bolinha. // com o id você diferencia assim pode selecionar um radio apenas. // com o name voce coloca todos no mesmo grupo // checked é para deixar um radio já selecionado 
          <input type="radio" id="tres" name="number">
 
-         para ser selecionado assim que for clicado em uma imagem ou palavra, pode ser de duas maneiras
-            1 - o input dentro da label: 
-                <label>Text
-                    <input type="text">
-                </label>
-            2 - com o atributo for do label sendo relacionado com o id do input 
-                <label for="text"></label>
-                <input type="text" id="text">
 
         <input type="range">
 
@@ -144,28 +162,7 @@ Quando desejamos que o usuário escolha somente uma entre uma série de opções
 input do tipo radio. Quando há mais de um elemento desse tipo com o mesmo valor no atributo name,
 somente um pode ser selecionado.
 
-O elemento input com o atributo type="button” renderiza um botão dentro do formulário, mas esse botão
-não tem nenhuma função direta nele e é comumente utilizado para disparar eventos para a execução de
-scripts.
-O texto do botão é determinado pelo valor do atributo value.
 
-O elemento input com o atributo type="submit” é similar ao botão, mas quando acionado esse elemento
-inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do
-
-<form>.
-
-O input comtype="reset” elimina os valores entrados anteriormente nos elementos de um formulário, permitindo
-que o usuário limpe o mesmo.
-
-
-A tag <input> dos tipos button, submit e reset pode ser substituída pela tag <button>. Neste
-caso, o texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário
-especicar o valor do atributo type, inclusive se ele for button:
-<button type="button" name="enviar">Clique aqui</button>
-
-Quando é necessário que o usuário envie um arquivo para a aplicação no lado do servidor é necessário o
-uso do input do tipo le. Para o correto envio dos arquivos, muitas vezes também é necessário adicionar o
-atributo enctype="multipart/form-data" na tag <form>.
 
 Muitas vezes precisamos enviar e receber informações que não têm utilidade direta para o usuário e, portanto,
 não devem ser exibidos no formulário. Para essa nalidade, existe o input do tipo hidden, que somente
@@ -208,21 +205,6 @@ buscas serão armazenadas e lembradas, além de exibir uma lupa dentro do campo 
 O input do tipo tel foi especicado para coletar um número de telefone.
 Em dispositivos com teclados virtuais como smartphones e tablets, é comum o teclado ser adaptado para
 exibir apenas opções relevantes à entrada de números telefônicos
-
-
-atributos
-
-autofocus
-Sua presença indica que aquele campo deve iniciar com foco quando a página for carregada. O usuário já
-pode começar a digitar algo sem nenhum clique.
-
-<input type="text" name="nome" placeholder="Insira seu nome">
-O atributo placeholder exibe o texto contido em seu valor dentro do elemento do formulário caso o seu valor
-seja vazio.
-
-A implementação de autocomplete sem o atributo list no campo, ligando-o a um datalist, vai utilizar os últimos
-valores utilizados em outros campos ou em outros formulários, dando prioridade a valores adicionados
-em inputs com o mesmo valor no atributo name.
 
 
 validação
