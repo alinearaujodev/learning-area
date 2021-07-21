@@ -44,9 +44,7 @@
                 <ol> 
                     <li><a href="#intro-form">Para que serve um formulário na web?</a></li>
                     <li><a href="#input-label">Elemento Input e Label</a></li>
-                    <li><a href="#list">Adicionando Listas</a></li>
-                    <li><a href="#links">Adicionando Links</a>   
-                    <li><a href="#imagem">Adicionando Imagem</a></li>                      
+                
                 </ol>
             </section>
         </header>
@@ -56,7 +54,7 @@
                 <h2>Para que serve um formulário na web?</h2>
                 <p><strong>Formulário</strong> é uma das elementos mais úteis da <i>web</i>, ele está por todas as partes. Para um cadastro simple de login, cadastro uma dado em site, pedir um iFodd... São várias as opções.</p>
                 <p>E como funciona um formulário? Lembra da lei da atração? Tudo o que vai volta, com os formulários funciona da mesma forma, você enviar algo para uma parte, e depois a outra parte de devolver o que você pediu.</p>
-                <p>Para isso que serve um atributo chamado <strong><i>action</i></strong>, ele especifica para onde os dados devem ir quando você apertar no botão enviar. Para entender melhor, precisamos estudar um pouco de <a href="internet.html#cliente_servidor">Cliente e Servidor</a></p>
+                <p>Logo, se queremos ir para um local, precisamos dizer pra onde quero ir, certo? Para isso que serve um atributo chamado <strong><i>action</i></strong>, ele especifica para onde os dados devem ir quando você apertar no botão enviar. Para entender melhor, precisamos estudar um pouco de <a href="internet.html#cliente_servidor">Cliente e Servidor</a></p>
             </section>
         </main>
         
@@ -89,9 +87,12 @@
 
         <section id="atributos">
             <h2>Atributos no Formulários</h2>
-
-            atributos
-
+            <div>
+                <h3>Atributo Name</h3>
+                <p>Como não é difícil entender o <strong>name</strong> bem aportuguezado, significa <i>nome</i>, e para o formulário significa apenas uma forma de se referir ao valor do campo que será enviado ao servidor. Geralmente são curtos e não tem espaços.</p>
+                <p>Por exemplo, se você cria um campo <i>nome do usuario</i>, você logicamente precisa saber o que foi que o usuário digitou naquele, por isso você preciso colocar um atributo <i>name="user"</i>, para que assim quando for enviado para o servidor, aparecerá uma coisas parecido com <i>name=aline</i></p>
+                <!--img de exemplo atributo name-->
+            </div>
 autofocus
 Sua presença indica que aquele campo deve iniciar com foco quando a página for carregada. O usuário já
 pode começar a digitar algo sem nenhum clique.
@@ -117,8 +118,6 @@ em inputs com o mesmo valor no atributo name.
 <!--
 <section id="form">
     <form>
- 
-        <textarea id="mensagem"></textarea>
 
         <input type="submit" value="Enviar">  submit - tipo para envio do form / VALEU - NOME DO BUTTON
         <button type="reset">Limpar</button> reset - para limpar o form 
@@ -230,7 +229,7 @@ desabilitado caso seja possível selecionar algum elemento por essa pseudo-class
 vericação e alteração do elemento submit pode ser feita por JavaScript e jQuery de maneira simples.
 
 
-**Name –** Server para manipular
+
 
 **Value –** Server para o banco de dados
 
