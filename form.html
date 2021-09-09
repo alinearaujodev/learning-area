@@ -84,11 +84,7 @@
             </div>
         </section>
 
-        <section id="range-check-radio">
-            <h2>Range, Checkbox e Radio</h2>
-            <p>Existe três tipos de <i>input</i> muito utilizado que precisamos de um pouco de atenção </p>
-        </section>
-
+        
         <section id="atributos">
             <h2>Atributos no Formulários</h2>
             <div>
@@ -111,6 +107,35 @@ em inputs com o mesmo valor no atributo name.
 
         </section>
 
+        <section id="range-check-radio">
+            <h2>Checkbox, Radio e Range</h2>
+            <p>Existe três tipos de <i>input</i> muito utilizado que precisamos de um pouco de atenção</p>
+            <div>
+                <h3>Checkbox</h3>
+                <p>Até agora, os tipos de entradas que permitimos eram todas escolhas únicas. Mas, e se apresentássemos várias opções aos usuários e permitíssemos que eles selecionassem qualquer quantidade de opções? Parece que poderíamos usar caixas de seleção! O <i>input</i> elemento e o conjunto type="checkbox" exibe uma caixa para marcação. Examine o código usado para criar várias caixas de seleção:</p>
+                <img src="/img/checkbox.PNG" alt="exemplo de checkbox no html">
+                <p>Observe no exemplo fornecido:</p>
+                <ul>
+                    <li>Existem valores atribuídos ao atributo <i>value</i> das caixas de seleção. Esses valores não são visíveis no próprio formulário, por isso é importante que utilizemos uma <i>label</i> para identificar a caixa de seleção.</li>
+                    <li>Cada um <i>input</i> tem o mesmo valor para o atributo <i>name</i>. Use o mesmo <i>name</i> para cada caixa de seleção agrupa os <i>input</i>s. No entanto, cada <i>input</i> tem um exclusivo <i>id</i> para emparelhar com um <i>label</i>.</li>
+                </ul>                   
+            </div>   
+            
+            <div>
+                <h3>Radio</h3>
+                <p>As caixas de seleção funcionam bem se quisermos apresentar aos usuários várias opções e deixá-los escolher uma ou mais das opções. No entanto, há casos em que queremos apresentar várias opções e permitir apenas uma seleção - como perguntar aos usuários se concordam ou discordam dos termos e condições. Vejamos o código usado para criar botões de opção:</p>
+                <img src="/img/radio.PNG" alt="exemplo de radio no html">
+                <p>Observe que, no trecho de código, os botões de opção (como caixas de seleção) não exibem seu valor. Temos um <i>label</i> associado para representar o valor do botão de opção. Para agrupar botões de opção, atribuímos a eles o mesmo <i>name</i> e apenas um botão de opção desse grupo pode ser selecionado.</p>
+            </div>
+
+            <div>
+                <h3>Range</h3>
+                <p>Se quisermos limitar os números que nossos usuários podem digitar, podemos considerar o uso de um <i>type</i> diferente. Outra opção que poderíamos usar é a configuração <i>type="range"</i> isso vai criar um controle deslizante.</p>
+                <p>Para definir os valores mínimo e máximo do controle deslizante, atribuímos valores ao atributo <i>min</i> e <i>max</i> do <i>input</i>. Também poderíamos controlar o quão suave e fluido o controle deslizante funciona atribuindo um valor ao atributo <i>step</i>. Valores menores tornarão o controle deslizante mais fluido, enquanto valores maiores farão com que o controle deslizante se mova de forma mais perceptível. Dê uma olhada no código para criar um controle deslizante:</p>
+                <img src="/img/range.png" alt="exemplo de range no html">
+            </div>
+        </section>
+
         <section id="buton">
             <h2>Adicionando Botões</h2>
             <p>Quando queremos criar um botão que enviam coisas, presicamos conhecer a tag <strong>button</strong>. Usamos essa tag para envio dentro do form, e sempre será redirencionado para o link do atributo <i>action</i>. O texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário especificar o valor do atributo type, inclusive se ele for button.</p>
@@ -129,12 +154,6 @@ em inputs com o mesmo valor no atributo name.
 
          <fieldset></fieldset>  é uma sessao dentro do form // funcionar so no form
          <legend></legend>  é um titulo da fieldset 
-         <input type="radio" id="um" name="number">
-         <input type="radio" id="dois" name="number" checked> é a 'grupo' de bolinha. // com o id você diferencia assim pode selecionar um radio apenas. // com o name voce coloca todos no mesmo grupo // checked é para deixar um radio já selecionado 
-         <input type="radio" id="tres" name="number">
-
-
-        <input type="range">
 
            
 
@@ -153,19 +172,6 @@ em inputs com o mesmo valor no atributo name.
         mas o GET faz isso via parâmetros na URL enquanto o POST envia os dados no corpo da requisição (e,
         portanto, não é visível na barra de endereços).
         <form action="checkout.php" method="POST">
-
-
-checkbox
-O elemento input do tipo checkbox exibe uma caixa para marcação, é muito utilizado quando temos uma
-opção que pode ser marcada como sim ou não, por exemplo “Aceito os termos de contrato do usuário”, ou
-“Manter a sessão ativa” em formulários de login.
-Apesar de muito utilizado com o valor true, é possível determinar qualquer valor para o checkbox.
-
-Quando desejamos que o usuário escolha somente uma entre uma série de opções, podemos utilizar elementos
-input do tipo radio. Quando há mais de um elemento desse tipo com o mesmo valor no atributo name,
-somente um pode ser selecionado.
-
-
 
 Muitas vezes precisamos enviar e receber informações que não têm utilidade direta para o usuário e, portanto,
 não devem ser exibidos no formulário. Para essa nalidade, existe o input do tipo hidden, que somente
