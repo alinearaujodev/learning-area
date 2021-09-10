@@ -56,34 +56,33 @@
                 <p>E como funciona um formulário? Lembra da lei da atração? Tudo o que vai volta, com os formulários funciona da mesma forma, você enviar algo para uma parte, e depois a outra parte de devolver o que você pediu.</p>
                 <p>Logo, se queremos ir para um local, precisamos dizer pra onde quero ir, certo? Para isso que serve um atributo chamado <strong><i>action</i></strong>, ele especifica para onde os dados devem ir quando você apertar no botão enviar. Para entender melhor, precisamos estudar um pouco de <a href="internet.html#cliente_servidor">Cliente e Servidor</a></p>
             </section>
-        </main>
-        
 
-        <section id="input-label">
-            <h2>Elemento Input e Label</h2>
-            <div>
-                <p>O elemento mais comum no form é o <strong>input</strong>, que significa entrada, e você pode usa-lo em mais de 20 diferente tipos de entradas, por isso você precisa mudar apenas o atributo <i>type</i>. Veja alguns exemplos abaixo:</p>
-                <p>O <i>input</i> não possui tag de fechamento. E como mencionei, o atributo mais importante é o <i>type</i>, veja abaixo mais tipos de entrada mais importante:</p>
-                <ul>
-                    <li><i>text</i> - para textos</li>
-                    <li><i>password</i> - para senhas</li>
-                    <li><i>color</i> - para selecionar cor</li>
-                    <li><i>number</i> - além de exibir um teclado numérico em dispositivos móveis, nos navegadores modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma seta para cima ou para baixo. Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores válidos.</li>
-                    <li><i>submit</i> - botão de enviar</li>
-                    <li><i>email</i> - permite que os dispositivos móveis, principalmente, exiba um teclado adaptado para facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de domínio .com</li>
-                    <li><i>date</i> - para selecionar datas</li>
-                    <li><i>reset</i> - elimina os valores entrados anteriormente nos elementos de um formulário, permitindo que o usuário limpe o mesmo.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Label</h3>
-                <p>Normalmente precisamos de uma descrição para nossos <i>input</i>, por isso é importante a <strong>label</strong>, esse elemento é uma tag de conteúdo para descrever seu texto. Além disso, é bom para telas pequenas e acessibilidade.</p>
-                <p>A maneira de conectar uma <i>label</i> para o <i>input</i> é por dois atributos, o <strong>for</strong> e <strong>ID</strong>. Todas as vezes que inserimos um <i>input</i>, fornecemos um ID, e todas as que inserimos uma <i>label</i>, fornecemos um for. E quando queremos conecta-los, precisamos atribuir o mesmo valores para ambos.</p>   
-                <p>Outra coisa legal de associar eles, é que assim que clicamos sobre o texto marcado com a tag <i>label</i>, o elemento <i>input</i> é selecionado.</p> 
-                <img src="img/id-for.png" alt="exemplo de conectar label e input">
-            </div>
-        </section>
-
+            <section id="input-label">
+                <h2>Elemento Input e Label</h2>
+                <div>
+                    <p>O elemento mais comum no form é o <strong>input</strong>, que significa entrada, e você pode usa-lo em mais de 20 diferente tipos de entradas, por isso você precisa mudar apenas o atributo <i>type</i>. Veja alguns exemplos abaixo:</p>
+                    <p>O <i>input</i> não possui tag de fechamento. E como mencionei, o atributo mais importante é o <i>type</i>, veja abaixo mais tipos de entrada mais importante:</p>
+                    <ul>
+                        <li><i>text</i> - para textos</li>
+                        <li><i>password</i> - para senhas</li>
+                        <li><i>color</i> - para selecionar cor</li>
+                        <li><i>number</i> - além de exibir um teclado numérico em dispositivos móveis, nos navegadores modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma seta para cima ou para baixo. Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores válidos.</li>
+                        <li><i>submit</i> - botão de enviar</li>
+                        <li><i>email</i> - permite que os dispositivos móveis, principalmente, exiba um teclado adaptado para facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de domínio .com</li>
+                        <li><i>date</i> - para selecionar datas</li>
+                        <li><i>reset</i> - elimina os valores entrados anteriormente nos elementos de um formulário, permitindo que o usuário limpe o mesmo.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Label</h3>
+                    <p>Normalmente precisamos de uma descrição para nossos <i>input</i>, por isso é importante a <strong>label</strong>, esse elemento é uma tag de conteúdo para descrever seu texto. Além disso, é bom para telas pequenas e acessibilidade.</p>
+                    <p>A maneira de conectar uma <i>label</i> para o <i>input</i> é por dois atributos, o <strong>for</strong> e <strong>ID</strong>. Todas as vezes que inserimos um <i>input</i>, fornecemos um ID, e todas as que inserimos uma <i>label</i>, fornecemos um for. E quando queremos conecta-los, precisamos atribuir o mesmo valores para ambos.</p>   
+                    <p>Outra coisa legal de associar eles, é que assim que clicamos sobre o texto marcado com a tag <i>label</i>, o elemento <i>input</i> é selecionado.</p> 
+                    <img src="img/id-for.png" alt="exemplo de conectar label e input">
+                </div>
+            </section>
+    
+        </main>    
         
         <section id="atributos">
             <h2>Atributos no Formulários</h2>
@@ -133,6 +132,29 @@ em inputs com o mesmo valor no atributo name.
                 <p>Se quisermos limitar os números que nossos usuários podem digitar, podemos considerar o uso de um <i>type</i> diferente. Outra opção que poderíamos usar é a configuração <i>type="range"</i> isso vai criar um controle deslizante.</p>
                 <p>Para definir os valores mínimo e máximo do controle deslizante, atribuímos valores ao atributo <i>min</i> e <i>max</i> do <i>input</i>. Também poderíamos controlar o quão suave e fluido o controle deslizante funciona atribuindo um valor ao atributo <i>step</i>. Valores menores tornarão o controle deslizante mais fluido, enquanto valores maiores farão com que o controle deslizante se mova de forma mais perceptível. Dê uma olhada no código para criar um controle deslizante:</p>
                 <img src="/img/range.png" alt="exemplo de range no html">
+            </div>
+        </section>
+
+        <section id="select-datalist">
+            <h2>Select e Datalist</h2>
+            <div>
+                <h3>Select</h3>
+                <p>Imagine se tivermos uma lista completa de opções! Essa situação pode levar rapidamente a uma grande quantidade de botões de opção para controlar.</p>
+                <p>Uma solução alternativa é usar a tag <strong>select</strong> para permitir que nossos usuários escolham uma opção de uma lista organizada. Este é o código para criar um menu suspenso:</p>
+                <img src="img/select.PNG" alt="exemplo de select no html">
+                <p>E se clicarmos no campo que contém a primeira opção, a lista é revelada:</p>
+                <img src="img/select2.PNG" alt="exemplo da lista do select">
+                <p>Observe no código que estamos usando o elemento <i>select</i> para criar a lista suspensa. Para preencher a lista suspensa, adicionamos vários <i>option</i>, cada um com um atributo <i>value</i>. Por padrão, apenas uma dessas opções pode ser selecionada.</p>
+                <p>Observe que quando o formulário for enviado, as informações deste campo de entrada serão enviadas usando o "name" do <i>select</i> o "value" do escolhido <i>option</i>. Por exemplo, se um usuário selecionou Pizza na lista suspensa, as informações seriam enviadas como "lunch=pizza".</p>
+            </div>
+            <div>
+                <h3>Datalist</h3>
+                <p>Mesmo se tivermos uma lista suspensa organizada, se a lista tiver muitas opções, pode ser tedioso para os usuários rolar a lista inteira para localizar uma opção. É aí que usar o <i>datalist</i> é útil.</p>
+                <p>O <strong>datalist</strong> é usado com um <i>type="text"</i>. O input cria um campo de texto no qual os usuários podem digitar e filtrar opções do datalist. Vamos examinar um exemplo concreto:</p>
+                <img src="img/datalist-code.PNG" alt="exemplo de datalist no html">
+                <p>Observe, no código acima, temos um input que possui um atributo <i>list</i>. O input está associada à datalist via input de <i>list</i> e o <i>id</i> da datalist. A partir do código fornecido, o seguinte formulário é processado:</p>
+                <img src="img/datalist2.PNG" alt="exemplo de como ficara o form de datalist">
+                <!-- ESTUDAR MAIS ISSO --> <p>Embora <i>select</i> <i>datalist</i> compartilhem algumas semelhanças, existem algumas diferenças importantes. No elemento input associado, os usuários podem digitar no campo de entrada para pesquisar uma opção específica. Se nenhuma das opções options, o usuário ainda pode usar o que eles digitada. Quando o formulário é enviado, o valor do <input>'s name e value da opção selecionada, ou o que o usuário digitou, é enviado como um par.</p>
             </div>
         </section>
 
