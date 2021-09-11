@@ -8,7 +8,7 @@
         <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="css/generic/reset.css">
-        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/style.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,6 +69,7 @@
                         <li><i>number</i> - além de exibir um teclado numérico em dispositivos móveis, nos navegadores modernos exibe um controle que permite incrementar ou decrementar o valor do campo clicando em uma seta para cima ou para baixo. Além dessa diferença visual, é possível determinar valores mínimos, máximos e se há uma escala de valores válidos.</li>
                         <li><i>submit</i> - botão de enviar</li>
                         <li><i>email</i> - permite que os dispositivos móveis, principalmente, exiba um teclado adaptado para facilitar esse tipo de entrada. Por exemplo, o iPhone exibe um teclado com o caractere @ e com as opções de domínio .com</li>
+                        <li><i>tel</i> - O input foi especificado para coletar um número de telefone. Em dispositivos com teclados virtuais como smartphones e tablets, é comum o teclado ser adaptado para exibir apenas opções relevantes à entrada de números telefônicos</li>
                         <li><i>date</i> - para selecionar datas</li>
                         <li><i>reset</i> - elimina os valores entrados anteriormente nos elementos de um formulário, permitindo que o usuário limpe o mesmo.</li>
                     </ul>
@@ -145,6 +146,7 @@ em inputs com o mesmo valor no atributo name.
                 <p>E se clicarmos no campo que contém a primeira opção, a lista é revelada:</p>
                 <img src="img/select2.PNG" alt="exemplo da lista do select">
                 <p>Observe no código que estamos usando o elemento <i>select</i> para criar a lista suspensa. Para preencher a lista suspensa, adicionamos vários <i>option</i>, cada um com um atributo <i>value</i>. Por padrão, apenas uma dessas opções pode ser selecionada.</p>
+                <p>Em sua conguração padrão, o controle select exibe o que conhecemos como <i>menu drop-down</i>, permitindo que somente uma das opções possa ser selecionada. Caso seja adicionado o atributo <i>multiple</i>, é possível selecionar mais de uma opção da mesma maneira que selecionamos diversos arquivos no explorador do sistema operacional.</p>
                 <p>Observe que quando o formulário for enviado, as informações deste campo de entrada serão enviadas usando o "name" do <i>select</i> o "value" do escolhido <i>option</i>. Por exemplo, se um usuário selecionou Pizza na lista suspensa, as informações seriam enviadas como "lunch=pizza".</p>
             </div>
             <div>
@@ -158,8 +160,22 @@ em inputs com o mesmo valor no atributo name.
             </div>
         </section>
 
+        <section id="textarea">
+            <h2>Textarea</h2>
+            <p>Quando queremos criar texto de texto com linha única, usamos o "type=text" como já vimos, mas e se queremos deixa os usuários escreverem mais linhas? Para isso, em vez de usuamos o input, usaremos o <i>textarea</i></p>
+            <p>O <strong>textarea</strong> é usado para criar um campo de texto maior para os usuários escreverem mais texto. Podemos adicionar os atributos <i>rows</i> e <i>cols</i> determina a quantidade de linhas e colunas para o textarea. Dê uma olhada:</p>
+            <img src="img/textarea-code.PNG" alt="exemplo de textarea no html">
+            <p>No código acima, um vazio de 5 linhas por 30 colunas é renderizado para a página assim:</p>
+            <img src="img/textarea2.PNG" alt="exemplo de como fica o textarea">
+            <p>Se quiséssemos um campo de texto ainda maior, poderíamos clicar e arrastar no canto inferior direito para expandi-lo.</p>
+            <p>Quando enviamos o formulário, o valor de textarea é o texto escrito dentro da caixa. Se quisermos adicionar um valor padrão a, devemos incluí-lo nas tags de abertura e fechamento.</p>
+        </section>
+
         <section id="buton">
-            <h2>Adicionando Botões</h2>
+            <h2>Enviando formulários</h2>
+            <div>
+                <h3>Botões</h3>
+            </div>
             <p>Quando queremos criar um botão que enviam coisas, presicamos conhecer a tag <strong>button</strong>. Usamos essa tag para envio dentro do form, e sempre será redirencionado para o link do atributo <i>action</i>. O texto do botão passa a ser indicado como conteúdo da tag. Ainda assim é necessário especificar o valor do atributo type, inclusive se ele for button.</p>
             <p>O elemento input com o atributo <i>type="button”</i> renderiza um botão dentro do formulário, mas esse botão não tem nenhuma função direta nele e é comumente utilizado para disparar eventos para a execução de scripts. O texto do botão é determinado pelo valor do atributo value.</p>
             <p>O elemento input com o atributo <i>type="submit”</i> é similar ao botão, mas quando acionado esse elemento inicia a chamada que envia as informações do formulário para o endereço indicado no atributo action do <i>form</i></p>
@@ -195,48 +211,15 @@ em inputs com o mesmo valor no atributo name.
         portanto, não é visível na barra de endereços).
         <form action="checkout.php" method="POST">
 
-Muitas vezes precisamos enviar e receber informações que não têm utilidade direta para o usuário e, portanto,
-não devem ser exibidos no formulário. Para essa nalidade, existe o input do tipo hidden, que somente
-carrega em si um valor.
 
-Quando desejamos que o usuário insira uma quantidade grande de informações textuais, incluindo quebras
-de linha, é necessário o uso da tag textarea
 
-Quando desejamos que o usuário selecione entre diversas opções, com a possibilidade de exibilizar a maneira
-com que ele interage com o componente do formulário, podemos utilizar a tag <select>.
-<select name="cidades">
-<option value="bsb">Brasília</option>
-<option value="rj">Rio de Janeiro</option>
-<option value="sp">São Paulo</option>
-</select>
-Em sua conguração padrão, o controle select exibe o que conhecemos como menu drop-down, permitindo
-que somente uma das opções possa ser selecionada. Caso seja adicionado o atributo multiple, é possível
-selecionar mais de uma opção da mesma maneira que selecionamos diversos arquivos no explorador
-do sistema operacional.
 
 
 Oelemento input comtipo url permite que os dispositivos exibamum teclado como, no exemplo do iPhone,
 opções como www e .com.
 
-O elemento input do tipo range exibe um controle deslizante nos navegadores modernos, permitindo uma
-interação mais agradável quando precisamos de um valor numérico em escala. O controle guarda um valor
-numérico em seu atributo value. Assim como o input do tipo number, é possível especicar um valor
-mínimo, máximo e uma escala.
-
-Os controles de “date picker” são feitos para coletar uma informação de data ou hora. São várias as possibilidades
-de formato de data ou hora necessárias. No navegador Opera, quando utilizado esse tipo de controle,
-o usuário pode selecionar uma data a partir de um calendário. É possível especicar datas mínima emáxima.
-
-O elemento input do tipo color permite que seja exibido um “color picker” para o preenchimento do seu
-valor.
-
 O input do tipo search exibe um campo especíco para busca. O atributo “results” determina quantas últimas
 buscas serão armazenadas e lembradas, além de exibir uma lupa dentro do campo (Safari e Chrome).
-
-O input do tipo tel foi especicado para coletar um número de telefone.
-Em dispositivos com teclados virtuais como smartphones e tablets, é comum o teclado ser adaptado para
-exibir apenas opções relevantes à entrada de números telefônicos
-
 
 validação
 
