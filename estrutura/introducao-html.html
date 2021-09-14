@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+    <head>
+        <title>Introdução ao HTML - Learning Area Por: @alinearaujodev</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <meta name="autor" content="Aline de Araújo - @alinearaujodev"/>
+        <meta name="description" content="Website de documentação pessoal de aprendizagem de programação"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="css/generic/reset.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/pagehtml.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script>
+                document.createElement("header" );
+                document.createElement("footer" );
+                document.createElement("section"); 
+                document.createElement("aside"  );
+                document.createElement("nav"    );
+                document.createElement("article"); 
+                document.createElement("hgroup" ); 
+                document.createElement("time"   );
+            </script>
+            <noscript>
+                <strong>Aviso !</strong>
+                Seu navegador web não suporta HTML5, e devido a isso alguns recursos são simulados usando JScript.
+                Infelizmente seu navegador desativou a execução de scripts. Por favor ative esse recurso para que esta página seja exibida corretamente.
+            </noscript>
+        <![endif]--> 
+    </head>
+
+    <body> 
+        <header>
+            <nav>
+                <div class="learning-area">
+                    <h1>Introdução ao HTML</h1>
+                    <p>Por:<a href="https://www.github.com/alinearaujodev/" target="_blank">@alinearaujodev</a></p> 
+                </div>
+            </nav>
+            <section>  
+                <ol> 
+                    <li><a href="#basico">HTML, básico </a></li>
+                    <li><a href="#marcacao">Formatação de Texto</a></li>
+                    <li><a href="#list">Adicionando Listas</a></li>
+                    <li><a href="#links">Adicionando Links</a>   
+                    <li><a href="#imagem">Adicionando Imagem</a></li>                      
+                </ol>
+            </section>
+        </header>
+
+        <main>
+            <section id="basico">
+                <h2>1. HTML, o básico</h2>
+                <div id="html">
+                    <h3>O que é HTML?</h3>
+                    <p>HTML: HyperText Markup Language, em português significa Linguagem de marcação de texto. Para um melhor entendimento, é a <strong> estrutura do site</strong>.</p>
+                    <p>Quer ir mais a fundo? Assista abaixo um curto vídeo explicando melhor</p>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RISPTY1Lh2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <p>As marcações que temos no HTML é chamada de tags. São basicamente eles que o navegador vai interpretar e assim, estruturar o site. As Tags ficam entre chaves menor que e maior que, e na maioria das vezes, possui abertura e fechamento.</p>
+                    <p>Ou seja, <strong><code>&lt;tag&gt;</code><code>&lt;/tag&gt;</code></strong></p>
+                </div>
+
+                <div id="estrutura">
+                    <h3>Estrutura inicial do HTML</h3>
+                    <img src="img/html-estrutura.png" alt="foto da estrutura do html">
+                    <p>Acima temos a estruta inicial do <i>html</i>. O <strong>!DOCTYPE html</strong> não é uma tag, é uma instrução para mostrar ao navegador a versão mais recente do <i>html</i>. Deve ser a primeira linha de código em seu documento.</p>
+                    <p>A tag <strong>html</strong> é para a criação da estrutura <i>html</i>, e qualquer coisa entre as tags de abertura e fechamento será interpretado pelo navegador.</p>       
+                    <p>Além disso, a tag <strong>html</strong> é o pai das tags <strong>head (cabeça)</strong>, que contém informações que somente o navegador irá precisar, como os <i>metadados</i>, que são informações sobre a página que não são exibidas diretamente na página da web. Diferentemente do <strong>body (corpo)</strong>, que todas informações entre as tags de abertura e fechamento será mostrada na página.</p>
+                    <p>A tag <strong>title</strong> é para o título da página que será exibido na barra da janela.</p>             
+                </div>
+
+                <div>
+                    <p>Um ponto bem importante na programação é a <strong>endedação</strong>, eles ajudam você a deixar seu código mais claro para quando você (e outras pessoas) decidir voltar e revisá-lo.</p>
+                </div>
+            </section>
+
+            <section id="marcacao">
+                <h2>2. Formatação de Texto</h2> 
+                <section id="titulos">
+                    <div>
+                        <h3>Títulos</h3>
+                        <p>Os títulos tem sua ordem, sendo com maior importância a tag <strong> <code>&lt;h1&gt;</code><code>&lt;/h1&gt;</code></strong>, e com menor importância o <strong> <code>&lt;h6&gt;</code><code>&lt;/h6&gt;</code></strong></p>        
+                        
+                        <h1>H1 - Texto nível 1</h1>
+                        <h2>H2 - Texto nível 2</h2>
+                        <h3>H3 - Texto nível 3</h3>
+                        <h4>H4 - Texto nível 4</h4>
+                        <h5>H5 - Texto nível 5</h5>
+                        <h6>H6 - Texto nível 6</h6>
+                    </div>
+                    <p>O elemento HTML <strong>hgroup</strong> destina-se a agrupar cabeçalhos de diferentes níveis para uma seção do documento.</p>
+                    <img src="img/hgroup.png" alt="exemplo de hgroup em html">
+                </section>
+                <section id="paragrafo">
+                    <h3>Paragráfo</h3>
+                    <p>Paragrafo usa a tag <strong><code>&lt;p&gt;</code><code>&lt;/p&gt;</code></strong></p>
+                    <p>Caso queira uma quebra de linha, usa a tag <strong><code>&lt;br&gt;</code></strong></p>
+                    <p>Caso queira uma linha horizontal, usa a tag <strong><code>&lt;hr&gt;</code></strong></p>
+                </section>
+                <section id="enfase">
+                    <h3>Ênfase no texto</h3>             
+                    <p>Para texto em negrito, use a tag <strong><code>&lt;strong&gt;</code><code>&lt;/strong&gt;</code></strong> Ex: <strong>Essa frase esta em negrito</strong></p>
+                    <p>Para texto em itálico, use a tag <strong><code>&lt;i&gt;</code><code>&lt;/i&gt;</code></strong> Ex: <i>Essa frase está em itálico</i></p>
+                    <p>Para texto pequeno, use a tag <strong><code>&lt;small&gt;</code><code>&lt;/small&gt;</code></strong> Ex: <small>Essa frase está pequena</small></p>
+                    <p>Para texto marcado, use a tag <strong><code>&lt;mark&gt;</code><code>&lt;/mark&gt;</code></strong> Ex: <mark>Essa frase está marcada</mark></p>
+                    <p>Para texto deletado com uma linha, use a tag <strong><code>&lt;del&gt;</code><code>&lt;/del&gt;</code></strong> Ex: <del>Essa frase está deletada</del></p>
+                </section>
+            </section>
+
+            <section id="list">
+                <h2>3. Adicionando Listas</h2>
+                <section>
+                    <h3>Listas ordenadas</h3>
+                    <p>A tag <strong><code>&lt;ol&gt;</code><code>&lt;/ol&gt;</code></strong>, são as <strong>ordered lists</strong> (listas ordenadas), ou seja, a ordem numerica importa. Como um passo-a-passo, exemplos de lista desse tipo, temos uma lista de bolo ou uma lista dos melhores lugares do mundo.</p>
+                    <p>Para criar uma lista ordenada, precisamos de duas tags, a primeira claro <strong><code>&lt;ol&gt;</code><code>&lt;/ol&gt;</code></strong>, assim determinando a lista ordenada e   <strong><code>&lt;li&gt;</code><code>&lt;/li&gt;</code></strong>, é colocada dentro da <strong><code>&lt;ol&gt;</code><code>&lt;/ol&gt;</code></strong> para determinar cada item da lista.</p>  
+                    <img src="img/ol.png" alt="exemplo de codigo fonte de uma ol">
+                    <p>Dentro da tag <strong><code>&lt;ol&gt;</code><code>&lt;/ol&gt;</code></strong>, existe o parêmetro <i>type</i>, onde que configura o tipo do marcador da lista, as opções são:</p>
+                    <ul>
+                        <li>1 - valor padrão. Cria listas númericas. Ex: 1, 2, 3, 4,... </li>
+                        <li>A - listas alfabéticas maiúsculas. Ex: A, B, C, D, ... </li>
+                        <li>a - listas alfabéticas minúsculas. Ex: a, b, c, d, ... </li>
+                        <li>I - listas números romanos maiúsculas. Ex: I, II, III, IV, ... </li>
+                        <li>i - listas números romanos minúsculas. Ex: i, ii, iii, iv, ... </li>
+                    </ul>
+                    <p>Outro coisa que você pode indicar é o inicio da contagem usando o <strong>start</strong></p>
+                </section>
+                <section>
+                    <h3>Listas não ordenadas</h3>
+                    <p>Agora com a tag <strong><code>&lt;ul&gt;</code><code>&lt;/ul&gt;</code></strong>é para listas não ordenadas, ou seja, a ordem numerica não importa. Seria apenas para orgaizar os itens sem uma ordem de classificação.</p>
+                    <p>O mesmo padrão é usado com a tag <strong><code>&lt;li&gt;</code><code>&lt;/li&gt;</code></strong>, é preciso que a tag seja filha da <strong><code>&lt;ul&gt;</code><code>&lt;/ul&gt;</code></strong></p>  
+                    <p>Existem também diferentes tipos de bolinhas, como:</p>
+                    <strong><p>Bolinha Preta - Disc</p></strong>
+                    <ul type="disc">
+                        <li>Bolinha preta 1</li>
+                        <li>Bolinha preta 2</li>
+                    </ul>
+                    <strong><p>Bolinha Branca - Circle</p></strong>
+                    <ul type="circle">
+                        <li>Bolinha branca 1</li>
+                        <li>Bolinha branca 2</li>
+                    </ul>
+                    <strong><p>Quadradinho Preta - Square</p></strong>
+                    <ul type="square">
+                        <li>Quadradinho preto 1</li>
+                        <li>Quadradinho preto 2</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Listas com descrição</h3>
+                    <p>A tag <strong><code>&lt;dl&gt;</code><code>&lt;/dl&gt;</code></strong>, é para listas com descrição. Algo como um dicionário sem marcação.</p> 
+                    <p>Essa tag é usada em conjunto com duas sinalizações: <strong><code>&lt;dt&gt;</code></strong> (que define termos/nomes) e <strong><code>&lt;dd&gt;</code></strong> (que informa a descrição que estará associada a cada termo ou nome). Exemplo abaixo:</p> 
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Linguagem de Marcação para estrutura do site</dd>
+                        <dt>CSS</dt>
+                        <dd>Linguagem de marcação para definir o estilo do site</dd>
+                        <dt>JS</dt>
+                        <dd>Linguagem de programação para criação de interatividade do site</dd>
+                    </dl>
+                </section>
+            </section>
+
+            <section id="links"> 
+                <h2>4. Adicionando Link</h2>
+                <p>A web é um mundo de links, todo vez que você estiver navegando em algum site e clicar em um local que leva para outra página, site ou até baixa um arquivo, você estará interagindo com <strong>hiperlink</strong></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BNHR6IQJGZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div>
+                    <h3>Link Externo</h3>
+                    <p>A tag <strong><code>&lt;a&gt;</code><code>&lt;/a&gt;</code></strong> significa âncora, e devemos usar para criar <strong>hiperlinks</strong>. Existem alguns atributos essenciais para essa tag:</p>
+                    <p>Atributo <strong>href</strong>, tem finalidade de adicionar as <i>URLs</i> para ser direcionado a pagina.</p>
+                    <p>Atributo <strong>rel</strong>, especifica a relação entre o documento atual e o documento vinculado. Alguns exemplos de que mais usamos:</p>
+                        <ul>
+                            <li>author - Indica que o link levará para uma página do autor do conteúdo</li>
+                            <li>external - Indica que o documento referenciado não faz parte do mesmo site que o documento atual</li>
+                            <li>next e prev - Fornece um link para o próximo ou anterios documento da série
+                            </li>
+                        </ul>
+                    <p>Atributo <strong>target</strong>, por padrão todos os links abriram na mesma janela. Ou seja o conteúdo anterior deixará de ser exibido para mostrar o novo conteúdo. Por isso esse atributo é muito importante, a função dizer em qual janela específica você desejar direncionar seu usuário. Se optar por <strong>"_blank" </strong>, abrirá o documento vinculado em uma nova janela. E o <strong>"_self"</strong>, abre o documento vinculado na janela atual.</p>
+                </div>
+
+                <div>
+                    <h3>Link Internos</h3>
+                    <p> Ao criar sites de várias páginas, os desenvolvedores web geralmente armazenam arquivos em uma pasta principal, onde todos os arquivos do projeto são armazenados. Conforme o tamanho do projeto aumenta, é importante que crie pastas adicionais dentro da pasta do projeto principal para organizar seu código.</p>
+                    <p>Se estiver se referindo à pasta atual do servidor, pode usar ./ antes do nome do arquivo. Se quiser se referir à pasta imediatamente superior na hierarquia, use ../ para voltar um nível para a pasta mais externa.</p>
+                    <!-- fazer um intrutação de exemplo de arquivo -->
+                    <p>A tag <strong><code>&lt;link&gt;</code></strong> é para links de arquivos que se encontra dentro da pasta do projeto.</p>
+                    <p>Com o <strong><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></strong> dentro da tag HEAD, sera para identificar o CSS interno</p>
+                    <p>Outro link importante no HEAD é o <strong><code>&lt;link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"&gt;</code></strong>, que sera para incluir o icon na barra da janela de nevegação</p>  
+                </div>
+   
+                <div>
+                    <h3>Links Importantes</h3>
+                    <ul>
+                        <li><p><strong>Link para Dowload</strong> - <i><code>&lt;a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US" download="firefox-39-installer.exe"&gt;</code><code>&lt;/a&gt;</code></strong></i></p></li>
+                        <li><p><strong>Link de Email</strong> - <i><code>&lt;a href="mailto:nowhere@mozilla.org"&gt;</code><code>&lt;/a&gt;</code></i></p></li>
+                        <li> <p><strong>Link para WhatsApp</strong> - <i><code>&lt;a href="https://api.whatsapp.com/send?phone=seunumerodetelefone&text=sua%20mensagem"&gt;</code><code>&lt;/a&gt;</code></i></p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="desafio-html1">
+                <h2>Desafio para conhecimentos gerais</h2>
+                <h3>Blog</h3>
+                <p>Sua amiga Aline é uma blogueira de moda em ascensão e pediu que você construísse um novo site para ela, bem a tempo do New York Fashion Week!</p>
+                <p>Use seu novo conhecimento de HTML para criar a estrutura do blog. Certifique-se de incluir muitas imagens, links, listas e outros elementos HTML que você aprendeu para que seus fãs tenham muito o que ler.</p>
+                <p>Deixo disponivéis algumas ideias no link "Ideias para se inspirar", dê uma conferida antes de começar</p>
+                <p>Se você ficar preso durante este projeto ou gostaria de ver a resolução do desafio, clique em "Estou preso, me ajude" para ver um vídeo passo a passo do projeto.</p>
+                <p><strong>Mãos a obra!</strong></p>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <hr>
+            com amor, por:<a href="https://www.instagram.com/alinearaujodev" target="_blank">@alinearaujodev</a></time>
+            <br>
+            <a href="#">Home</a>
+        </footer>
+    </body>
+</html>
