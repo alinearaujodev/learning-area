@@ -28,8 +28,25 @@
 
             <section>
                 <h2>Defina um mínimo e um máximo</h2>
-                <p>Outra validação embutida que podemos usar é atribuir um valor mínimo ou máximo para um campo de número, por exemplo, <i>type="number" e type="range"</i>. Para definir um valor mínimo aceitável, usamos o minatributo e atribuímos um valor. Por outro lado, para definir um valor máximo aceitável, atribuímos maxum valor ao atributo. </p>
+                <p>Outra validação embutida que podemos usar é atribuir um valor mínimo ou máximo para um campo de número, por exemplo, <i>type="number" e type="range"</i>. Para definir um valor mínimo aceitável, usamos o atributo <strong>min</strong> e atribuímos um valor. Por outro lado, para definir um valor máximo aceitável, atribuímos um valor ao atributo <strong>max</strong>.</p>
+                <img src="../img/min-max.PNG" alt="exemplo de min e max no html">
             </section>
+
+            <section>
+                <h2>Verificando o comprimento do texto</h2>
+                <p>Para definir um número mínimo de caracteres para um campo de texto, adicionamos o atributo <strong>minlength</strong> e um valor para definir um valor mínimo. Da mesma forma, para definir o número máximo de caracteres para um campo de texto, usamos o <strong>maxlength</strong> e definimos um valor máximo. Vamos dar uma olhada nesses atributos no código:</p>
+                <img src="../img/minlength-max.PNG" alt="exemplo de minlength e maxlength no html">
+                <p>E se um usuário tentar digitar mais do que o número máximo permitido de caracteres, ele não receberá uma mensagem de aviso, mas não poderá digitá-la!</p>
+            </section>
+
+            <section>
+                <h2>Combinando um padrão</h2>
+                <p>Além de verificar o comprimento de um texto, também podemos adicionar uma validação para verificar como o texto foi fornecido. Para os casos em que queremos que a entrada do usuário siga diretrizes específicas, usamos o atributo <strong>pattern</strong> e atribuímos a ele uma expressão regular ou regex. As expressões regulares são uma sequência de caracteres que constituem um padrão de pesquisa. Se a entrada corresponder à regex, o formulário pode ser enviado.</p>
+                <p>Digamos que desejamos verificar se há um número de cartão de crédito válido (um número de 14 a 16 dígitos). Poderíamos usar a regex: <i>[0-9]{14,16}</i> que verifica se o usuário forneceu apenas números e se inseriu pelo menos 14 dígitos e no máximo 16 dígitos.</p>
+                <img src="../img/pattern.PNG" alt="exemplo de pattern no html">
+            </section>
+
+            <input type="search" name="pes" id="pes" results>
         </main>
 
         <footer></footer>       
@@ -75,30 +92,6 @@ opções como www e .com.
 O input do tipo search exibe um campo especíco para busca. O atributo “results” determina quantas últimas
 buscas serão armazenadas e lembradas, além de exibir uma lupa dentro do campo (Safari e Chrome).
 
-validação
-
-required
-Podemos indicar na marcação do formulário quando um campo é de preenchimento obrigatório.
-<input type="text" name="nome" required>
-Esse atributo permite uma validação fraca no lado do cliente.
-
-Conseguimos também especicar um formato requerido através do atributo pattern, adicionando uma expressão
-regular como valor:
-<input type="text" pattern="^@\w{2,}" name="usuario_twitter">
-O atributo pattern também permite uma validação fraca do campo.
-
-Essa pseudo-classe é a :invalid, e pode ser utilizada para dar um retorno visual imediato caso o usuário não
-esteja atendendo aos requisitos dos campos do formulário.
-:invalid {
-outline: 1px solid #cc0000;
-}
-Essa validação é fraca pois de maneira direta não é possível impedir que o usuário envie as informações
-do formulário, mesmo que incompletas ou incorretas. É possível porém alterar o botão de submit e deixálo
-desabilitado caso seja possível selecionar algum elemento por essa pseudo-classe no formulário. Essa
-vericação e alteração do elemento submit pode ser feita por JavaScript e jQuery de maneira simples.
-
-
-
 
 **Value –** Server para o banco de dados
 
@@ -122,43 +115,7 @@ Exemplos:
 2. Se você precisar enviar uma grande quantidade de dados, o método POST é preferido porque alguns navegadores limitam o tamanho dos URLs. Além disso, muitos servidores limitam o comprimento dos URLs que aceitam.
 3. Defina o valor de [enctype](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form#attr-enctype) Para multipart / form-data porque os dados serão divididos em várias partes, uma para cada arquivo mais uma para o texto do corpo do formulário que pode ser enviado com eles.
 
-<**textarea** cols="6" rows="5"> </**textarea**>
 
-<**form** name="form1" action=""> </**form**>
-
-<**div** class="form-group">
-
-<label class="control-label"> Teste </label>
-
-<input class=""form-control" type="text" name="teste"  value="" />
-
-</**div**>
-
-<**div** class="form-group">
-
-<label class="control-label"> Selecionar opções </label>
-
-<**select** class="form-control" name="teste">
-
-<option value="item1">Item 1 </option>
-
-<option value="item2">Item 2 </option>
-
-</**select**>
-
-</**div**>
-
-<div class="**radio**">
-
-<input type="radio" name="teste" value="teste1" id="radio1"/>
-
-<label class="control-label">Teste 1 </label>
-
-<input type="radio" name="teste" value="teste2" id="radio2"/>
-
-<label class="control-label">Teste 2 </label>
-
-</div>
 
 **autofocus** - input focado
 
@@ -167,10 +124,6 @@ Exemplos:
 **multiple** - selecionar mais de um arquivo
 
 **placeholder**="teste" - Discrição
-
-**maxlength**="10" - caráter máximo
-
-**minlength**="5" - caráter mínimo
 
 **checked**
 
@@ -183,30 +136,5 @@ Exemplos:
 **<fieldset> </fieldset>** - estrutura de organização do form
 
 **<legend> </legend>** - Legendar o título do form
-
-<input type="image" src="img/busca.png" class="lupa">
-
-<input type="search"> - para pesquisar algo no site
-
-
-
-        No PHP, podemos acessar cada parâmetro individualmente usando uma sintaxe de arrays:
-            <? = $_GET['mensagem'] ?>
-            ou
-            <? = $_POST['mensagem'] ?>
-        
-        Até o capítulo anterior, quando queríamos imprimir algo na tela usamos a construção:
-            <?php print $dado; ?>
-        Mas o PHP permite uma sintaxe mais curta para declarar um bloco de código quando a única ação é imprimir algo e não há várias linhas de código.
-            <?= $dado ?>
-            É uma sintaxe mais curta que a primeira e tem exatamente o mesmo efeito.
-
-            <dl>
-                <dt>Cor</dt>
-                <dd><?= $_POST['cor'] ?> </dd>
-                <dt>Tamanho</dt>
-                <dd><?= $_POST['tamanho'] ?> </dd>
-            </dl>
-    </form>
 </section>
     -->
